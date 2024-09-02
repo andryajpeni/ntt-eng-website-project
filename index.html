@@ -19,48 +19,56 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <!-- *whatsapp -->
     <style>
-      :root {
-        --bs-blue: #0d6efd;
-        --bs-indigo: #6610f2;
-        --bs-purple: #6f42c1;
-        --bs-pink: #d63384;
-        --bs-red: #dc3545;
-        --bs-orange: #fd7e14;
-        --bs-yellow: #ffc107;
-        --bs-green: #198754;
-        --bs-teal: #20c997;
-        --bs-cyan: #0dcaf0;
-        --bs-black: #000;
-        --bs-white: #fff;
-        --bs-gray: #6c757d;
-        --bs-gray-dark: #343a40;
-        --bs-gray-100: #f8f9fa;
-        --bs-gray-200: #e9ecef;
-        --bs-gray-300: #dee2e6;
-        --bs-gray-400: #ced4da;
-        --bs-gray-500: #adb5bd;
-        --bs-gray-600: #6c757d;
-        --bs-gray-700: #495057;
-        --bs-gray-800: #343a40;
-        --bs-gray-900: #212529;
-        --bs-primary: #0d6efd;
-        --bs-secondary: #6c757d;
-        --bs-success: #198754;
-        --bs-info: #0dcaf0;
-        --bs-warning: #ffc107;
-        --bs-danger: #dc3545;
-        --bs-light: #f8f9fa;
-        --bs-dark: #212529;
-        --bs-ntt-blue-color: #261c6e;
-        --bs-ntt-red-color: #ed1c22;
-        --bs-linear-gradient: linear-gradient(
-          -120deg,
-          #261c6e -2.85%,
-          #ed1c22 84.92%
-        );
+      .whatsapp {
+        height: 50px;
+        width: 50px;
+        background: #25d366;
+        position: fixed;
+        margin: auto;
+        right: 50px;
+        bottom: 50px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 30px;
+        color: white;
+        z-index: 1050;
+        text-decoration: none;
       }
-
+      .whatsapp a {
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        z-index: 1;
+      }
+      .whatsapp:before,
+      .whatsapp:after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #25d366;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.7;
+      }
+      .whatsapp:before {
+        animation: pulse 2s ease-out infinite;
+      }
+      .whatsapp:after {
+        animation: pulse 2s 1s ease-out infinite;
+      }
+      @keyframes pulse {
+        100% {
+          transform: scale(1.5);
+          opacity: 0;
+        }
+      }
+    </style>
+    <!-- *whatsapp -->
+    <style>
       * {
         box-sizing: border-box;
         margin: 0;
@@ -116,28 +124,26 @@
         resize: none;
       }
       .btn-warning {
-        color: var(--bs-ntt-blue-color);
-        background-color: var(--bs-warning);
-        border: 15px solid var(--bs-warning);
+        color: #261c6e;
+        background-color: yellow;
+        border: 15px solid yellow;
         border-radius: 25px;
         text-decoration: none;
         font-size: 12px;
         font-weight: 800;
         letter-spacing: 5px;
       }
-
       .btn-warning:hover {
-        color: var(--bs-white);
-        background-color: var(--bs-ntt-red-color);
-        border: 15px solid var(--bs-ntt-red-color);
+        color: white;
+        background-color: #ed1c22;
+        border: 15px solid #ed1c22;
         border-radius: 25px;
         text-decoration: none;
         font-size: 12px;
         font-weight: 800;
         letter-spacing: 5px;
       }
-    </style>
-    <style>
+      /* *navbar */
       nav {
         z-index: 1000;
         transition: all 0.3s;
@@ -145,11 +151,9 @@
       nav .collapse {
         justify-content: center;
       }
-
       .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%283, 152, 158, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
       }
-
       .navbar-dark .navbar-nav .active > .nav-link {
         color: rgb(237, 28, 34);
         background: transparent;
@@ -158,7 +162,7 @@
         color: rgb(237, 28, 34);
       }
       .navbar-expand-lg .navbar-nav .nav-link {
-        color: var(--bs-light);
+        color: white;
         font-size: 14px;
         padding: 0 0px;
         font-weight: 100;
@@ -179,25 +183,32 @@
         letter-spacing: 0.5px;
       }
       .sticky {
-        background: var(--bs-white);
+        background: white;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 1020;
       }
       .header.sticky .navbar-nav li a {
-        color: var(--bs-ntt-blue-color);
+        color: #261c6e;
       }
-      hero {
+
+      #contact .contactus .gmaps {
+        margin-top: 200px;
+      }
+    </style>
+    <!-- ?hero -->
+    <style>
+      #hero {
         width: 100%;
         height: auto;
         position: relative;
       }
-      hero .head-content {
+      #hero .head-content {
         margin-top: -177px;
         text-align: center;
       }
-      hero .head-content-item img {
+      #hero .head-content-item img {
         height: 840px;
         width: 100%;
         z-index: 9;
@@ -210,7 +221,7 @@
         background-size: cover;
         position: relative;
       }
-      hero .head-content-caption {
+      #hero .head-content-caption {
         position: absolute;
         top: 20%;
         bottom: 0;
@@ -220,7 +231,7 @@
         margin: auto;
         z-index: 999;
       }
-      hero .gradient-head-content-item {
+      #hero .gradient-head-content-item {
         background: -moz-linear-gradient(
           -45deg,
           rgba(0, 0, 0, 0.8) 0%,
@@ -244,62 +255,59 @@
         left: 0;
         z-index: 800;
       }
-      hero h1,
+      #hero h1,
       h2,
       h4,
       h3,
       h5,
       h6 {
-        color: var(--bs-light);
-      }
-      .whatsapp {
-        height: 50px;
-        width: 50px;
-        background: #25d366;
-        position: fixed;
-        margin: auto;
-        right: 50px;
-        bottom: 50px;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        font-size: 30px;
-        color: var(--bs-light);
-        z-index: 1050;
-        text-decoration: none;
-      }
-      .whatsapp a {
-        font-size: 30px;
-        color: var(--bs-light);
-        text-decoration: none;
-        z-index: 1;
-      }
-      .whatsapp:before,
-      .whatsapp:after {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: #25d366;
-        border-radius: 50%;
-        z-index: -1;
-        opacity: 0.7;
-      }
-      .whatsapp:before {
-        animation: pulse 2s ease-out infinite;
-      }
-      .whatsapp:after {
-        animation: pulse 2s 1s ease-out infinite;
-      }
-      @keyframes pulse {
-        100% {
-          transform: scale(1.5);
-          opacity: 0;
-        }
+        color: white;
       }
     </style>
+    <!-- ?hero -->
+    <!-- *profile -->
+    <style></style>
+    <!-- *profile -->
+    <!-- !services -->
+    <style></style>
+    <!-- !services -->
+    <!-- ?contact -->
+    <style></style>
+    <!-- ?contact -->
+    <!-- *footer -->
     <style>
-      @media (max-width: 1300px) {
+      .footerimage {
+        padding: 0;
+        justify-content: start;
+      }
+      .socialmedia h5,
+      .qlinks h5,
+      .serviceslinks h5 {
+        color: #261c6e;
+        font-weight: bold;
+      }
+      .socialmedia img,
+      .qlinks img,
+      .serviceslinks img {
+        width: 40px;
+        height: 40px;
+      }
+      .socialmediaicon {
+        color: #261c6e;
+        font-size: 30px;
+      }
+
+      .footer-copyright {
+        font-size: 12px;
+      }
+      .footer-copyright span {
+        font-size: 14px;
+      }
+    </style>
+    <!-- *footer -->
+    <!-- TODO:media query -->
+    <!-- <style> 
+       @media (max-width: 1300px) {
         header .head-item img {
           height: 800px;
         }
@@ -540,7 +548,8 @@
           font-size: 12px;
         }
       }
-    </style>
+    </style> -->
+    <!-- TODO:media query -->
   </head>
   <body>
     <div class="whatsapp">
@@ -551,6 +560,7 @@
         <i class="bi bi-whatsapp"></i>
       </a>
     </div>
+
     <nav id="myHeader" class="header navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="#home"
@@ -602,8 +612,9 @@
         </div>
       </div>
     </nav>
-    <hero class="content">
-      <div id="home" class="head-content">
+
+    <section id="hero" class="hero">
+      <div class="head-content">
         <div class="head-content-item">
           <img src="./images/header/bg-head.png" alt="..." />
           <div class="gradient-head-content-item"></div>
@@ -619,12 +630,13 @@
           </div>
         </div>
       </div>
-    </hero>
+    </section>
+
     <section id="profile" class="profile">
       <div class="container">
         <div class="row py-5">
           <div class="col-lg-7 col-sm-12 text-start" style="margin-top: 100px">
-            <h1 class="fw-bold text-uppercase profiletitle">
+            <h1 class="profiletitle">
               Nusa Timore
               <span
                 style="
@@ -640,17 +652,17 @@
                 >Telematika</span
               >
             </h1>
-            <h4 class="fw-bold text-black profilesubtitle">
+            <h4 class="profilesubtitle">
               We are from East Nusa Tenggara For Indonesia
             </h4>
             <p>Established in March 2024</p>
-            <h5 class="fw-bold text-black">Vision</h5>
+            <h5>Vision</h5>
             <p>
               to become a professional, strong and trusted telecommunications
               network development company in Indonesia, with quality human
               resources and advanced technological equipment in development.
             </p>
-            <h5 class="fw-bold text-black">mission</h5>
+            <h5>mission</h5>
             <p>
               Providing the best service for customer satisfaction Able to
               compete by working professionally, creatively, effectively,
@@ -666,45 +678,51 @@
               width="300px"
             />
           </div>
+          <div class="col-12 py-5">
+            <h1 class="directortalk">
+              DIRECTOR
+              <span
+                style="
+                  background: linear-gradient(
+                    91deg,
+                    #00aab4 -2.85%,
+                    #e1d200 84.92%
+                  );
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+                >TALK</span
+              >
+            </h1>
+            <h6 class="text-center text-black directorword">
+              <span>In accordance with our vision & Mission</span>
+              to become a professional, strong and trusted telecommunications
+              network development company in Indonesia, with quality human
+              resources and advanced technological equipment in development, and
+              Providing the best service for customer satisfaction Able to
+              compete by working professionally, creatively, effectively,
+              efficiently and prioritizing Occupational Health and Safety (K3)
+              standards Can be a trusted partner with mutually beneficial
+              business cooperation
+            </h6>
+            <p class="text-center pt-3">
+              <span class="directorname">Mikhael Tefbana</span>
+              <br />
+              Director
+            </p>
+          </div>
         </div>
       </div>
     </section>
-    <div class="col-12 py-5">
-      <h1 class="text-center fw-bold text-black py-4 directortalk">
-        DIRECTOR
-        <span
-          style="
-            background: linear-gradient(91deg, #00aab4 -2.85%, #e1d200 84.92%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-          "
-          >TALK</span
-        >
-      </h1>
-      <h6 class="text-center text-black directorword">
-        <span class="fw-bold">In accordance with our vision & Mission</span>
-        to become a professional, strong and trusted telecommunications network
-        development company in Indonesia, with quality human resources and
-        advanced technological equipment in development, and Providing the best
-        service for customer satisfaction Able to compete by working
-        professionally, creatively, effectively, efficiently and prioritizing
-        Occupational Health and Safety (K3) standards Can be a trusted partner
-        with mutually beneficial business cooperation
-      </h6>
-      <p class="text-center pt-3">
-        <span class="fw-bold text-black directorname">Mikhael Tefbana</span>
-        <br />
-        Director
-      </p>
-    </div>
+
     <section id="services">
       <div class="services bg-body py-5">
         <div class="container">
           <div class="row">
             <div class="col" style="margin-top: 90px">
-              <h4 class="text-center fw-bold text-black py-3">Our Services</h4>
-              <h1 class="text-center fw-bold text-uppercase">
+              <h4>Our Services</h4>
+              <h1>
                 <span
                   style="
                     background: linear-gradient(
@@ -720,8 +738,8 @@
                 >
                 Your Business
               </h1>
-              <p class="text-center text-black">
-                <span class="fw-bold"
+              <p>
+                <span
                   >We offer a range of cutting-edge solutions and
                   expertise</span
                 >
@@ -755,10 +773,9 @@
                     />
                   </div>
                   <div class="col-10 col-sm-10">
-                    <h2 class="text-start text-black fw-bold fotext">
+                    <h2 class="fotext">
                       Optical Fiber
                       <span
-                        class="fw-bold"
                         style="
                           background: linear-gradient(
                             91deg,
@@ -821,10 +838,9 @@
                     />
                   </div>
                   <div class="col-10 col-sm-10">
-                    <h2 class="text-black fw-bold vsattext">
+                    <h2 class="vsattext">
                       VSAT
                       <span
-                        class="fw-bold"
                         style="
                           background: linear-gradient(
                             91deg,
@@ -887,10 +903,9 @@
                     />
                   </div>
                   <div class="col-10 col-sm-10">
-                    <h2 class="text-start text-black fw-bold towerrtext">
+                    <h2 class="towerrtext">
                       Telco Tower
                       <span
-                        class="fw-bold"
                         style="
                           background: linear-gradient(
                             91deg,
@@ -953,10 +968,9 @@
                     />
                   </div>
                   <div class="col-10 col-sm-10">
-                    <h2 class="text-black fw-bold cctvtext">
+                    <h2 class="cctvtext">
                       CCTV
                       <span
-                        class="fw-bold"
                         style="
                           background: linear-gradient(
                             91deg,
@@ -1001,11 +1015,12 @@
         </div>
       </div>
     </section>
+
     <section id="contact">
       <div class="container contactus">
         <div class="row d-flex">
           <div class="col-8" style="margin-top: 100px">
-            <h1 class="fw-bold text-black">
+            <h1>
               GET
               <span
                 style="
@@ -1021,8 +1036,8 @@
                 >IN TOUCH</span
               >
             </h1>
-            <h4 class="fw-bold text-black">Nusa Timore Telematika</h4>
-            <h5 class="mt-3 fw-bold" style="color: var(--bs-ntt-blue-color)">
+            <h4>Nusa Timore Telematika</h4>
+            <h5>
               <img
                 src="./images/icon/location-pin.gif"
                 alt=""
@@ -1034,7 +1049,7 @@
               Kecamatan Kota Raja, Kota Kupang,Provinsi Nusa Tenggara Timur,
               <br />Indonesia-85116
             </p>
-            <h5 class="mt-3 fw-bold" style="color: var(--bs-ntt-blue-color)">
+            <h5>
               <img
                 src="./images/icon/call.gif"
                 alt=""
@@ -1042,7 +1057,7 @@
               />Telephone
             </h5>
             <p>+62 85858833600</p>
-            <h5 class="mt-3 fw-bold" style="color: var(--bs-ntt-blue-color)">
+            <h5>
               <img
                 src="./images/icon/email-file.gif"
                 alt=""
@@ -1072,44 +1087,33 @@
           <div class="col-lg-3 col-sm-6 footerimage">
             <img
               class="footerbrand"
-              src="./images/logo/footer-logo.svg"
+              src="./images/logo/footer-logo.png"
               alt="footer-logo"
-              width="150px"
-              height="auto"
             />
 
             <p>Established in March 2024</p>
           </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <h5 class="fw-bold" style="color: var(--bs-ntt-blue-color)">
-              <img
-                src="./images/icon/services.gif"
-                width="30px"
-                height="30px"
-                alt=""
-              />SERVICES
-            </h5>
-            <a href="#services"
+          <div class="col-lg-3 col-sm-6 serviceslinks">
+            <h5><img src="./images/icon/services.gif" alt="" />SERVICES</h5>
+            <a href="#services" class="serviceslink"
               ><i class="bi bi-arrow-down-right"></i> Fiber Optic</a
             >
             <br />
-            <a href="#services"><i class="bi bi-arrow-down-right"></i> VSAT</a>
+            <a href="#services" class="serviceslink"
+              ><i class="bi bi-arrow-down-right"></i> VSAT</a
+            >
             <br />
-            <a href="#services"
+            <a href="#services" class="serviceslink"
               ><i class="bi bi-arrow-down-right"></i> Telco Tower</a
             >
             <br />
-            <a href="#services"><i class="bi bi-arrow-down-right"></i> CCTV</a>
+            <a href="#services" class="serviceslink"
+              ><i class="bi bi-arrow-down-right"></i> CCTV</a
+            >
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <h5 class="fw-bold" style="color: var(--bs-ntt-blue-color)">
-              <img
-                src="./images/icon/links.gif"
-                width="30px"
-                height="30px"
-                alt=""
-              />
+          <div class="col-lg-3 col-sm-6 qlinks">
+            <h5>
+              <img src="./images/icon/links.gif" alt="" />
               QUICK LINKS
             </h5>
             <a href="#home"><i class="bi bi-arrow-down-right"></i> Home</a>
@@ -1126,47 +1130,32 @@
               ><i class="bi bi-arrow-down-right"></i> Contact Us</a
             >
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <h5 class="fw-bold" style="color: var(--bs-ntt-blue-color)">
-              <img
-                src="./images/icon/social-media.gif"
-                width="30px"
-                height="30px"
-                alt=""
-              />
+          <div class="col-lg-3 col-sm-6 socialmedia">
+            <h5>
+              <img src="./images/icon/social-media.gif" alt="social-media" />
               SOCIAL MEDIA
             </h5>
-            <a href="#"
-              ><i
-                class="bi bi-linkedin"
-                style="color: var(--bs-ntt-blue-color); font-size: 30px"
-                aria-hidden="true"
-              ></i
-              ><span
-                ><a href="#"
+            <a href="#" class="socialmediaicon"
+              ><i class="bi bi-linkedin" aria-hidden="true"></i
+              ><span>
+                <a href="#" class="socialmediaicon"
                   ><i
                     class="bi bi-facebook px-2"
-                    style="color: var(--bs-ntt-blue-color); font-size: 30px"
                     aria-hidden="true"
                   ></i></a></span
-              ><span
-                ><a href="#"
-                  ><i
-                    class="bi bi-instagram"
-                    style="color: var(--bs-ntt-blue-color); font-size: 30px"
-                    aria-hidden="true"
-                  ></i></a></span
-              ><span
-                ><a href="#"
+              ><span>
+                <a href="#" class="socialmediaicon"
+                  ><i class="bi bi-instagram" aria-hidden="true"></i></a></span
+              ><span>
+                <a href="#" class="socialmediaicon"
                   ><i
                     class="bi bi-twitter-x px-2"
-                    style="color: var(--bs-ntt-blue-color); font-size: 30px"
                     aria-hidden="true"
                   ></i></a></span
             ></a>
           </div>
         </div>
-        <div class="footer-copyright text-start" style="font-size: 16px">
+        <div class="footer-copyright">
           <p>
             <span>© </span> 2024 Nusa Timore Telematika | All Rights Reserved
           </p>
