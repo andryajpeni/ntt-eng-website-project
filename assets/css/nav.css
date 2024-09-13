@@ -1,0 +1,77 @@
+nav {
+  z-index: 999;
+  transition: all 0.3s;
+}
+.navbar {
+  padding: 20px 0;
+  z-index: 9999;
+}
+.navbar-brand {
+  margin-top: -15px;
+}
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: rgb(255, 255, 0);
+  background: #000;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 14px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding: 0.2rem 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(255, 255, 0);
+}
+.navbar-dark .navbar-nav .active:after {
+  display: none;
+}
+.navbar-dark .navbar-nav li:last-child:after {
+  display: none;
+}
+.navbar-dark .navbar-nav li:last-child {
+  margin-right: -25px;
+}
+.navbar-expand-lg .navbar-nav li {
+  position: relative;
+  padding: 0 9px;
+  letter-spacing: 0.5px;
+}
+.navbar-expand-lg .navbar-nav li:after {
+  color: #ff0000;
+  float: right;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.sticky {
+  background: #ffffff;
+  padding: 15px 0;
+}
+
+#myHeader.sticky .nav-link {
+  color: #000;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Some browsers will not display the caret when using calc, so we put the fallback first */
+  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
+    white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
+    white no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
+}

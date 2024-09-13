@@ -1,0 +1,142 @@
+#hero.head-content {
+  margin-top: -100px;
+  background-color: black;
+}
+#hero .head-content-item img {
+  height: 680px;
+  width: 100%;
+  min-height: 300px;
+  z-index: 9;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+#hero .gradient {
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.8) 10%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.8) 10%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8) 10%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80bf0019', endColorstr='#8000159e',GradientType=1 );
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#hero {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#hero .head-content-caption {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  z-index: 999;
+}
+#hero .head-content-caption h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#hero .head-content-caption h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+#hero .head-content-caption p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  padding-bottom: 35px;
+}
+#hero .head-content-caption h1 {
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 15px 0px;
+  text-transform: uppercase;
+}
+#hero .head-content-caption .text {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  padding: 15px 0px;
+  color: #80af28;
+}
+#hero .btn-primary {
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #2e3192;
+  border-color: #2e3192;
+  border: 10px solid #2e3192;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: 700;
+}
+#hero .btn-primary:hover {
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 700;
+  background-color: #80af28;
+  border-color: #80af28;
+  border: 10px solid #80af28;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#hero .btn-primary:not(:disabled):not(.disabled):active {
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #2e3192;
+  border-color: #2e3192;
+  border: 10px solid #2e3192;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: 700;
+}
