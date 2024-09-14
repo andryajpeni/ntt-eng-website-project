@@ -124,6 +124,8 @@ textarea {
 }
 
 /* navbar */
+
+/* 
 nav {
   z-index: 999;
   transition: all 0.3s;
@@ -191,11 +193,10 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /* Some browsers will not display the caret when using calc, so we put the fallback first */
+   background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
+    white no-repeat 98.5% !important;  
   background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
-    white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
-  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
-    white no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
+    white no-repeat calc(100% - 10px) !important;  
 }
 
 @media screen and (max-width: 1024px) {
@@ -263,12 +264,12 @@ select {
   }
 }
 @media screen and (max-width: 350px) {
-}
+} */
 
 /* navbar */
 
 /* hero */
-
+/* 
 #hero.head-content {
   margin-top: -100px;
   background-color: black;
@@ -422,7 +423,7 @@ select {
     margin: auto;
     z-index: 999;
   }
-}
+} */
 
 /* hero */
 /* profile */
@@ -653,4 +654,25 @@ select {
 
 #myBtn:hover {
   background-color: #261c6e;
+}
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  background: none;
+  border: 3px solid black;
+  width: 100%;
+}
+
+#hero.head-content {
+  margin-top: 100px;
+}
+
+#menu-list {
+  display: none;
+}
+
+#menu-head:hover #menu-list {
+  display: block;
 }
