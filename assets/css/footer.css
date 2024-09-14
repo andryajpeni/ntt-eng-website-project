@@ -1,0 +1,44 @@
+#footer .footer-brand {
+  text-align: start;
+}
+#footer .footer-caption h5 {
+  color: #261c6e;
+  font-weight: 700;
+}
+#footer .footer-caption p {
+  color: #971414;
+  font-weight: 500;
+}
+#footer .footer-caption .bi {
+  color: #261c6e;
+  font-weight: 600;
+}
+#footer .footer-brand svg {
+  width: 40px;
+}
+#footer .footer-brand hr {
+  color: white;
+}
+#footer .footer-copyright {
+  font-size: 12px;
+  text-align: start;
+}
+
+@media screen and (max-width: 350px) {
+  #footer {
+    text-align: center;
+  }
+  #footer .footer-brand {
+    text-align: center;
+  }
+  #footer .footer-caption p {
+    color: #971414;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  #footer .footer-caption .bi {
+    color: #261c6e;
+    font-weight: 600;
+    padding-right: 20px;
+  }
+}
