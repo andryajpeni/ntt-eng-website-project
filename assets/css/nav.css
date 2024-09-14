@@ -3,24 +3,20 @@ nav {
   transition: all 0.3s;
 }
 .navbar {
-  padding: 20px 0;
+  padding: 10px 0;
   z-index: 9999;
 }
-.navbar-brand {
-  margin-top: -15px;
-}
+
 .navbar-dark .navbar-nav .active > .nav-link {
   color: rgb(255, 255, 0);
-  background: #000;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
   color: #fff;
   font-size: 14px;
   padding-right: 25px;
   padding-left: 25px;
-  padding: 0.2rem 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  padding: 0.1rem 1rem;
+  font-weight: 700;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
   color: rgb(255, 255, 0);
@@ -57,8 +53,8 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 .sticky {
-  background: #ffffff;
-  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 0;
 }
 
 #myHeader.sticky .nav-link {

@@ -1,45 +1,18 @@
-.whatsapp {
-  height: 50px;
-  width: 50px;
-  background: #25d366;
-  position: fixed;
-  margin: auto;
-  right: 50px;
-  bottom: 50px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 30px;
-  color: white;
-  z-index: 1050;
-  text-decoration: none;
+::-webkit-scrollbar {
+  width: 20px;
 }
-.whatsapp a {
-  font-size: 30px;
-  color: white;
-  text-decoration: none;
-  z-index: 1;
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
 }
-.whatsapp:before,
-.whatsapp:after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #25d366;
-  border-radius: 50%;
-  z-index: -1;
-  opacity: 0.7;
+
+::-webkit-scrollbar-thumb {
+  background-color: #b41616;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
 }
-.whatsapp:before {
-  animation: pulse 2s ease-out infinite;
-}
-.whatsapp:after {
-  animation: pulse 2s 1s ease-out infinite;
-}
-@keyframes pulse {
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b41616;
 }
