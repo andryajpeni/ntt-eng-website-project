@@ -21,7 +21,7 @@ html {
 }
 body {
   overflow-x: hidden;
-  background: var(--milk);
+  background: var(--jagger);
   font-family: "Montserrat", sans-serif;
   /* height: 5000px; */
 }
@@ -421,7 +421,7 @@ li {
 }
 .ntt-home .btn-subtitle {
   background-color: var(--jonquii);
-  color: var(--milk);
+  color: var(--jagger);
   font-weight: 500;
   word-spacing: 1px;
   font-size: 14px;
