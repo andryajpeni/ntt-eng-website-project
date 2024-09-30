@@ -22,15 +22,6 @@ window.addEventListener("click", function (e) {
     navMenu2.classList.add("prof-menu");
   }
 });
-// scoll to hide header
-// var divs = $("header");
-// $(window).on("scroll", function () {
-//   var st = $(this).scrollTop();
-//   divs.css({ opacity: 1 - st / 700 });
-//   divs.css({ "transition-delay": "0s" });
-//   divs.css({ transition: "0.05s ease-in-out" });
-// });
-
 //==> Hamburger Menu <==//
 const hamBurger = document.querySelector(".hamburger");
 const hamBurger1 = document.querySelector("#hamburger-1");
@@ -50,28 +41,3 @@ window.addEventListener("click", function (e) {
     hamBurger1.classList.remove("is-active");
   }
 });
-
-//==> Mob Menu Custom <==//
-const mobServ = document.querySelector("#mob-nav-serv");
-const mobProf = document.querySelector("#mob-nav-prof");
-const mobServBtn = document.querySelector("#mobile-nav-servx");
-const mobProfBtn = document.querySelector("#mobile-nav-provx");
-mobServBtn.addEventListener("click", function () {
-  mobServ.classList.toggle("nav-mobile-menu-serv-show");
-});
-mobProfBtn.addEventListener("click", function () {
-  mobProf.classList.toggle("nav-mobile-menu-prof-show");
-});
-window.addEventListener("click", function (e) {
-  if (e.target != mobServBtn && e.target != mobServ) {
-    mobServ.classList.remove("nav-mobile-menu-serv-show");
-    mobServ.classList.add("nav-mobile-menu-serv");
-  }
-});
-window.addEventListener("click", function (e) {
-  if (e.target != mobProfBtn && e.target != navMenu2) {
-    mobProf.classList.remove("nav-mobile-menu-prof-show");
-    mobProf.classList.add("nav-mobile-menu-prof");
-  }
-});
-//==> Mob Menu Custom <==//
