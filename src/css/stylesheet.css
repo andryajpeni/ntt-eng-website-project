@@ -502,16 +502,18 @@ li {
     -o-border-radius: 2rem;
   }
   .ntt-nav-btn {
+    z-index: 2;
     font-size: 11px;
     align-items: center;
     background-color: var(--jagger);
-    padding: 0.5rem;
+    padding: 0;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
   }
+
   /* nav */
   /* home */
   .ntt-home .home-title h1 span {
