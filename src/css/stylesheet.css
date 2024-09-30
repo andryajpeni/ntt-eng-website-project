@@ -223,7 +223,11 @@ li {
   font-weight: 500;
   color: var(--milk);
 }
+
 /* header and nav menu*/
+.three {
+  display: none;
+}
 @media only screen and (max-width: 479px) {
   .header-ntt .ntt-nav-btn a {
     display: none;
@@ -282,6 +286,8 @@ li {
   }
   /* hamburger */
   .three {
+    list-style: none;
+    display: block;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -289,6 +295,7 @@ li {
     color: var(--milk);
     text-align: center;
     margin-left: 10px;
+    border: transparent;
   }
   .hamburger .line {
     width: 30px;
