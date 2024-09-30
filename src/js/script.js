@@ -34,10 +34,8 @@ hamBurger1.addEventListener("click", function () {
   MobMenu.classList.toggle("mob-menu-show");
 });
 window.addEventListener("click", function (e) {
-  if (e.target != hamBurger1 && e.target != MobMenu && e.target != hamBurger1) {
+  if (e.target != hamBurger1 && e.target != MobMenu) {
     MobMenu.classList.add("mob-menu");
-    MobMenu.classList.remove("mob-menu-show");
-    hamBurger1.classList.add("hamBurger");
-    hamBurger1.classList.remove("is-active");
+    hamBurger1.classList.add("hamburger");
   }
 });

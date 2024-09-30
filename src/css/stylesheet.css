@@ -294,12 +294,12 @@ li {
     box-sizing: border-box;
     background-color: transparent;
     color: var(--milk);
+    padding-left: 0.7rem;
     text-align: center;
-
     border: transparent;
   }
   .hamburger .line {
-    width: 30px;
+    width: 20px;
     height: 2px;
     background-color: var(--milk);
     margin-left: 10px;
@@ -520,17 +520,6 @@ li {
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
-  }
-  .three {
-    list-style: none;
-    display: block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: transparent;
-    color: var(--milk);
-    text-align: start;
-    border: transparent;
   }
   /* nav */
   /* home */
