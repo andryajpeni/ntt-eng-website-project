@@ -285,6 +285,7 @@ li {
     align-items: center;
   }
   /* hamburger */
+
   .three {
     list-style: none;
     display: block;
@@ -294,7 +295,7 @@ li {
     background-color: transparent;
     color: var(--milk);
     text-align: center;
-    margin-left: 10px;
+
     border: transparent;
   }
   .hamburger .line {
@@ -520,7 +521,17 @@ li {
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
   }
-
+  .three {
+    list-style: none;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: var(--milk);
+    text-align: start;
+    border: transparent;
+  }
   /* nav */
   /* home */
   .ntt-home .home-title h1 span {
