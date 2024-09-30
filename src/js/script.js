@@ -1,88 +1,77 @@
-//==> Sticky Nav <==//
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 20) {
-      $(".ntt-navbar").addClass("ntt-navbar-whenFixed");
-      $(".hamburger .line").addClass("line-scroll");
-    } else {
-      $(".ntt-navbar").removeClass("ntt-navbar-whenFixed");
-      $(".hamburger .line").removeClass("line-scroll");
-    }
-  });
-});
-//==> Mobile Menu <==//
-$(document).ready(function () {
-  $(".hamburger").click(function () {
-    $(this).toggleClass("is-active");
-  });
-  $("#hamburger-1").click(function () {
-    $(".overlay").toggleClass("overlay-active");
-  });
-  $(".nav-link-m").click(function () {
-    $(".overlay-active").removeClass("overlay-active");
-  });
-});
 //==> Desktop Menu Show <==//
-const drop1 = document.querySelector("#dropdownsatu");
-const navMenu1 = document.querySelector("#nttDesktop1");
+const drop1 = document.querySelector("#btnServ");
+const navMenu1 = document.querySelector("#servMenu");
 drop1.addEventListener("click", function () {
-  navMenu1.classList.toggle("nttDesktop1-active");
+  navMenu1.classList.toggle("serv-menu-show");
 });
-const drop2 = document.querySelector("#dropdowndua");
-const navMenu2 = document.querySelector("#nttDesktop2");
+const drop2 = document.querySelector("#btnProf");
+const navMenu2 = document.querySelector("#profMenu");
 drop2.addEventListener("click", function () {
-  navMenu2.classList.toggle("nttDesktop2-active");
+  navMenu2.classList.toggle("prof-menu-show");
 });
-//==> Outside Click <==//
+//==> Desktop Menu Close <==//
 window.addEventListener("click", function (e) {
   if (e.target != drop1 && e.target != navMenu1) {
-    navMenu1.classList.remove("nttDesktop1-active");
-    navMenu1.classList.add("nttDesktop1");
+    navMenu1.classList.remove("serv-menu-show");
+    navMenu1.classList.add("serv-menu");
   }
 });
 window.addEventListener("click", function (e) {
   if (e.target != drop2 && e.target != navMenu2) {
-    navMenu2.classList.remove("nttDesktop2-active");
-    navMenu2.classList.add("nttDesktop2");
+    navMenu2.classList.remove("prof-menu-show");
+    navMenu2.classList.add("prof-menu");
   }
 });
-//==> Theme Switch <==//
-// you can use app's unique identifier here
-// const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+// scoll to hide header
+// var divs = $("header");
+// $(window).on("scroll", function () {
+//   var st = $(this).scrollTop();
+//   divs.css({ opacity: 1 - st / 700 });
+//   divs.css({ "transition-delay": "0s" });
+//   divs.css({ transition: "0.05s ease-in-out" });
+// });
 
-// const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+//==> Hamburger Menu <==//
+const hamBurger = document.querySelector(".hamburger");
+const hamBurger1 = document.querySelector("#hamburger-1");
+const MobMenu = document.querySelector("#mobMenu");
 
-// you can change this url as needed
-// const DARK_THEME_PATH = "https://bootswatch.com/4/cyborg/bootstrap.min.css";
+hamBurger.addEventListener("click", function () {
+  hamBurger1.classList.toggle("is-active");
+});
+hamBurger1.addEventListener("click", function () {
+  MobMenu.classList.toggle("mob-menu-show");
+});
+window.addEventListener("click", function (e) {
+  if (e.target != hamBurger1 && e.target != MobMenu && e.target != hamBurger1) {
+    MobMenu.classList.add("mob-menu");
+    MobMenu.classList.remove("mob-menu-show");
+    hamBurger1.classList.add("hamBurger");
+    hamBurger1.classList.remove("is-active");
+  }
+});
 
-// const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
-// const THEME_TOGGLER = document.getElementById("theme-toggler");
-
-// let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
-
-// check if user has already selected dark theme earlier
-// if (isDark) {
-//   enableDarkTheme();
-// } else {
-//   disableDarkTheme();
-// }
-/*  Apart from toggling themes, this will also store user's theme preference in local storage.
- * So when user visits next time, we can load the same theme.  */
-// function toggleTheme() {
-//   isDark = !isDark;
-//   if (isDark) {
-//     enableDarkTheme();
-//   } else {
-//     disableDarkTheme();
-//   }
-//   const META = { isDark };
-//   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
-// }
-// function enableDarkTheme() {
-//   DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
-//   THEME_TOGGLER.innerHTML = "🌙";
-// }
-// function disableDarkTheme() {
-//   DARK_STYLE_LINK.setAttribute("href", "");
-//   THEME_TOGGLER.innerHTML = "🌞";
-// }
+//==> Mob Menu Custom <==//
+const mobServ = document.querySelector("#mob-nav-serv");
+const mobProf = document.querySelector("#mob-nav-prof");
+const mobServBtn = document.querySelector("#mobile-nav-servx");
+const mobProfBtn = document.querySelector("#mobile-nav-provx");
+mobServBtn.addEventListener("click", function () {
+  mobServ.classList.toggle("nav-mobile-menu-serv-show");
+});
+mobProfBtn.addEventListener("click", function () {
+  mobProf.classList.toggle("nav-mobile-menu-prof-show");
+});
+window.addEventListener("click", function (e) {
+  if (e.target != mobServBtn && e.target != mobServ) {
+    mobServ.classList.remove("nav-mobile-menu-serv-show");
+    mobServ.classList.add("nav-mobile-menu-serv");
+  }
+});
+window.addEventListener("click", function (e) {
+  if (e.target != mobProfBtn && e.target != navMenu2) {
+    mobProf.classList.remove("nav-mobile-menu-prof-show");
+    mobProf.classList.add("nav-mobile-menu-prof");
+  }
+});
+//==> Mob Menu Custom <==//

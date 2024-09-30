@@ -1,204 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--{meta}-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--{title & favicon}-->
     <title>Nusa Timore Telematika</title>
     <link
       rel="shortcut icon"
-      href="./assets/favicon/ntt-48x48.png"
+      href="./public/favicon/ntt-48x48.png"
       type="image/x-icon"
     />
-    <!--=== cdnStart ===-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <!--=== cdnEnd ===-->
-    <!--=== bootstrap assets ===-->
-    <link rel="stylesheet" href="./src/cli/bootstrap.min.css" />
-    <link rel="stylesheet" href="./src/font/font-awsome/css/all.min.css" />
-    <!--=== bootstrap assets ===-->
-    <!--=== customStylesStart ===-->
-    <link id="dark-theme-style" rel="stylesheet" />
-    <link rel="stylesheet" href="./src/css/styles.css" />
-    <style type="text/css">
+    <!--{CDN on}-->
+    <!--{CDN Off}-->
+    <link rel="stylesheet" href="./src/dist/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/dist/font-awsome/css/all.css" />
+    <!--{css}-->
+    <!--{Large View}-->
+    <link rel="stylesheet" href="./src/css/large.css" />
+    <!--{Medium View}-->
+    <link rel="stylesheet" href="./src/css/medium.css" />
+    <!--{Small View}-->
+    <link rel="stylesheet" href="./src/css/small.css" />
+    <!-- sadasdasddas -->
+    <link rel="stylesheet" href="./src/css/public.css" />
+    <link rel="stylesheet" href="./src/css/media-query.css" />
+    <style>
       ::-webkit-scrollbar {
         width: 20px;
       }
       ::-webkit-scrollbar-track {
-        background-color: #f1f1f1;
+        background-color: #c7c6c3;
+        /* background-color: #fefefc; */
+        /* background-color: #380a53; */
       }
       ::-webkit-scrollbar-thumb {
-        background-color: #2d1a96;
+        /* background-color: #b4b4ab; */
+        background-color: #f36;
+        /* background-color: #ed1c22; */
         border-radius: 20px;
         border: 6px solid transparent;
         background-clip: content-box;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background-color: #2d1a96;
+        background-color: #f36;
+        /* background-color: #fefefc; */
+        /* background-color: #ed1c22; */
+        cursor: pointer;
       }
     </style>
-    <!--=== customStylesEnd ===-->
   </head>
   <body>
-    <!--=== navStart ===-->
-    <nav class="ntt-navbar navbar navbar-expand-lg fixed-top">
-      <div class="container display-mobile-navbar">
-        <div class="justify-content-lg-start">
-          <!--==== navBrand ====-->
-          <a class="navbar-brand" href="#">
-            <img
-              id="ntt-eng"
-              src="./assets/favicon/ntt-100x48-color.png"
-              alt="ntt-logo"
-            />
-          </a>
-          <!--==== navBrand ====-->
-        </div>
-        <div class="collapse navbar-collapse justify-content-lg-end">
-          <!--==== navLink ====-->
-          <ul class="navbar-nav">
-            <!--==== Company Profile ====-->
-            <li class="nav-item">
-              <a class="nav-link" id="dropdownsatu"> Layanan </a>
-            </li>
-            <!--==== Company Profile ====-->
-            <!--==== Services ====-->
-            <li class="nav-item">
-              <a class="nav-link" id="dropdowndua"> Profil Perusahaan </a>
-            </li>
-            <!-- <li>
-              <a
-                href="javascript:void()"
-                class="btn btn-outline-info btn-lg ml-auto font-weight-bold"
-                id="theme-toggler"
-                onclick="toggleTheme()"
-              ></a>
-            </li> -->
-            <!--==== Services ====-->
-          </ul>
-        </div>
-        <!--==== navLangSwitch ====-->
-        <div class="justify-content-lg-end d-large" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown ntt-dropdown">
-              <a
-                class="nav-link dropdown-toggle dropdown-lang"
-                href="#"
-                id="nav-service"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="./assets/favicon/id.png"
-                  width="20px"
-                  class="me-1"
-                  alt="Indonesia"
-                />
-              </a>
-              <ul
-                class="dropdown-menu ntt-dropdown-menu ntt-dropdown-menu-lang animate slideIn dropdown-menu-right p-2"
-                aria-labelledby="nav-service"
-              >
-                <div class="row">
-                  <div class="col-12 mb-1">
-                    <a
-                      href="#langindo"
-                      class="nav2item nav2item-lang d-block active"
-                    >
-                      <img
-                        src="./assets/favicon/id.png"
-                        width="20px"
-                        class="me-1"
-                        alt="Indonesia"
-                      />
-                      ID
-                    </a>
-                  </div>
-                  <div class="col-12">
-                    <a href="#langEn" class="nav2item nav2item-lang d-block">
-                      <img
-                        src="./assets/favicon/eng.png"
-                        width="20px"
-                        class="me-1"
-                        alt="English"
-                      />
-                      EN
-                    </a>
-                  </div>
-                </div>
+    <!--{header}-->
+    <header class="ntt-header">
+      <nav class="container-fluid custom-nav">
+        <div class="header-ntt">
+          <!--{nav}-->
+          <!--{nav-item}-->
+          <div class="ntt-brand">
+            <a href="#home"
+              ><img
+                src="./public/favicon/ntt-100x48-white-text.png"
+                alt="ntt-logo"
+            /></a>
+          </div>
+          <!--{nav-item}-->
+
+          <!--{nav-item}-->
+          <div class="nav-ntt">
+            <div id="ntt-nav-menu">
+              <ul class="ntt-navbar">
+                <li class="ntt-nav">
+                  <a class="ntt-nav-link" id="btnServ">Services</a>
+                  <a class="ntt-nav-link" id="btnProf">Profile</a>
+                  <a class="ntt-nav-link" href="#teams">Team</a>
+                </li>
               </ul>
-            </li>
-          </ul>
-        </div>
-        <!--==== navLangSwitch ====-->
-        <div
-          class="collapse navbar-collapse justify-content-end d-medium"
-          id="navbarNavDropdown"
-        >
-          <li class="nav-item dropdown ntt-dropdown" style="list-style: none">
-            <a
-              class="nav-link dropdown-toggle dropdown-lang"
-              href="#"
-              id="nav-service"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img
-                src="./assets/favicon/id.png"
-                width="20px"
-                class="me-1"
-                alt="Indonesia"
-              />
-            </a>
-            <ul
-              class="dropdown-menu ntt-dropdown-menu ntt-dropdown-menu-lang animate slideIn dropdown-menu-right p-2"
-              aria-labelledby="nav-service"
-            >
-              <div class="row">
-                <div class="col-12 mb-1">
-                  <a href="#" class="nav2item nav2item-lang d-block active">
-                    <img
-                      src="./assets/favicon/id.png"
-                      width="20px"
-                      class="me-1"
-                      alt="Indonesia"
-                    />
-                    ID
-                  </a>
-                </div>
-                <div class="col-12">
-                  <a href="#" class="nav2item nav2item-lang d-block">
-                    <img
-                      src="./assets/favicon/eng.png"
-                      width="20px"
-                      class="me-1"
-                      alt="English"
-                    />
-                    EN
-                  </a>
-                </div>
-              </div>
+            </div>
+          </div>
+          <!--{nav-item}-->
+
+          <!--{nav-item}-->
+          <div class="ntt-nav-btn">
+            <ul>
+              <li>
+                <a class="btn-cont" href="#contact">Contact Us</a>
+              </li>
             </ul>
-          </li>
-          <!--==== navLangSwitch ====-->
-          <!--==== navHamburger ====-->
-          <div class="nav-item">
-            <div class="three col">
+
+            <!--{nav-item}-->
+            <div class="three">
               <div class="hamburger" id="hamburger-1">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -206,759 +97,129 @@
               </div>
             </div>
           </div>
+          <!--{nav-item}-->
+          <!--{nav}-->
         </div>
-        <!--==== navHamburger ====-->
-      </div>
-    </nav>
-    <!--=== navEnd ===-->
-    <!--=== navdesktopMenu ===-->
-    <!--===== Company Profile =====-->
-    <div id="nttDesktop1" class="nttDesktop1 shadow-sm">
+        <!--{menu}-->
+        <div id="servMenu" class="serv-menu">
+          <div class="serv-menu-title">
+            <h5>Services</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              dolore?
+            </p>
+          </div>
+          <hr />
+          <div class="serv-menu-desc">
+            <ul>
+              <li>
+                <a class="serv-menu-link" href="#telco-serv"
+                  >Telco Infra Services</a
+                >
+                <a class="serv-menu-link" href="#it-serv">IT Services</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--{menu}-->
+        <!--{menu}-->
+        <div id="profMenu" class="prof-menu">
+          <div class="prof-menu-title">
+            <h5>Profile</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              dolore?
+            </p>
+          </div>
+          <hr />
+          <div class="prof-menu-desc">
+            <ul>
+              <li>
+                <a class="prof-menu-link" href="#profile">About</a>
+                <a class="prof-menu-link" href="#structure">Structure</a>
+                <a class="prof-menu-link" href="#legal">Legality</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--{menu}-->
+        <!-- col--mob -->
+        <div id="mobMenu" class="mob-menu">
+          <div class="mob-menu-title">
+            <h5>Services</h5>
+            <div></div>
+            <ul>
+              <li>
+                <a class="mob-menu-Link" href="#telco-serv"
+                  >Telco Infra Services</a
+                >
+                <a class="mob-menu-Link" href="#it-serv">IT Services</a>
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div class="mob-menu-title">
+            <h5>Profile</h5>
+            <div></div>
+            <ul>
+              <li>
+                <a class="mob-menu-Link" href="#profile">About Us</a>
+                <a class="mob-menu-Link" href="#structure">Structure</a>
+                <a class="mob-menu-Link" href="#legal">Legality</a>
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div class="mob-menu-title">
+            <a class="mob-menu-Link" href="#teams">Teams</a>
+            <hr />
+            <a class="btn-mob-cont" href="#contact">Contact Us</a>
+          </div>
+        </div>
+        <!-- col-menu-mob -->
+      </nav>
+    </header>
+    <!--{header}-->
+    <!--{section}-->
+    <section id="home" class="ntt-home">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-9 menuLink">
-            <h3>Layanan</h3>
-            <p>
-              Kami menyediakan layanan Jasa Profesional dari Nusa Tenggara Timur
-              untuk Indonesia.
-            </p>
-            <hr />
-            <a href="#fiber-serv">Fiber Optic</a>
-            <a href="#vsat-serv">VSAT</a>
-            <a href="#tower-serv">Tower</a>
-            <a href="#cctv-serv">CCTV</a>
-          </div>
-          <div class="col-3 menuImg">
-            <img src="./assets/public/menu-1.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--===== Company Profile =====-->
-    <!--===== Services =====-->
-    <div id="nttDesktop2" class="nttDesktop2 shadow-sm">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-9 menuLink">
-            <h3>Profil Perusahaan</h3>
-            <p>
-              <span>Sejarah Singkat</span>Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Exercitationem, asperiores.
-            </p>
-            <hr />
-            <a href="#profile">Tentang Kami</a>
-            <a class="btn-info" target="_blank" href="#gogle-drive"
-              >Unduh Profil Perusahaan</a
-            >
-            <hr />
-            <h3>Laporan</h3>
-            <hr />
-            <a href="#"> Laporan Keuangan </a>
-            <a class="btn-info" target="_blank" href="#gogle-drive"
-              >Unduh Laporan Keuangan</a
-            >
-          </div>
-          <div class="col-3 menuImg">
-            <img src="./assets/public/menu-2.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--===== Services =====-->
-    <!--=== navdesktopMenu ===-->
-    <!--=== navMobileMenu ===-->
-    <div class="menu-mobile">
-      <div id="myNav" class="overlay">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="overlay-content">
-                <div class="accordion accordion-flush" id="menuMobileContent">
-                  <!--==== navAccordionLink ====-->
-
-                  <!--==== navAccordionLink ====-->
-                  <div class="accordion-item">
-                    <div class="accordion-header" id="flush-headingOne">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseOne"
-                      >
-                        layanan
-                      </button>
-                    </div>
-                    <div
-                      id="flush-collapseOne"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="flush-headingOne"
-                      data-bs-parent="#menuMobileContent"
-                    >
-                      <div class="accordion-body">
-                        <h4 class="menu-top mt-3">
-                          <span class="mobile-menu-title"> Layanan Kami </span>
-                        </h4>
-                        <ul class="mobile-menu mt-3">
-                          <li>
-                            <a class="nav-link-m" href="#fiber-serv">
-                              Fiber Optic
-                            </a>
-                          </li>
-                          <li>
-                            <a class="nav-link-m" href="#vsat-serv"> VSAT </a>
-                          </li>
-                          <li>
-                            <a class="nav-link-m" href="#tower-serv"> Tower </a>
-                          </li>
-                          <li>
-                            <a class="nav-link-m" href="#cctv-serv"> CCTV </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <!--==== navAccordionLink ====-->
-                  <div class="accordion-item">
-                    <div class="accordion-header" id="flush-headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseTwo"
-                      >
-                        Profil Perusahaan
-                      </button>
-                    </div>
-                    <div
-                      id="flush-collapseTwo"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="flush-headingTwo"
-                      data-bs-parent="#menuMobileContent"
-                    >
-                      <div class="accordion-body">
-                        <a href="#" class="menu-top mt-3">
-                          <span class="mobile-menu-title">
-                            Profil Perusahaan
-                          </span>
-                        </a>
-                        <ul class="mobile-menu mt-3">
-                          <li>
-                            <a class="nav-link-m" href="#profile">
-                              Tentang Kami
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="nav-link-m btn-info"
-                              target="_blank"
-                              href="#gogle-drive"
-                              >Unduh Profil Perusahaan</a
-                            >
-                          </li>
-                        </ul>
-                        <a href="#" class="menu-top mt-3">
-                          <span class="mobile-menu-title"> Laporan </span>
-                        </a>
-                        <ul class="mobile-menu mt-3">
-                          <li>
-                            <a class="nav-link-m" href="#">
-                              Laporan Keuangan
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="nav-link-m btn-info"
-                              target="_blank"
-                              href="#gogle-drive"
-                              >Unduh Laporan Keuangan</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <!--==== navAccordionLink ====-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--=== navMobileMenu ===-->
-
-    <!--=== navEnd ===-->
-
-    <!--=== headerStart ===-->
-    <div class="ntt-header ntt-header-home">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="content-header">
-              <h1 class="title"></h1>
-              <h4 class="desc"></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--=== headerEnd ===-->
-
-    <!--=== profileStart ===-->
-    <section id="profile" class="profile">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-sm-12 profile-caption">
+        <div class="row content-home">
+          <div class="col-lg-12 col-md-12 col-sm-12 home-title">
             <h1>
-              Nusa Timore
-              <span>Telematika</span>
+              <span> We</span> Provide <br />
+              Best <span>Services</span>
             </h1>
-            <h4>Kami dari Nusa Tenggara Timur Untuk Indonesia</h4>
-            <p>Didirikan pada Maret 2024</p>
-            <h4>Visi</h4>
-            <p>
-              menjadi perusahaan telekomunikasi yang profesional, tangguh dan
-              terpercaya perusahaan pengembangan jaringan di Indonesia, dengan
-              sumber daya manusia yang berkualitas sumber daya dan peralatan
-              teknologi canggih dalam pembangunan.
-            </p>
-            <h4>Misi</h4>
-            <p>
-              Memberikan pelayanan terbaik demi kepuasan pelanggan Mampu
-              bersaing dengan bekerja secara profesional, kreatif, efektif,
-              efisien dan mengedepankan Kesehatan dan Keselamatan Kerja (K3)
-              standar Dapat menjadi mitra terpercaya yang saling menguntungkan
-              kerjasama bisnis
-            </p>
           </div>
-          <div class="col-lg-4 col-sm-12">
-            <img
-              class="profile-brand"
-              src="./assets/public/intro.png"
-              alt=" "
-            />
+          <div class="col-lg-12 col-md-12 col-sm-12 home-subtitle">
+            <h4>
+              With years of experiences in the Telco industry, <br />
+              Nusa Timore always strives to provide best of services solutions
+              for customers.
+            </h4>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 home-btn">
+            <a class="btn-title" href="#profile"
+              ><span class="btn-subtitle"> Learn More </span>
+              <span class="btn-subs">about</span>– Nusa Timore
+              <i class="fa fa-arrow-turn-down"></i>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!--=== profileEnd ===-->
+    <!--!profile-->
 
-    <!--=== clientStart ===-->
-    <div class="our-clients">
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12 client-title">
-          <h3>Our <span>Clients</span></h3>
-        </div>
-        <div class="col-lg-9 col-md-9 col-sm-12 client-logo">
-          <img src="./assets/clients/client-1.svg" alt="" />
-          <img src="./assets/clients/client-2.png" alt="" />
-          <img src="./assets/clients/client-3.svg" alt="" />
-        </div>
-      </div>
-    </div>
-    <!--=== clientEnd ===-->
+    <!--{section}-->
 
-    <!--=== servicesStart ===-->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <!--==== servicesHead ====-->
-          <div class="col-lg-12 col-sm-12 head-services">
-            <h4>Layanan Kami</h4>
-            <h1>
-              <span>Menunjang</span>
-              Bisnis Anda
-            </h1>
-            <p>
-              <span
-                >Kami menawarkan serangkaian solusi dan keahlian mutakhir</span
-              >
-              yang akan mendorong kesuksesan Anda dalam lanskap digital saat
-              ini. Temukan bagaimana layanan kami dapat mengubah dan
-              meningkatkan bisnis Anda potensi Anda.
-            </p>
-          </div>
-        </div>
-        <!--==== servicesHead ====-->
+    <!--{main}-->
+    <!--{footer}-->
+    <footer></footer>
+    <!--{footer}-->
 
-        <!--==== fiberOpticStart ====-->
-        <div class="fiber" id="fiber-serv">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-5">
-                <img
-                  class="services-img"
-                  src="./assets/services/s-fo.png"
-                  alt="s-fo"
-                />
-              </div>
-              <div class="col-sm-7">
-                <div class="row">
-                  <div class="col-2 col-sm-2">
-                    <img
-                      class="services-icon"
-                      src="./assets/icon/fo.gif"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-10 col-sm-10">
-                    <h2>
-                      Optical Fiber
-                      <span><br />Infrastructure Construction</span>
-                    </h2>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <p>
-                    <i class="fa fa-check-circle"></i> Survey, Design & Planning
-                    (As Plan Drawing)
-                  </p>
-                  <p><i class="fa fa-check-circle"></i> Permit & SITAC</p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Civil Work Implementation
-                    & Monitoring
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Cable installation
-                    (Aerial, Direct Buried Duct System)
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Splicing and Termination
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> As-Built Documentation
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--==== fiberOPticEnd ====-->
-
-        <!--==== vsatStart ====-->
-        <div class="vsat" id="vsat-serv">
-          <div class="container">
-            <div class="row flex-row-reverse">
-              <div class="col-sm-5">
-                <img
-                  class="services-img"
-                  src="./assets/services/vsat-cons.png"
-                  alt="s-fo"
-                />
-              </div>
-              <div class="col-sm-7">
-                <div class="row">
-                  <div class="col-2 col-sm-2">
-                    <img
-                      class="services-icon"
-                      src="./assets/icon/vsat.gif"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-10 col-sm-10">
-                    <h2>
-                      VSAT
-                      <span><br />Infrastructure Construction</span>
-                    </h2>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <p>
-                    <i class="fa fa-check-circle"></i> Survey, Design & Planning
-                    (As Plan Drawing)
-                  </p>
-                  <p><i class="fa fa-check-circle"></i> Permit & SITAC</p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Civil Work Implementation
-                    & Monitoring
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Cable installation
-                    (Aerial, Direct Buried Duct System)
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Splicing and Termination
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> As-Built Documentation
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--==== vsatEnd ====-->
-
-        <!--==== towerStart ====-->
-        <div class="tower" id="tower-serv">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-5">
-                <img
-                  class="services-img"
-                  src="./assets/services/s-tower.png"
-                  alt="s-fo"
-                />
-              </div>
-              <div class="col-sm-7">
-                <div class="row">
-                  <div class="col-2 col-sm-2">
-                    <img
-                      class="services-icon"
-                      src="./assets/icon/tower.gif"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-10 col-sm-10">
-                    <h2>
-                      Telecommunication Tower
-                      <span>Infrastructure Construction</span>
-                    </h2>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <p>
-                    <i class="fa fa-check-circle"></i> Survey, Design & Planning
-                    (As Plan Drawing)
-                  </p>
-                  <p><i class="fa fa-check-circle"></i> Permit & SITAC</p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Civil Work Implementation
-                    & Monitoring
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Cable installation
-                    (Aerial, Direct Buried Duct System)
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Splicing and Termination
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> As-Built Documentation
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--==== towerEnd ====-->
-
-        <!--==== cctvStart ====-->
-        <div class="cctv" id="cctv-serv">
-          <div class="container">
-            <div class="row flex-row-reverse">
-              <div class="col-sm-5">
-                <img
-                  class="services-img"
-                  src="./assets/services/cctv.png"
-                  alt="s-fo"
-                />
-              </div>
-              <div class="col-sm-7">
-                <div class="row">
-                  <div class="col-2 col-sm-2">
-                    <img
-                      class="services-icon"
-                      src="./assets/icon/cctv.gif"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-10 col-sm-10">
-                    <h2>
-                      CCTV
-                      <span><br />Instalation & Maintenance</span>
-                    </h2>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <p>
-                    <i class="fa fa-check-circle"></i> Survey, Design & Planning
-                    (As Plan Drawing)
-                  </p>
-                  <p><i class="fa fa-check-circle"></i> Permit & SITAC</p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Civil Work Implementation
-                    & Monitoring
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Cable installation
-                    (Aerial, Direct Buried Duct System)
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> Splicing and Termination
-                  </p>
-                  <p>
-                    <i class="fa fa-check-circle"></i> As-Built Documentation
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--==== cctvEnd ====-->
-      </div>
-    </section>
-    <!--=== servicesEnd ===-->
-
-    <!--=== getTouchStart ===-->
-    <section class="getconnect">
-      <div class="row">
-        <div class="col-lg-6 col-sm-12 touch-text">
-          <h1>HAVE SOMETHING IN MIND ?</h1>
-        </div>
-        <div class="col-lg-6 col-sm-12 touch-btn">
-          <a href="#footer" class="btn-warning"
-            >GET <span> CONNECTED</span> <i class="fa fa-arrow-right"></i
-          ></a>
-        </div>
-      </div>
-    </section>
-    <!--=== getTouchEnd ===-->
-
-    <!--=== gmapsStart ===-->
-    <div class="card text-center m-5">
-      <div class="card-header">Kunjungi Kami</div>
-      <div class="card-body">
-        <h5 class="card-title">isikan link ke embed google maps</h5>
-      </div>
-    </div>
-
-    <!--=== gmapsEnd ===-->
-
-    <!--=== footerStart ===-->
-    <footer id="footer" class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="ntt-footer">
-              <div class="ntt-footer-2">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-2">
-                      <div class="d-none d-sm-block">
-                        <div class="footer-logo mb-4">
-                          <img
-                            src="./assets/favicon/ntt-100x48-color.png"
-                            alt="ntt-Logo-color"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="footer-office">
-                        <h5 class="title mb-2">Kantor Pusat</h5>
-                        <p class="address mb-2">
-                          Gang Damai Nomor 12, Rukun Tetangga 040, Rukun Warga
-                          011, Kelurahan/Desa Liliba, Kecamatan Oebobo,Kota
-                          Kupang, Propinsi Nusa Tenggara Timur, Indonesia.
-                        </p>
-                        <div class="mail">
-                          <i class="fas fa-envelope"></i>
-                          nusatimoretelematika@gmail.com
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2">
-                      <div class="social-media d-flex">
-                        <div class="item-social-media">
-                          <a href="#" target="_blank">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              shape-rendering="geometricPrecision"
-                              text-rendering="geometricPrecision"
-                              image-rendering="optimizeQuality"
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              viewBox="0 0 512 512"
-                            >
-                              <path
-                                fill="#2d1a96 "
-                                d="M474.919 0H38.592C17.72 0 0 16.504 0 36.841V475.14C0 495.496 11.629 512 32.492 512h436.327C489.718 512 512 495.496 512 475.14V36.841C512 16.504 495.809 0 474.919 0zM195.043 195.043h68.928v35.136h.755c10.505-18.945 41.541-38.177 79.921-38.177 73.655 0 94.214 39.108 94.214 111.538v135.321h-73.148V316.883c0-32.427-12.947-60.883-43.227-60.883-36.768 0-54.295 24.889-54.295 65.758v117.103h-73.148V195.043zM73.139 438.861h73.148V195.043H73.139v243.818zm82.289-329.148c0 25.258-20.457 45.715-45.715 45.715-25.258 0-45.715-20.457-45.715-45.715 0-25.258 20.457-45.715 45.715-45.715 25.258 0 45.715 20.457 45.715 45.715z"
-                              />
-                            </svg>
-                          </a>
-                          <a href="#" target="_blank">
-                            <svg
-                              width="48"
-                              height="48"
-                              viewBox="0 0 48 48"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M36.6526 3.80782H43.3995L28.6594 20.6548L46 43.5798H32.4225L21.7881 29.6759L9.61989 43.5798H2.86886L18.6349 25.56L2 3.80782H15.9222L25.5348 16.5165L36.6526 3.80782ZM34.2846 39.5414H38.0232L13.8908 7.63408H9.87892L34.2846 39.5414Z"
-                                fill="black"
-                              />
-                            </svg>
-                          </a>
-                          <a href="#" target="_blank">
-                            <svg
-                              version="1.1"
-                              id="Layer_1"
-                              xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink"
-                              x="0px"
-                              y="0px"
-                              viewBox="0 0 35.4 35.4"
-                              style="enable-background: new 0 0 35.4 35.4"
-                              xml:space="preserve"
-                            >
-                              <style type="text/css">
-                                .st0 {
-                                  fill: #194adf;
-                                }
-                              </style>
-
-                              <g id="Layer_2_1_">
-                                <g id="Layer_1-2">
-                                  <path
-                                    class="st0"
-                                    d="M27.1,6.3c-1.1,0-2.1,0.9-2.1,2.1c0,1.1,0.9,2.1,2.1,2.1c1.1,0,2.1-0.9,2.1-2.1c0,0,0,0,0,0
-			C29.1,7.2,28.2,6.3,27.1,6.3z"
-                                  />
-                                  <path
-                                    class="st0"
-                                    d="M17.8,9c-4.8,0-8.7,3.9-8.7,8.7s3.9,8.7,8.7,8.7s8.7-3.9,8.7-8.7l0,0C26.5,12.9,22.6,9,17.8,9z M17.8,23.3
-			c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6C23.4,20.8,20.9,23.3,17.8,23.3L17.8,23.3z"
-                                  />
-                                  <path
-                                    class="st0"
-                                    d="M24.8,35.4H10.6C4.8,35.4,0,30.6,0,24.7V10.6C0,4.8,4.8,0,10.6,0h14.1c5.9,0,10.6,4.8,10.6,10.6v14.1
-			C35.4,30.6,30.6,35.4,24.8,35.4z M10.6,3.3c-4,0-7.3,3.3-7.3,7.3c0,0,0,0,0,0v14.1c0,4,3.3,7.3,7.3,7.3h14.1c4,0,7.3-3.3,7.3-7.3
-			V10.6c0-4-3.3-7.3-7.3-7.3H10.6z"
-                                  />
-                                </g>
-                              </g>
-                            </svg>
-                          </a>
-                          <a href="#" target="_blank">
-                            <svg
-                              version="1.1"
-                              id="Layer_1"
-                              xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink"
-                              x="0px"
-                              y="0px"
-                              viewBox="0 0 35.4 35.4"
-                              style="enable-background: new 0 0 35.4 35.4"
-                              xml:space="preserve"
-                            >
-                              <style type="text/css">
-                                .st0 {
-                                  fill: #2d1a96;
-                                }
-                              </style>
-                              <g id="Layer_2_1_">
-                                <g id="Layer_1-2">
-                                  <path
-                                    class="st0"
-                                    d="M26,19.9l1-6.4h-6.2V9.3c0-1.7,0.9-3.5,3.6-3.5h2.8V0.4c-1.7-0.3-3.3-0.4-5-0.4c-5.1,0-8.4,3.1-8.4,8.6v4.9
-                               H8.2v6.4h5.6v15.5h6.9V19.9H26z"
-                                  />
-                                </g>
-                              </g>
-                            </svg>
-                          </a>
-                          <a href="#" target="_blank">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 576 512"
-                            >
-                              <path
-                                fill="#ff0000 "
-                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
-                              />
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr />
-              <div class="ntt-footer-3">
-                <div class="container">
-                  <div class="copyright">
-                    © 2024 CV. Nusa Timore Telematika | All Right Reserved.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--=== footerEnd ===-->
-
-    <!--=== addOnsStart ===-->
-    <div class="styles-module_floatingWhatsapp__L3iwm custom-class">
-      <a
-        class="styles-module_whatsappButton__lnTsj"
-        href="https://wa.me/6282163029770?text=Silahkan%20Klik%20Tombol%20Tautan%20diatas."
-        target="_blank"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          style="isolation: isolate"
-          viewBox="0 0 800 800"
-          width="800"
-          height="800"
-        >
-          <defs>
-            <clipPath id="_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ">
-              <rect width="800" height="800" />
-            </clipPath>
-          </defs>
-          <g clip-path="url(#_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ)">
-            <g>
-              <path
-                d=" M 508.558 450.429 C 502.67 447.483 473.723 433.24 468.325 431.273 C 462.929 429.308 459.003 428.328 455.078 434.22 C 451.153 440.114 439.869 453.377 436.434 457.307 C 433 461.236 429.565 461.729 423.677 458.78 C 417.79 455.834 398.818 449.617 376.328 429.556 C 358.825 413.943 347.008 394.663 343.574 388.768 C 340.139 382.873 343.207 379.687 346.155 376.752 C 348.804 374.113 352.044 369.874 354.987 366.436 C 357.931 362.999 358.912 360.541 360.875 356.614 C 362.837 352.683 361.857 349.246 360.383 346.299 C 358.912 343.352 347.136 314.369 342.231 302.579 C 337.451 291.099 332.597 292.654 328.983 292.472 C 325.552 292.301 321.622 292.265 317.698 292.265 C 313.773 292.265 307.394 293.739 301.996 299.632 C 296.6 305.527 281.389 319.772 281.389 348.752 C 281.389 377.735 302.487 405.731 305.431 409.661 C 308.376 413.592 346.949 473.062 406.015 498.566 C 420.062 504.634 431.03 508.256 439.581 510.969 C 453.685 515.451 466.521 514.818 476.666 513.302 C 487.978 511.613 511.502 499.06 516.409 485.307 C 521.315 471.55 521.315 459.762 519.842 457.307 C 518.371 454.851 514.446 453.377 508.558 450.429 Z  M 401.126 597.117 L 401.047 597.117 C 365.902 597.104 331.431 587.661 301.36 569.817 L 294.208 565.572 L 220.08 585.017 L 239.866 512.743 L 235.21 505.332 C 215.604 474.149 205.248 438.108 205.264 401.1 C 205.307 293.113 293.17 205.257 401.204 205.257 C 453.518 205.275 502.693 225.674 539.673 262.696 C 576.651 299.716 597.004 348.925 596.983 401.258 C 596.939 509.254 509.078 597.117 401.126 597.117 Z  M 567.816 234.565 C 523.327 190.024 464.161 165.484 401.124 165.458 C 271.24 165.458 165.529 271.161 165.477 401.085 C 165.46 442.617 176.311 483.154 196.932 518.892 L 163.502 641 L 288.421 608.232 C 322.839 627.005 361.591 636.901 401.03 636.913 L 401.126 636.913 L 401.127 636.913 C 530.998 636.913 636.717 531.2 636.77 401.274 C 636.794 338.309 612.306 279.105 567.816 234.565"
-                fill-rule="evenodd"
-                fill="rgb(255,255,255)"
-              />
-            </g>
-          </g>
-        </svg>
-      </a>
-    </div>
-    <!--=== addOnsEnd ===-->
-
-    <!--=== cdnStart ===-->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <!--=== cdnEnd ===-->
-
-    <!--=== dev-offStart ===-->
-    <script src="./src/cli/jquery-3.7.1.min.js"></script>
-    <script src="./src/cli/bootstrap.bundle.min.js"></script>
-    <!--=== dev-offEnd ===-->
-
-    <!--=== CustomScriptStart ===-->
+    <script src="./src/dist/bootstrap/jquery-3.7.1.min.js"></script>
+    <script src="./src/dist/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--{custom js}-->
     <script src="./src/js/script.js"></script>
-    <!--=== CustomScriptEnd ===-->
+    <!--{custom js}-->
   </body>
 </html>
