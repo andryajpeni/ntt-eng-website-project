@@ -1,28 +1,4 @@
-//==> Desktop Menu Show <==//
-const drop1 = document.querySelector("#btnServ");
-const navMenu1 = document.querySelector("#servMenu");
-drop1.addEventListener("click", function () {
-  navMenu1.classList.toggle("serv-menu-show");
-});
-const drop2 = document.querySelector("#btnProf");
-const navMenu2 = document.querySelector("#profMenu");
-drop2.addEventListener("click", function () {
-  navMenu2.classList.toggle("prof-menu-show");
-});
-//==> Desktop Menu Close <==//
-window.addEventListener("click", function (e) {
-  if (e.target != drop1 && e.target != navMenu1) {
-    navMenu1.classList.remove("serv-menu-show");
-    navMenu1.classList.add("serv-menu");
-  }
-});
-window.addEventListener("click", function (e) {
-  if (e.target != drop2 && e.target != navMenu2) {
-    navMenu2.classList.remove("prof-menu-show");
-    navMenu2.classList.add("prof-menu");
-  }
-});
-//==> Hamburger Menu <==//
+//==>Hamburger Menu show<==//
 const hamBurger = document.querySelector(".hamburger");
 const hamBurger1 = document.querySelector("#hamburger-1");
 const MobMenu = document.querySelector("#mobMenu");
@@ -33,9 +9,24 @@ hamBurger.addEventListener("click", function () {
 hamBurger1.addEventListener("click", function () {
   MobMenu.classList.toggle("mob-menu-show");
 });
+//==>Hamburger Menu close<==//
 window.addEventListener("click", function (e) {
   if (e.target != hamBurger1 && e.target != MobMenu) {
     MobMenu.classList.add("mob-menu");
     hamBurger1.classList.add("hamburger");
   }
+});
+//==>Header Scroll Blur<==//
+$(document).ready(function () {
+  $(window).scroll(function (e) {
+    let s = $(window).scrollTop(),
+      filterVal = s === 0 ? 0 : Math.ceil(s / 11);
+    $(".blur").css({
+      filter: "blur(" + filterVal + "px)",
+      "-webkit-filter": "blur(" + filterVal + "px)",
+      "-moz-filter": "blur(" + filterVal + "px)",
+      "-o-filter": "blur(" + filterVal + "px)",
+      "-ms-filter": "blur(" + filterVal + "px)",
+    });
+  });
 });
