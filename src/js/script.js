@@ -30,3 +30,30 @@ $(document).ready(function () {
     });
   });
 });
+//==>Swipper<==//
+var swiper = new Swiper(".swiper-container", {
+  spaceBetween: 0,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.1,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2.1,
+    },
+    // when window width is >= 667px
+    667: {
+      slidesPerView: 3.1,
+    },
+    // when window width is >= 920px
+    920: {
+      slidesPerView: 4.1,
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 5.2,
+    },
+  },
+});

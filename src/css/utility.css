@@ -1,0 +1,17 @@
+/* border item and hover */
+.ntt-border:hover {
+  border: 1px solid rgba(143, 132, 132, 0.562);
+}
+.ntt-border {
+  width: 100%;
+  margin: 0;
+  border: 1px solid #947b7b2a;
+  background-color: var(--milk-2);
+  backdrop-filter: blur(15px);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  padding: 0.7rem 0.5rem;
+}

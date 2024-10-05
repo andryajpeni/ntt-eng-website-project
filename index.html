@@ -1,265 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--{meta}-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--{title & favicon}-->
     <title>Nusa Timore Telematika</title>
-    <link
-      rel="shortcut icon"
-      href="./public/favicon/ntt-48x48.png"
-      type="image/x-icon"
-    />
-    <!--{CDN on}-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!--{CDN Off}-->
     <link rel="stylesheet" href="./src/dist/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/dist/swipper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/dist/font-awsome/css/all.css" />
-    <!--{css}-->
-    <link rel="stylesheet" href="./src/css/styles.css" />
-    <style>
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      ::-webkit-scrollbar {
-        display: none;
-      }
-      /* Hide scrollbar for IE, Edge and Firefox */
-      body {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-      }
-      /* ::-webkit-scrollbar-track {
-        background-color: #380a53;
-      }
-      ::-webkit-scrollbar-thumb {
-        background-color: #fff4e0;
-
-        border-radius: 10px;
-        border: 1px solid transparent;
-        background-clip: content-box;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background-color: #fff4e0;
-        cursor: pointer;
-      } */
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--{header}-->
-    <header class="ntt-header">
-      <nav class="container-fluid custom-nav">
-        <div class="header-ntt">
-          <!--{nav}-->
-          <!--{nav-item}-->
-          <div class="ntt-brand">
-            <a href="#home"
-              ><img
-                src="./public/favicon/ntt-100x48-white-text.png"
-                alt="ntt-logo"
-            /></a>
+    <header>
+      <!--{home}-->
+      <div id="home" class="ntt-home blur">
+        <div class="container-fluid">
+          <div class="row content-home">
+            <div class="col-lg-12 col-md-12 col-sm-12 home-title">
+              <h1>
+                <span>We</span>Provide<br />
+                Best<span>Services</span>
+              </h1>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 home-subtitle">
+              <h4>
+                Established since March 2024, Nusa Timor is committed
+                <br />to providing professional services and trusted in the
+                world of telecommunications
+                <br />
+                infrastructure construction in Indonesia.
+              </h4>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 home-btn">
+              <a class="btn-title" href="#profile">
+                Learn More about – Nusa Timore
+                <i class="fa fa-arrow-right"></i>
+              </a>
+              <div class="mouse_scroll">
+                <div class="mouse">
+                  <div class="wheel"></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!--{nav-item}-->
-          <!--{nav-item}-->
-          <div class="nav-ntt">
-            <div id="ntt-nav-menu">
-              <ul class="ntt-navbar">
-                <li class="ntt-nav">
-                  <a class="ntt-nav-link" href="#services">Services</a>
-                  <a class="ntt-nav-link" href="#profile">Profile</a>
-                  <a class="ntt-nav-link" href="#teams">Team</a>
+        </div>
+      </div>
+      <!--{home}-->
+    </header>
+    <nav>
+      <div class="container fixed-top my-3">
+        <div class="row g-4 m-0 p-0">
+          <div class="col-6 m-0 p-0 nav-nav">
+            <div class="ntt-nav-brand">
+              <a href="index.html">
+                <img src="./public/favicon/ntt-100x48.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-6 m-0 p-0 align-content-center justify-content-end nav-navbar"
+          >
+            <div class="ntt-nav-menu">
+              <ul class="m-0 p-0">
+                <li>
+                  <a href="#services">services</a>
+                  <a href="#profile">profile</a>
+                  <a href="#team">team</a>
+                  <a href="#contact">contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ntt-nav-add m-0 p-0 justify-content-end">
+              <div class="three">
+                <div class="hamburger" id="hamburger-1">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="mobMenu" class="col-12 m-0 p-0 mob-menu">
+            <div class="ntt-nav-mob">
+              <ul>
+                <li>
+                  <a href="#services">services</a>
+                  <a href="#profile">profile</a>
+                  <a href="#team">team</a>
+                  <a href="#contact">contact</a>
                 </li>
               </ul>
             </div>
           </div>
-          <!--{nav-item}-->
-          <!--{nav-item}-->
-          <div class="ntt-nav-btn">
-            <a class="btn-cont" href="#footer">Contact Us</a>
-            <!--{nav-item}-->
-            <div class="three">
-              <div class="hamburger" id="hamburger-1">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-            </div>
-          </div>
-          <!--{nav-item}-->
-          <!--{nav}-->
-        </div>
-        <!--{menu-mob}-->
-        <div id="mobMenu" class="mob-menu">
-          <div class="mob-menu-title">
-            <a class="mob-menu-Link" href="#services">Services</a>
-            <a class="mob-menu-Link" href="#profile">Profile</a>
-            <a class="mob-menu-Link" href="#teams">Teams</a>
-            <hr />
-            <a class="btn-mob-cont" href="#footer">Contact Us</a>
-          </div>
-        </div>
-        <!--{menu-mob}-->
-      </nav>
-    </header>
-    <!--{header}-->
-    <!--{home}-->
-    <section id="home" class="ntt-home blur">
-      <div class="container-fluid">
-        <div class="row content-home">
-          <div class="col-lg-12 col-md-12 col-sm-12 home-title">
-            <h1>
-              <span>We</span>Provide<br />
-              Best<span>Services</span>
-            </h1>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 home-subtitle">
-            <h4>
-              Established since March 2024, Nusa Timor is committed <br />to
-              providing professional services and trusted in the world of
-              telecommunications
-              <br />
-              infrastructure construction in Indonesia.
-            </h4>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 home-btn">
-            <a class="btn-title" href="#profile">
-              Learn More about – Nusa Timore
-              <i class="fa fa-arrow-right"></i>
-            </a>
-            <div class="mouse_scroll">
-              <div class="mouse">
-                <div class="wheel"></div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    </section>
-    <!--{home}-->
-    <!--{services}-->
-    <section id="services">
-      <div class="padding-section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 col-md-5 col-sm-12 services-title">
-              <h1><span>see nusa timore </span> services</h1>
+    </nav>
+    <main>
+      <section id="services">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-6 col-ntt">
+              <div class="ntt-section-title">
+                <h1><span>nusa timore</span><br />services</h1>
+              </div>
             </div>
-            <div class="col-lg-6 col-md-5 col-sm-12 services-subtitle">
-              <h6>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam nulla quas quidem odio reprehenderit, ipsum soluta.
-                Cumque cupiditate unde architecto?
-              </h6>
+            <div class="col-6 col-ntt">
+              <div class="ntt-section-subtitle">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores, dicta.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--{services}-->
-    <section class="services-item">
-      <div class="padding-section">
-        <div class="container-fluid ntt-services">
-          <div class="row services-ntt">
-            <div class="col-lg-6 col-md-5 col-sm-12">
-              <div class="telcoinfra">
-                <div class="telcoinfra-content">
-                  <div class="bg-infra"></div>
-                  <h3>Telco Infra Services</h3>
-                  <p>Survey, Design & Planning (As Plan Drawing)</p>
-                  <p>Permit & SITAC</p>
-                  <p>Civil Work Implementation & Monitoring</p>
-                  <p>Cable installation (Aerial, Direct Buried Duct System)</p>
-                  <p>Splicing and Termination</p>
-                  <p>As-Built Documentation</p>
-                </div>
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-6 ntt-services-infra">
+              <div class="ntt-infra-services bg-infra-services">
+                <h3><span>telco infra</span> services</h3>
+                <p>Survey, Design & Planning (As Plan Drawing)</p>
+                <p>Permit & SITAC</p>
+                <p>Civil Work Implementation & Monitoring</p>
+                <p>Cable installation (Aerial, Direct Buried Duct System)</p>
+                <p>Splicing and Termination</p>
+                <p>As-Built Documentation</p>
               </div>
             </div>
-            <div class="col-lg-6 col-md-5 col-sm-12">
-              <div class="itservices">
-                <div class="itservices-content">
-                  <div class="bg-services"></div>
-                  <h3>IT Services</h3>
-                  <p>Survey, Design & Planning (As Plan Drawing)</p>
-                  <p>Permit & SITAC</p>
-                  <p>Civil Work Implementation & Monitoring</p>
-                  <p>Cable installation (Aerial, Direct Buried Duct System)</p>
-                  <p>Splicing and Termination</p>
-                  <p>As-Built Documentation</p>
-                </div>
+            <div class="col-6 ntt-services-it">
+              <div class="ntt-it-services bg-it-services">
+                <h3><span>it</span> services</h3>
+                <p>Survey, Design & Planning (As Plan Drawing)</p>
+                <p>Permit & SITAC</p>
+                <p>Civil Work Implementation & Monitoring</p>
+                <p>Cable installation (Aerial, Direct Buried Duct System)</p>
+                <p>Splicing and Termination</p>
+                <p>As-Built Documentation</p>
               </div>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 services-btn">
-              <a class="btn-title" href="#profile">
-                Need More Information &amp; Pricelist – Contact Us
-                <i class="fa fa-arrow-right"></i>
-              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--{services}-->
+        <div class="col-lg-12 col-md-12 col-sm-12 ntt-services-btn">
+          <a class="btn-title" href="#contact">
+            Heve something inmind – Contact Us
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+      <section id="profile">
+        <div class="container ntt-profile">
+          <div class="row g-4">
+            <div class="col-6 col-ntt">
+              <div class="ntt-section-title">
+                <h1><span>nusa timore</span><br />Profile</h1>
+              </div>
+            </div>
+            <div class="col-6 col-ntt">
+              <div class="ntt-section-subtitle">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores, dicta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team">
+        <div class="container ntt-team">
+          <div class="row g-4">
+            <div class="col-6 col-ntt">
+              <div class="ntt-section-title">
+                <h1>
+                  <span>meet nusa timore</span> <br />
+                  team
+                </h1>
+              </div>
+            </div>
+            <div class="col-6 col-ntt">
+              <div class="ntt-section-subtitle">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores, dicta.
+                </p>
+              </div>
+            </div>
 
-    <!--{profile}-->
-    <section id="profile">
-      <div class="padding-section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 profile-title">
-              <h1><span>Nusa Timore</span> Profile</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                doloribus dolore? Eveniet magnam est, voluptatum velit excepturi
-                consequuntur adipisci illum.
-              </p>
-              <!--{legal}-->
-              <h6>Leagality of Nusa Timore</h6>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                doloribus dolore? Eveniet magnam est, voluptatum velit excepturi
-                consequuntur adipisci illum.
-              </p>
-              <!--{legal}-->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--{profile}-->
-    <!--{teams}-->
-    <section id="teams">
-      <div class="padding-section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 col-md-5 col-sm-12 team-title">
-              <h1><span>meet nusa timore</span> team</h1>
-            </div>
-            <div class="col-lg-6 col-md-5 col-sm-12 team-subtitle">
-              <h6>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam nulla quas quidem odio reprehenderit, ipsum soluta.
-                Cumque cupiditate unde architecto?
-              </h6>
-              <p>
-                <i class="fa fa-arrow-left"></i> Drag
-                <i class="fa fa-arrow-right"></i>
-              </p>
-            </div>
             <div class="col-md-12 ath_swiper_col">
               <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -352,9 +277,46 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--{teams}-->
+      </section>
+      <section id="contact">
+        <div class="container ntt-contact">
+          <div class="row g-4">
+            <div class="col-6 col-ntt">
+              <div class="ntt-section-title">
+                <h1><span>get in touch</span><br />with nusa timore</h1>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="ntt-section-subtitle">
+                <p>Visit Us.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-6 col-ntt">
+              <div class="ntt-contact-info">
+                <h6>Head Office</h6>
+                <p>Liliba, Kupang Capital City, East Nusa Tenggara Indonesia</p>
+                <h6>Email</h6>
+                <p>nusatimoretelematika@gmail.com</p>
+                <h6>Phone / WhatsApp</h6>
+                <p>085 85 88 33 600</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="ntt-gmaps">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2697.7418370672285!2d123.5906989917967!3d-10.182566517406004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1724672029815!5m2!1sen!2sid"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!--{footer}-->
     <footer id="footer " class="ntt-footer">
       <div class="container-fluid">
@@ -366,59 +328,10 @@
       </div>
     </footer>
     <!--{footer}-->
-    <!--{Jquery}-->
-    <!--{cdn-script}-->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-    -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!--{cdn-script}-->
-    <script src="./src/dist/bootstrap/jquery-3.7.1.min.js"></script>
-    <script src="./src/dist/bootstrap/bootstrap.bundle.min.js"></script>
-    <!--{custom js}-->
+    <script src="./src/dist/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./src/dist/bootstrap/bootstrap.min.js"></script>
     <script src="./src/dist/swipper/swiper-bundle.min.js"></script>
+
     <script src="./src/js/script.js"></script>
-    <!--{custom js}-->
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        spaceBetween: 0,
-        // Responsive breakpoints
-        breakpoints: {
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 1.1,
-          },
-          // when window width is >= 480px
-          480: {
-            slidesPerView: 2.1,
-          },
-          // when window width is >= 667px
-          667: {
-            slidesPerView: 3.1,
-          },
-          // when window width is >= 920px
-          920: {
-            slidesPerView: 4.1,
-          },
-          // when window width is >= 1200px
-          1200: {
-            slidesPerView: 5.2,
-          },
-        },
-      });
-    </script>
   </body>
 </html>
