@@ -4,40 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nusa Timore Telematika</title>
-    <link rel="stylesheet" href="./src/dist/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./src/dist/swipper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./src/dist/font-awsome/css/all.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./public/favicon/ntt-48x48.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/dist/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/dist/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <style>
+      body {
+        cursor: url("./public/cursor/cursor.png"), auto;
+      }
+
+      a {
+        cursor: url("./public/cursor/pointer.png"), auto;
+      }
+      .swiper-slide {
+        cursor: url("./public/cursor/grab.png"), auto;
+      }
+      .swiper-slide:active {
+        cursor: url("./public/cursor/grabbed.png"), auto;
+      }
+    </style>
   </head>
   <body>
+    <!--{header}-->
     <header>
       <!--{home}-->
-      <div id="home" class="ntt-home blur">
-        <div class="container-fluid">
-          <div class="row content-home">
-            <div class="col-lg-12 col-md-12 col-sm-12 home-title">
-              <h1>
-                <span>We</span>Provide<br />
-                Best<span>Services</span>
-              </h1>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 home-subtitle">
-              <h4>
-                Established since March 2024, Nusa Timor is committed
-                <br />to providing professional services and trusted in the
-                world of telecommunications
-                <br />
-                infrastructure construction in Indonesia.
-              </h4>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 home-btn">
-              <a class="btn-title" href="#profile">
-                Learn More about – Nusa Timore
-                <i class="fa fa-arrow-right"></i>
-              </a>
-              <div class="mouse_scroll">
-                <div class="mouse">
-                  <div class="wheel"></div>
+      <div class="ntt-header">
+        <div id="home" class="ntt-home blur">
+          <div class="container">
+            <div class="row content-home">
+              <div class="home-title">
+                <h1>
+                  <span>We</span>Provide<br />
+                  Best<span>Services</span>
+                </h1>
+              </div>
+              <div class="home-subtitle">
+                <h4>
+                  Established since March 2024, Nusa Timor is committed
+                  <br />to providing professional services and trusted in the
+                  world of telecommunications
+                  <br />
+                  infrastructure construction in Indonesia.
+                </h4>
+              </div>
+              <div class="home-btn">
+                <a class="btn-title" href="#profile">
+                  Learn More about – Nusa Timore
+                  <i class="fa fa-arrow-right"></i>
+                </a>
+                <div class="mouse_scroll">
+                  <div class="mouse">
+                    <div class="wheel"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -46,282 +68,372 @@
       </div>
       <!--{home}-->
     </header>
-    <nav>
-      <div class="container fixed-top my-3">
-        <div class="row g-4 m-0 p-0">
-          <div class="col-6 m-0 p-0 nav-nav">
-            <div class="ntt-nav-brand">
-              <a href="index.html">
-                <img src="./public/favicon/ntt-100x48.png" alt="" />
-              </a>
-            </div>
-          </div>
-          <div
-            class="col-6 m-0 p-0 align-content-center justify-content-end nav-navbar"
-          >
-            <div class="ntt-nav-menu">
-              <ul class="m-0 p-0">
-                <li>
-                  <a href="#services">services</a>
-                  <a href="#profile">profile</a>
-                  <a href="#team">team</a>
-                  <a href="#contact">contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="ntt-nav-add m-0 p-0 justify-content-end">
-              <div class="three">
-                <div class="hamburger" id="hamburger-1">
-                  <span class="line"></span>
-                  <span class="line"></span>
-                  <span class="line"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="mobMenu" class="col-12 m-0 p-0 mob-menu">
-            <div class="ntt-nav-mob">
-              <ul>
-                <li>
-                  <a href="#services">services</a>
-                  <a href="#profile">profile</a>
-                  <a href="#team">team</a>
-                  <a href="#contact">contact</a>
-                </li>
-              </ul>
-            </div>
+    <!--{header}-->
+    <!--{nav}-->
+
+    <nav class="ntt-nav">
+      <a href="" class="ntt-nav-logo">
+        <img src="./public/favicon/NTT-PL-100x48.png" alt="ntt-logo" />
+      </a>
+      <div class="ntt-nav-menu">
+        <ul class="ntt-nav-menulist">
+          <li>
+            <a href="#services" class="ntt-navlink">Services</a>
+            <a href="#profile" class="ntt-navlink">Profile</a>
+            <a href="#team" class="ntt-navlink">Team</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ntt-nav-add">
+        <a href="#contact" class="ntt-navadd">Contact</a>
+        <div class="three">
+          <div class="hamburger" id="hamburger-1">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
           </div>
         </div>
       </div>
     </nav>
-    <main>
-      <section id="services">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-6 col-ntt">
-              <div class="ntt-section-title">
-                <h1><span>nusa timore</span><br />services</h1>
-              </div>
-            </div>
-            <div class="col-6 col-ntt">
-              <div class="ntt-section-subtitle">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores, dicta.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-6 ntt-services-infra">
-              <div class="ntt-infra-services bg-infra-services">
-                <h3><span>telco infra</span> services</h3>
-                <p>Survey, Design & Planning (As Plan Drawing)</p>
-                <p>Permit & SITAC</p>
-                <p>Civil Work Implementation & Monitoring</p>
-                <p>Cable installation (Aerial, Direct Buried Duct System)</p>
-                <p>Splicing and Termination</p>
-                <p>As-Built Documentation</p>
-              </div>
-            </div>
-            <div class="col-6 ntt-services-it">
-              <div class="ntt-it-services bg-it-services">
-                <h3><span>it</span> services</h3>
-                <p>Survey, Design & Planning (As Plan Drawing)</p>
-                <p>Permit & SITAC</p>
-                <p>Civil Work Implementation & Monitoring</p>
-                <p>Cable installation (Aerial, Direct Buried Duct System)</p>
-                <p>Splicing and Termination</p>
-                <p>As-Built Documentation</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 ntt-services-btn">
-          <a class="btn-title" href="#contact">
-            Heve something inmind – Contact Us
-            <i class="fa fa-arrow-right"></i>
-          </a>
-        </div>
-      </section>
-      <section id="profile">
-        <div class="container ntt-profile">
-          <div class="row g-4">
-            <div class="col-6 col-ntt">
-              <div class="ntt-section-title">
-                <h1><span>nusa timore</span><br />Profile</h1>
-              </div>
-            </div>
-            <div class="col-6 col-ntt">
-              <div class="ntt-section-subtitle">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores, dicta.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="team">
-        <div class="container ntt-team">
-          <div class="row g-4">
-            <div class="col-6 col-ntt">
+    <div id="mobMenu" class="mobile-menu">
+      <ul class="ntt-mobile-menulist">
+        <li>
+          <a href="#services" class="ntt-mobilelink">Services</a>
+        </li>
+        <li>
+          <a href="#profile" class="ntt-mobilelink">Profile</a>
+        </li>
+        <li><a href="#team" class="ntt-mobilelink">Team</a></li>
+      </ul>
+    </div>
+
+    <!--{nav}-->
+    <!--{ntt=page}-->
+    <div class="ntt-page overflow-hidden">
+      <div class="ntt-padding">
+        <!--{main}-->
+        <main class="ntt-main">
+          <!--{services}-->
+          <section id="services">
+            <div class="col-ntt">
               <div class="ntt-section-title">
                 <h1>
-                  <span>meet nusa timore</span> <br />
-                  team
+                  <span>nusa timore</span> <br />
+                  services
+                  <span>
+                    <svg
+                      style="position: relative; top: -10; left: -10"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 200 200"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_104_26)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
+                          fill="url(#paint0_linear_104_26)"
+                        />
+                      </g>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_104_26"
+                          x1="20.5"
+                          y1="16"
+                          x2="100"
+                          y2="200"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#fc0" />
+                          <stop offset="1" stop-color="#fc0" />
+                        </linearGradient>
+                        <clipPath id="clip0_104_26">
+                          <rect width="200" height="200" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
                 </h1>
               </div>
             </div>
-            <div class="col-6 col-ntt">
-              <div class="ntt-section-subtitle">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores, dicta.
-                </p>
+          </section>
+          <!--{services}-->
+          <!--{profile}-->
+          <section id="profile">
+            <div class="col-ntt">
+              <div class="ntt-section-title">
+                <h1>
+                  <span>nusa timore</span> <br />
+                  PROFILE
+                  <span>
+                    <svg
+                      style="position: relative; top: -10; left: -10"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 200 200"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_104_26)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
+                          fill="url(#paint0_linear_104_26)"
+                        />
+                      </g>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_104_26"
+                          x1="20.5"
+                          y1="16"
+                          x2="100"
+                          y2="200"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#fc0" />
+                          <stop offset="1" stop-color="#fc0" />
+                        </linearGradient>
+                        <clipPath id="clip0_104_26">
+                          <rect width="200" height="200" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </h1>
               </div>
             </div>
-
-            <div class="col-md-12 ath_swiper_col">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="javascript:void(0)">
-                          <h4>MITHE</h4>
-                          <img
-                            class="pic-1"
-                            src="./public/swipper/team-mithe.png"
+          </section>
+          <!--{profile}-->
+          <!--{team}-->
+          <section id="team">
+            <div class="container ntt-team">
+              <div class="col-ntt">
+                <div class="ntt-section-title">
+                  <h1>
+                    <span>meet nusa timore</span> <br />
+                    team
+                    <span>
+                      <svg
+                        style="position: relative; top: -10; left: -10"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 200 200"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_104_26)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
+                            fill="url(#paint0_linear_104_26)"
                           />
-                          <h6>CEO</h6>
-                        </a>
+                        </g>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_104_26"
+                            x1="20.5"
+                            y1="16"
+                            x2="100"
+                            y2="200"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#fc0" />
+                            <stop offset="1" stop-color="#fc0" />
+                          </linearGradient>
+                          <clipPath id="clip0_104_26">
+                            <rect width="200" height="200" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </h1>
+                </div>
+              </div>
+              <!--{swipper}-->
+              <div class="ath_swiper_col">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="product-grid">
+                        <div class="product-image">
+                          <a href="javascript:void(0)">
+                            <h4>MITHE</h4>
+                            <img
+                              class="pic-1"
+                              width="240px"
+                              src="./public/swipper/team-mithe.png"
+                            />
+                            <h6>CEO</h6>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="product-grid topdown">
-                      <div class="product-image">
-                        <a href="javascript:void(0)">
-                          <h4>ABANK</h4>
-                          <img
-                            class="pic-2"
-                            src="./public/swipper/team-abank.png"
-                          />
-                          <h6>CTO</h6>
-                        </a>
+                    <div class="swiper-slide">
+                      <div class="product-grid topdown">
+                        <div class="product-image">
+                          <a href="javascript:void(0)">
+                            <h4>ABANK</h4>
+                            <img
+                              class="pic-2"
+                              width="240px"
+                              src="./public/swipper/team-abank.png"
+                            />
+                            <h6>CTO</h6>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="javascript:void(0)">
-                          <h4>INDAH</h4>
-                          <img
-                            class="pic-1"
-                            src="./public/swipper/team-inda.png"
-                          />
-                          <h6>CFO</h6>
-                        </a>
+                    <div class="swiper-slide">
+                      <div class="product-grid">
+                        <div class="product-image">
+                          <a href="javascript:void(0)">
+                            <h4>INDAH</h4>
+                            <img
+                              class="pic-1"
+                              width="240px"
+                              src="./public/swipper/team-inda.png"
+                            />
+                            <h6>CFO</h6>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="product-grid topdown">
-                      <div class="product-image">
-                        <a href="javascript:void(0)">
-                          <h4>KA-AN</h4>
-                          <img
-                            class="pic-2"
-                            src="./public/swipper/team-kaan.png"
-                          />
-                          <h6>PM</h6>
-                        </a>
+                    <div class="swiper-slide">
+                      <div class="product-grid topdown">
+                        <div class="product-image">
+                          <a href="javascript:void(0)">
+                            <h4>KA-AN</h4>
+                            <img
+                              class="pic-2"
+                              width="240px"
+                              src="./public/swipper/team-kaan.png"
+                            />
+                            <h6>PM</h6>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="product-grid">
-                      <div class="product-image">
-                        <a href="javascript:void(0)">
-                          <h4>HERNAZS</h4>
-                          <img
-                            class="pic-1"
-                            src="./public/swipper/team-hernazs.png"
-                          />
-                          <h6>ENGINEER</h6>
-                        </a>
+                    <div class="swiper-slide">
+                      <div class="product-grid">
+                        <div class="product-image">
+                          <a href="javascript:void(0)">
+                            <h4>JO</h4>
+                            <img
+                              class="pic-1"
+                              width="240px"
+                              src="./public/swipper/team-jo.png"
+                            />
+                            <h6>HSE</h6>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="product-grid topdown">
-                      <div class="product-image">
-                        <a href="javascript:void(0)">
-                          <h4>CHA</h4>
-                          <img
-                            class="pic-2"
-                            src="./public/swipper/team-cha.png"
-                          />
-                          <h6>PERMIT &amp; SITAC</h6>
-                        </a>
+                    <div class="swiper-slide">
+                      <div class="product-grid topdown">
+                        <div class="product-image">
+                          <a href="javascript:void(0)">
+                            <h4>HERNAZS</h4>
+                            <img
+                              class="pic-1"
+                              width="240px"
+                              src="./public/swipper/team-hernazs.png"
+                            />
+                            <h6>ENG</h6>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product-grid">
+                        <div class="product-image">
+                          <a href="javascript:void(0)">
+                            <h4>CHA</h4>
+                            <img
+                              class="pic-2"
+                              width="240px"
+                              src="./public/swipper/team-cha.png"
+                            />
+                            <h6>PERMIT</h6>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!--{swipper}-->
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="container ntt-contact">
-          <div class="row g-4">
-            <div class="col-6 col-ntt">
+          </section>
+          <!--{team}-->
+          <!--{contact}-->
+          <section id="contact" class="ntt-contact-page">
+            <div class="ntt-contact">
               <div class="ntt-section-title">
-                <h1><span>get in touch</span><br />with nusa timore</h1>
+                <h1>
+                  <span>get in touch with</span> <br />
+                  nusa timore
+                  <span>
+                    <svg
+                      style="position: relative; top: -10; left: -10"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 200 200"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_104_26)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
+                          fill="url(#paint0_linear_104_26)"
+                        />
+                      </g>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_104_26"
+                          x1="20.5"
+                          y1="16"
+                          x2="100"
+                          y2="200"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#fc0" />
+                          <stop offset="1" stop-color="#fc0" />
+                        </linearGradient>
+                        <clipPath id="clip0_104_26">
+                          <rect width="200" height="200" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </h1>
               </div>
             </div>
-            <div class="col-6">
-              <div class="ntt-section-subtitle">
-                <p>Visit Us.</p>
-              </div>
+            <div class="ntt-contact-item">
+              <h4>Head Office</h4>
+              <p>Liliba, Kupang Capital City, East Nusa Tenggara - Indonesia</p>
+              <h4>Mail Office</h4>
+              <p>nusatimoretelematika@gmail.com</p>
+              <h4>Phone Office</h4>
+              <p>+62 85 85 88 33 600</p>
             </div>
-          </div>
-          <div class="row g-4">
-            <div class="col-6 col-ntt">
-              <div class="ntt-contact-info">
-                <h6>Head Office</h6>
-                <p>Liliba, Kupang Capital City, East Nusa Tenggara Indonesia</p>
-                <h6>Email</h6>
-                <p>nusatimoretelematika@gmail.com</p>
-                <h6>Phone / WhatsApp</h6>
-                <p>085 85 88 33 600</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="ntt-gmaps">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2697.7418370672285!2d123.5906989917967!3d-10.182566517406004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1724672029815!5m2!1sen!2sid"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+          </section>
+          <!--{contact}-->
+        </main>
+        <!--{main}-->
+      </div>
+    </div>
+    <!--{ntt=page}-->
     <!--{footer}-->
     <footer id="footer " class="ntt-footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 footer-copyright">
+      <div class="ntt-footer-content">
+        <div class="ntt-footer-item">
+          <div class="footer-copyright">
             <p>© 2024 Nusa Timore telematika</p>
           </div>
         </div>
@@ -329,9 +441,7 @@
     </footer>
     <!--{footer}-->
     <script src="./src/dist/jquery/jquery-3.7.1.min.js"></script>
-    <script src="./src/dist/bootstrap/bootstrap.min.js"></script>
-    <script src="./src/dist/swipper/swiper-bundle.min.js"></script>
-
-    <script src="./src/js/script.js"></script>
+    <script src="./src/dist/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
