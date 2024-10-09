@@ -12,6 +12,23 @@
     <link rel="stylesheet" href="./src/dist/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/dist/fontawesome-free/css/all.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <style type="text/css">
+      ::-webkit-scrollbar {
+        width: 20px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #2d1a96;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #2d1a96;
+      }
+    </style>
     <style>
       body {
         cursor: url("./public/cursor/cursor.png"), auto;
@@ -54,11 +71,6 @@
                   Learn More about – Nusa Timore
                   <i class="fa fa-arrow-right"></i>
                 </a>
-                <div class="mouse_scroll">
-                  <div class="mouse">
-                    <div class="wheel"></div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -119,8 +131,8 @@
                   <span>
                     <svg
                       style="position: relative; top: -10; left: -10"
-                      width="40"
-                      height="40"
+                      width="30"
+                      height="30"
                       viewBox="0 0 200 200"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -230,8 +242,8 @@
                   <span>
                     <svg
                       style="position: relative; top: -10; left: -10"
-                      width="40"
-                      height="40"
+                      width="30"
+                      height="30"
                       viewBox="0 0 200 200"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -276,6 +288,7 @@
             </div>
           </section>
           <!--{profile}-->
+
           <!--{team}-->
           <section id="team">
             <div class="container ntt-team">
@@ -287,8 +300,8 @@
                     <span>
                       <svg
                         style="position: relative; top: -10; left: -10"
-                        width="40"
-                        height="40"
+                        width="30"
+                        height="30"
                         viewBox="0 0 200 200"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -440,75 +453,151 @@
           <!--{team}-->
           <!--{contact}-->
           <section id="contact" class="ntt-contact-page">
-            <div class="ntt-contact">
-              <div class="ntt-section-title">
-                <h1>
-                  <span>get in touch with</span> <br />
-                  nusa timore
-                  <span>
-                    <svg
-                      style="position: relative; top: -10; left: -10"
-                      width="40"
-                      height="40"
-                      viewBox="0 0 200 200"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_104_26)">
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
-                          fill="url(#paint0_linear_104_26)"
-                        />
-                      </g>
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear_104_26"
-                          x1="20.5"
-                          y1="16"
-                          x2="100"
-                          y2="200"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#fc0" />
-                          <stop offset="1" stop-color="#fc0" />
-                        </linearGradient>
-                        <clipPath id="clip0_104_26">
-                          <rect width="200" height="200" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </span>
-                </h1>
+            <div class="ntt-contact"></div>
+            <div class="contact_ntt">
+              <div class="grid-contact_ntt">
+                <div class="contact_ntt_list">
+                  <div class="grid">
+                    <div class="contact_ntt-box">
+                      <div class="contact_ntt-wrapper">
+                        <div class="ntt-contact-item">
+                          <div class="ntt-section-title">
+                            <h1>
+                              <span>nusa timore</span> <br />
+                              contact
+                              <span>
+                                <svg
+                                  style="
+                                    position: relative;
+                                    top: -10;
+                                    left: -10;
+                                  "
+                                  width="30"
+                                  height="30"
+                                  viewBox="0 0 200 200"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g clip-path="url(#clip0_104_26)">
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
+                                      fill="url(#paint0_linear_104_26)"
+                                    />
+                                  </g>
+                                  <defs>
+                                    <linearGradient
+                                      id="paint0_linear_104_26"
+                                      x1="20.5"
+                                      y1="16"
+                                      x2="100"
+                                      y2="200"
+                                      gradientUnits="userSpaceOnUse"
+                                    >
+                                      <stop stop-color="#fc0" />
+                                      <stop offset="1" stop-color="#fc0" />
+                                    </linearGradient>
+                                    <clipPath id="clip0_104_26">
+                                      <rect
+                                        width="200"
+                                        height="200"
+                                        fill="white"
+                                      />
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                              </span>
+                            </h1>
+                          </div>
+                          <h4>Head Office</h4>
+                          <p>
+                            Liliba, Kupang Capital City, East Nusa Tenggara -
+                            Indonesia
+                          </p>
+                          <h4>Mail Office</h4>
+                          <p>nusatimoretelematika@gmail.com</p>
+                          <h4>Phone Office</h4>
+                          <p>+62 85 85 88 33 600</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="contact_ntt-box">
+                    <div class="contact_ntt-box">
+                      <div class="contact_ntt-wrapper">
+                        <!-- Maps -->
+                        <div class="ntt-contact-maps">
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="ntt_main_direction_link w-inline-block"
+                            ><div class="ntt_cta">
+                              <div class="div-block-4">
+                                <img
+                                  src="./public/img/map.webp"
+                                  loading="lazy"
+                                  sizes="(max-width: 500px) 20vh 10vw"
+                                  class="map"
+                                />
+                                <div
+                                  class="ntt-tag"
+                                  style="
+                                    transform: translate3d(0vw, 0px, 0px)
+                                      scale3d(1, 1, 1) rotateX(0deg)
+                                      rotateY(0deg) rotateZ(-6deg)
+                                      skew(0deg, 0deg);
+                                    transform-style: preserve-3d;
+                                    opacity: 1;
+                                  "
+                                >
+                                  <div class="ntt-tag-text">
+                                    <h5>locate &amp; visit<br />nusa timore</h5>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ntt_arw_rapper">
+                                <img
+                                  src="./public/shapes/arrow_white.svg"
+                                  loading="lazy"
+                                  class="arrow_ntt_wt"
+                                  style="opacity: 0"
+                                /><img
+                                  src="./public/shapes/arrow_black.svg"
+                                  loading="lazy"
+                                  class="arrow_ntt_bk"
+                                  style="opacity: 1"
+                                />
+                              </div></div
+                          ></a>
+                        </div>
+
+                        <!-- Maps -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="ntt-contact-item">
-              <h4>Head Office</h4>
-              <p>Liliba, Kupang Capital City, East Nusa Tenggara - Indonesia</p>
-              <h4>Mail Office</h4>
-              <p>nusatimoretelematika@gmail.com</p>
-              <h4>Phone Office</h4>
-              <p>+62 85 85 88 33 600</p>
-            </div>
           </section>
+
           <!--{contact}-->
         </main>
         <!--{main}-->
       </div>
     </div>
     <!--{ntt=page}-->
+
     <!--{footer}-->
     <footer id="footer " class="ntt-footer">
-      <div class="ntt-footer-content">
-        <div class="ntt-footer-item">
-          <div class="footer-copyright">
-            <p>© 2024 Nusa Timore telematika</p>
-          </div>
+      <div class="ntt-footer-bg">
+        <div class="footer-copyright">
+          <p>© 2024 Nusa Timore telematika</p>
         </div>
       </div>
     </footer>
     <!--{footer}-->
+
     <script src="./src/dist/jquery/jquery-3.7.1.min.js"></script>
     <script src="./src/dist/swiper/swiper-bundle.min.js"></script>
     <script src="./src/js/main.js"></script>
