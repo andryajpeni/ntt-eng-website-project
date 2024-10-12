@@ -372,6 +372,7 @@ p {
 .ntt-section-subtitle {
   height: 120px;
 }
+
 .ntt-section-title {
   align-content: start;
 }
@@ -408,6 +409,13 @@ p {
   }
   .ntt-section-subtitle p {
     font-size: 0.7rem;
+  }
+  .ntt-section-title,
+  .ntt-section-subtitle {
+    height: 70px;
+  }
+  .ath_swiper_col {
+    margin-top: 2rem;
   }
 }
 @media only screen and (max-width: 920px) {
