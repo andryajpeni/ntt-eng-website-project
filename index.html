@@ -25,190 +25,169 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav  id="yl-nav" class="yl_nav">
-      <a class="yl_nav-brand" href="#">
-        <img
-          src="./public/favicon/gmit-light 300x269.png"
-          height="50px"
-          alt=""
-          id="yl-logo"
-          class="yl_nav-brand-logo"
-        />
-        <span class="yl_nav-brand-text" id="yl-logo-txt">
-          Gereja Masehi Injili di Timor <br />
-          Yarden Labat
-        </span>
-      </a>
-      <div class="yl_nav-menu">
-        <ul class="yl_nav-menu-item">
-          <li class="yl_nav-menu-itemlist" id="yl_nav-menu">
-            <div id="yl-navlink1" class="yl-navlink">
-              <div class="yl-dropdown">
-                <span class="yl-dropdown-title">PROFIL</span>
-                <div
-                  class="yl-dropdown-content"
-                  style="
-                    background-image: url(/public/favicon/gmit-drop.png);
-                    object-fit: cover;
-                    background-size: cover;
-                  "
-                >
-                  <p class="fade_small">YARDEN LABAT</p>
-                  <div class="drop-link"><a href="">SEJARAH</a></div>
-                  <div class="drop-link"><a href="">VISI MISI</a></div>
+    <div class="yl_nav-custom border_box">
+      <div class="yl_navlayout">
+        <div class="yl_nav-brand">
+          <a class="yl_nav-logo" href="#">
+            <img
+              src="./public/favicon/gmit-dark 300x269.png"
+              loading="lazy"
+              height="50px"
+              alt=""
+              id="yl-logo"
+              class="yl_nav-brand-logo"
+            />
+            <span class="yl_nav-brand-text" id="yl-logo-txt">
+              Gereja Masehi Injili di Timor <br />
+              Yarden Labat
+            </span>
+          </a>
+        </div>
 
-                  <p class="fade_small">ARSIP</p>
-                  <div class="drop-link"><a href="">PENDETA GEREJA</a></div>
-                </div>
-              </div>
+        <nav class="yl_nav-menu">
+          <ul class="yl_nav-menu-item">
+            <li class="yl_navmenulink" style="justify-self: center">
+              <div id="navbtn">TENTANG</div>
+              <a href="">PENATALAYANAN</a>
+              <a href="">PELAYANAN</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="yl_nav_right">
+          <a
+            href="https://nusatimoretelematika.gitbook.io/docs/"
+            class="button_primary"
+            style="width: 150px; justify-self: end"
+            target="_blank"
+            >Open Docs
+            <span
+              ><i
+                class="fa fa-arrow-right"
+                style="transform: rotate(-45deg)"
+              ></i></span
+          ></a>
+
+          <div class="three" style="justify-self: end">
+            <div class="hamburger" id="hamburger-1">
+              <span id="line1" class="line"></span>
+
+              <span id="line2" class="line"></span>
             </div>
+          </div>
+        </div>
+      </div>
+      <!-- megamenu -->
+      <div id="megamenu" class="yl_nav-megamenu">
+        <div class="yl_nav-megamenu-content">
+          <div class="box_1">
+            <p>PROFIL</p>
+            <ul>
+              <li>
+                <a href=""> SEJARAH </a>
+              </li>
+              <li><a href=""> VISI MISI </a></li>
+              <li><a href=""> STRUKTUR ORGANISASI </a></li>
+            </ul>
+          </div>
+          <div class="box_2">
+            <p>MJH</p>
+            <ul>
+              <li>
+                <a href=""> MAJELIS JEMAAT HARIAN </a>
+              </li>
+            </ul>
+          </div>
+          <div class="box_3">
+            <p>MJH</p>
+            <ul>
+              <li>
+                <a href=""> BADAN PEMBANTU PELAYANAN (BPP) </a>
+              </li>
+              <li>
+                <a href=""> BPPPPJ (BP4J) </a>
+              </li>
 
-            <div id="yl-navlink2" class="yl-navlink">
-              <div class="yl-dropdown">
-                <span class="yl-dropdown-title">PENATALAYANAN</span>
-                <div
-                  class="yl-dropdown-content"
-                  style="
-                    background-image: url(/public/favicon/gmit-drop.png);
-                    object-fit: cover;
-                    background-size: cover;
-                  "
-                >
-                  <p class="fade_small">MAJELIS</p>
-                  <div class="drop-link"><a href="">MAJELIS JEMAAT</a></div>
+              <li><a href=""> BPPPJ (BP3J) </a></li>
+              <li><a href=""> BADAN DIAKONAT JEMAAT (BDJ) </a></li>
+              <li><a href=""> BADAN PEMBANGUNAN FISIK (BPF) </a></li>
+              <li><a href=""> BADAN HARGAKU </a></li>
+            </ul>
+          </div>
+          <div class="box_4">
+            <p>UNIT PEMBANTU PELAYANAN (UPP)</p>
+            <ul>
+              <li>
+                <a href=""> TERITORI </a>
+              </li>
 
-                  <p class="fade_small">UPP</p>
-                  <div class="drop-link"><a href="">KATEGORIAL</a></div>
-                  <div class="drop-link"><a href="">HARGAKU</a></div>
-                </div>
-              </div>
-            </div>
+              <li><a href=""> PAR & TARUNA </a></li>
+              <li><a href=""> KATEKISASI </a></li>
+              <li><a href=""> PEMUDA </a></li>
+              <li><a href=""> KAUM BAPAK </a></li>
+              <li><a href=""> KAUM PEREMPUAN </a></li>
+              <li><a href=""> LANSIA </a></li>
+              <li><a href=""> PERSEKUTUAN DOA </a></li>
+              <li><a href=""> LITURGI & MUSIK GEREJAWI </a></li>
+              <li><a href=""> KESEKRETARIATAN & MULTIMEDIA </a></li>
+              <li><a href=""> PERBENDAHARAAN & KERUMAH -TANGGAAN </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--{mobile::menu-->
+      <div id="mobMenu" class="mobile-menu">
+        <ul class="yl_mobile-menulist">
+          <li>
+            <a href="#" class="yl_mobilelink">PROFIL</a>
+            <p class="fade_small">YARDEN LABAT</p>
+            <div class="moblink"><a href="">SEJARAH</a></div>
+            <div class="moblink"><a href="">VISI MISI</a></div>
 
-            <div id="yl-navlink3" class="yl-navlink">
-              <div class="yl-dropdown">
-                <span class="yl-dropdown-title">PELAYANAN</span>
-                <div
-                  class="yl-dropdown-content"
-                  style="
-                    background-image: url(/public/favicon/gmit-drop.png);
-                    object-fit: cover;
-                    background-size: cover;
-                  "
-                >
-                  <p class="fade_small">SAKRAMEN</p>
-                  <div class="drop-link"><a href="">PERJAMUAN KUDUS</a></div>
-                  <div class="drop-link"><a href="">BAPTISAN</a></div>
+            <p class="fade_small">ARSIP</p>
+            <div class="moblink"><a href="">PENDETA GEREJA</a></div>
+          </li>
 
-                  <p class="fade_small">UPP</p>
-                  <div class="drop-link"><a href="">KATEGORIAL</a></div>
-                </div>
-              </div>
-            </div>
-            <div id="yl-navlink4" class="yl-navlink">
-              <div class="yl-dropdown">
-                <span class="yl-dropdown-title">UNDUHAN</span>
-                <div
-                  class="yl-dropdown-content"
-                  style="
-                    background-image: url(/public/favicon/gmit-drop.png);
-                    object-fit: cover;
-                    background-size: cover;
-                  "
-                >
-                  <p class="fade_small">FORMULIR</p>
-                  <div class="drop-link"><a href="">FORMULIR 1</a></div>
-                  <div class="drop-link"><a href="">FORMULIR 2</a></div>
-                  <div class="drop-link"><a href="">FORMULIR 32</a></div>
-                </div>
-              </div>
-            </div>
+          <li class="yl_mob-btn">
+            <a
+              href="https://nusatimoretelematika.gitbook.io/docs/"
+              class="button_primary"
+              style="margin-left: 1rem"
+              target="_blank"
+              >Open Docs
+              <span
+                ><i
+                  class="fa fa-arrow-right"
+                  style="transform: rotate(-45deg)"
+                ></i></span
+            ></a>
           </li>
         </ul>
       </div>
-      <!--{hamburger}-->
-      <div class="three">
-        <div class="hamburger" id="hamburger-1">
-          <span id="line1" class="line"></span>
-
-          <span id="line2" class="line"></span>
-        </div>
-      </div>
-      <!--{hamburger}-->
-    </nav>
-    <!--{mobile::menu-->
-    <div id="mobMenu" class="mobile-menu">
-      <ul class="ntt-mobile-menulist">
-        <li>
-          <a href="#" class="ntt-mobilelink">PROFIL</a>
-          <p class="fade_small">YARDEN LABAT</p>
-          <div class="moblink"><a href="">SEJARAH</a></div>
-          <div class="moblink"><a href="">VISI MISI</a></div>
-
-          <p class="fade_small">ARSIP</p>
-          <div class="moblink"><a href="">PENDETA GEREJA</a></div>
-        </li>
-        <hr />
-        <li>
-          <a href="#" class="ntt-mobilelink">PENATALAYANAN</a>
-          <p class="fade_small">MAJELIS</p>
-          <div class="drop-link"><a href="">MAJELIS JEMAAT</a></div>
-
-          <p class="fade_small">UPP</p>
-          <div class="moblink"><a href="">KATEGORIAL</a></div>
-          <div class="moblink"><a href="">HARGAKU</a></div>
-        </li>
-        <hr />
-
-        <li>
-          <a href="#" class="ntt-mobilelink">PELAYANAN</a>
-          <p class="fade_small">SAKRAMEN</p>
-          <div class="moblink"><a href="">PERJAMUAN KUDUS</a></div>
-          <div class="moblink"><a href="">BAPTISAN</a></div>
-
-          <p class="fade_small">UPP</p>
-          <div class="moblink"><a href="">KATEGORIAL</a></div>
-        </li>
-        <hr />
-
-        <li>
-          <a href="#" class="ntt-mobilelink">UNDUHAN</a>
-          <p class="fade_small">FORMULIR</p>
-          <div class="moblink"><a href="">FORMULIR 1</a></div>
-          <div class="moblink"><a href="">FORMULIR 2</a></div>
-          <div class="moblink"><a href="">FORMULIR 32</a></div>
-        </li>
-        <hr />
-
-        <li>
-          <a href="#" class="ntt-mobilelink pointer" id="nav-docm-btn"
-            >BLOG &amp; ARTIKEL</a
-          >
-        </li>
-      </ul>
+      <!--{docs::menu}-->
     </div>
-    <!--{docs::menu}-->
 
     <header>
       <div class="yl_header-content">
         <img src="./public/hero-slide/header.jpg" alt="x" />
         <div class="gradient"></div>
         <div class="yl_header-title">
-          <div class="yl_layout">
-            <div class="yl_box">
-              <div class="yl_wrap">
+          <div class="yl_2layout">
+            <div class="yl_2box">
+              <div class="yl_2wrap">
                 <div class="yl_header-head">
                   <h5>kebaktian pertama</h5>
                   <h6>pukul 06:00 - 08:00 (WITA)</h6>
                 </div>
               </div>
             </div>
-            <div class="yl_box">
-              <div class="yl_wrap">
+            <div class="yl_2box">
+              <div class="yl_2wrap">
                 <div class="yl_header-head">
                   <h5>kebaktian kedua</h5>
                   <h6>pukul 08:00 - 10:00 (WITA)</h6>
@@ -257,12 +236,38 @@
                 neque.
               </p>
             </div>
-            <div class="yl_about-content">
-              <div class="yl_church-head">
-                <img src="" alt="foto pendeta" />
-              </div>
-              <div class="yl_church-head">
-                <img src="" alt="foto pendeta" />
+            <div class="yl_about-bottom">
+              <div class="yl_2layout">
+                <div class="yl_2box">
+                  <div class="yl_2wrap">
+                    <div class="yl_about-bottom-content">
+                      <div class="yl_church-head">
+                        <img
+                          src="./public/pendeta/pendeta1.webp"
+                          loading="lazy"
+                          alt="foto pendeta1"
+                          height="280px"
+                          width="180px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="yl_2box">
+                  <div class="yl_2wrap">
+                    <div class="yl_about-bottom-content">
+                      <div class="yl_church-head">
+                        <img
+                          src="./public/pendeta/pendeta2.webp"
+                          alt="foto pendeta2"
+                          loading="lazy"
+                          height="280px"
+                          width="180px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -272,7 +277,7 @@
         <section id="news">
           <div class="yl_blog">
             <div class="yl_blog-top">
-              <h1 class="yl_sect-title">Berita Kegiatan</h1>
+              <h1 class="yl_sect-title">Berita &amp; Aktivitas</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Nesciunt voluptatum vero beatae repellat suscipit! Minima qui
@@ -285,16 +290,16 @@
 
             <div class="yl_blog-bottom">
               <div class="yl_bottom-head">
-                <div class="yl_layout">
-                  <div class="yl_box">
-                    <div class="yl_wrap">
+                <div class="yl_2layout">
+                  <div class="yl_2box">
+                    <div class="yl_2wrap">
                       <div class="yl_bottom-head-l-content">
                         <h5>Berita Terbaru</h5>
                       </div>
                     </div>
                   </div>
-                  <div class="yl_box">
-                    <div class="yl_wrap">
+                  <div class="yl_2box">
+                    <div class="yl_2wrap">
                       <div class="yl_bottom-head-r-content">
                         <a href="" class="card-btn-head">
                           Berita Lainnya
@@ -308,94 +313,86 @@
                 <div class="yl_3layout">
                   <div class="yl_3box">
                     <div class="yl_3wrap">
-                      <div class="yl_card">
-                        <div class="card-header">
-                          <img src="./public/blog/IMG_0043.JPG" alt="" />
-                          <div class="yl_gradient"></div>
-                        </div>
-                        <div class="card-body">
-                          <div class="card-body-desc">
-                            <div class="card-body-title">
-                              Satu Tahap Lagi Akan Dilalui
-                            </div>
-                            <div class="card-body-subtitle">
-                              Seng pertama pengatapan rumah pastori 2 GMIT
-                              Yarden LabatJemaat GMIT Yarden Labat patut
-                              mengucap syukur atas kebaikan Tuhan Yesus...
-                            </div>
-                          </div>
-                          <div class="line-devid-card"></div>
-
-                          <div class="card-body-date">13 Februari 2024</div>
-                          <div class="line-devid-card"></div>
-
-                          <a href="" class="card-btn">
-                            Baca Selengkapnya
-                            <span> <i class="fa fa-arrow-right"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="yl_3box">
-                    <div class="yl_3wrap">
-                      <div class="yl_card">
-                        <div class="card-header">
-                          <img src="./public/blog/_MG_7599.JPG" alt="" />
-                          <div class="yl_gradient"></div>
-                        </div>
-                        <div class="card-body">
-                          <div class="card-body-desc">
-                            <div class="card-body-title">
-                              Yarden Laksanakan Nikah Masal
-                            </div>
-                            <div class="card-body-subtitle">
-                              BP Kategorial Fungsional saat menghadap ke
-                              JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
-                              Yarden Labat, Klasis Kota Kupang, memberi diri
-                              untuk melayani...
-                            </div>
-                          </div>
-                          <div class="line-devid-card"></div>
-
-                          <div class="card-body-date">21 Oktober 2024</div>
-                          <div class="line-devid-card"></div>
-
-                          <a href="" class="card-btn">
-                            Baca Selengkapnya
-                            <span> <i class="fa fa-arrow-right"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="yl_3box">
-                    <div class="yl_3wrap">
-                      <div class="yl_card">
-                        <div class="card-header">
+                      <div class="yl_card border_box">
+                        <div class="yl_card-header">
                           <img
-                            src="./public/blog/IMG-20240317-WA0035.jpg"
+                            src="./public/blog/IMG_0043.JPG"
+                            loading="lazy"
                             alt=""
                           />
                           <div class="yl_gradient"></div>
                         </div>
-
-                        <div class="card-body">
-                          <div class="card-body-desc">
-                            <div class="card-body-title">
-                              105 Orang Memberi Diri
-                            </div>
-                            <div class="card-body-subtitle">
-                              BP Kategorial Fungsional saat menghadap ke
-                              JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
-                              Yarden Labat, Klasis Kota Kupang, memberi diri
-                              untuk melayani...
-                            </div>
-                          </div>
-                          <div class="line-devid-card"></div>
-                          <div class="card-body-date">21 Oktober 2024</div>
-                          <div class="line-devid-card"></div>
-                          <a href="" class="card-btn">
+                        <div class="yl_card-body">
+                          <h2>Satu Tahap Lagi Akan Dilalui</h2>
+                          <p>
+                            Seng pertama pengatapan rumah pastori 2 GMIT Yarden
+                            LabatJemaat GMIT Yarden Labat patut mengucap syukur
+                            atas kebaikan Tuhan Yesus...
+                          </p>
+                        </div>
+                        <div class="yl_card-footer">
+                          <p>13 Februari 2024</p>
+                          <a href="" class="yl_card-btn">
+                            Baca Selengkapnya
+                            <span> <i class="fa fa-arrow-right"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yl_3box">
+                    <div class="yl_3wrap">
+                      <div class="yl_card border_box">
+                        <div class="yl_card-header">
+                          <img
+                            src="./public/blog/_MG_7599.JPG"
+                            loading="lazy"
+                            alt=""
+                          />
+                          <div class="yl_gradient"></div>
+                        </div>
+                        <div class="yl_card-body">
+                          <h2>Yarden Laksanakan Nikah Masal</h2>
+                          <p>
+                            BP Kategorial Fungsional saat menghadap ke
+                            JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
+                            Yarden Labat, Klasis Kota Kupang, memberi diri untuk
+                            melayani...
+                          </p>
+                        </div>
+                        <div class="yl_card-footer">
+                          <p>21 Oktober 2024</p>
+                          <a href="" class="yl_card-btn">
+                            Baca Selengkapnya
+                            <span> <i class="fa fa-arrow-right"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yl_3box">
+                    <div class="yl_3wrap">
+                      <div class="yl_card border_box">
+                        <div class="yl_card-header">
+                          <img
+                            src="./public/blog/IMG-20240317-WA0035.jpg"
+                            loading="lazy"
+                            alt=""
+                          />
+                          <div class="yl_gradient"></div>
+                        </div>
+                        <div class="yl_card-body">
+                          <h2>105 Orang Memberi Diri</h2>
+                          <p>
+                            BP Kategorial Fungsional saat menghadap ke
+                            JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
+                            Yarden Labat, Klasis Kota Kupang, memberi diri untuk
+                            melayani...
+                          </p>
+                        </div>
+                        <div class="yl_card-footer">
+                          <p>21 Oktober 2024</p>
+                          <a href="" class="yl_card-btn">
                             Baca Selengkapnya
                             <span> <i class="fa fa-arrow-right"></i></span>
                           </a>
@@ -411,89 +408,199 @@
 
         <!--akhir berita kegiatan -->
 
-        <section>
-          <div class="embed_layout">
-            <div class="embed_box">
-              <div class="embed_wrap">
-                <img
-                  loading="lazy"
-                  src="./public/img/sixteen-miles-out-bIwFwR2fSsA-unsplash.jpg"
-                  alt=""
-                />
+        <!--awal slider -->
+
+        <section id="5sola">
+          <div class="yl_5sola-slide">
+            <div class="yl_5sola-top">
+              <div class="yl_5sola-top-title">
+                <h1>5 Sola Protestan</h1>
+              </div>
+              <div class="yl_5sola-top-btn">
+                <i id="left" class="fa fa-arrow-left"></i>
+                <div class="yl_5sola-devide-btn"></div>
+
+                <i id="right" class="fa fa-arrow-right"></i>
               </div>
             </div>
-            <div class="embed_box">
-              <div class="embed_wrap">
-                <div class="yl_content">
-                  <h4>TRI PANGGILAN GEREJA</h4>
-                  <p>
-                    Sebagai umat Kristus, panggilan dan tugas gereja adalah
-                    mendirikan pilar untuk menyebarkan tanda-tanda Kerajaan
-                    Allah. Gereja harus mampu mengusahakan kebenaran, keadilan,
-                    kasih, perdamaian, dan keutuhan.
-                  </p>
-                  <h5>Koinonia (Bersekutu)</h5>
-                  <p>
-                    Allah memerintahkan umat dan jemaat-Nya untuk tidak hanya
-                    hidup seorang diri. Meraka harus senantiasa untuk selalu
-                    terhubung, tidak hanya dengan Tuhan, dan JemaatNya, namun
-                    juga dengan sesama manusia beriman. Umat dan JemaatNyaan
-                    ditugaskan untuk tekun dalam pengajaran dan persekutuan demi
-                    membangun Kerajaan Allah.
-                  </p>
-                  <h5>Marturia (Bersaksi)</h5>
-                  <p>
-                    Kehidupan kita adalah surat terbuka, yang dapat dibaca dan
-                    dilihat oleh dunia. Seperti kesaksian para rasul di hari
-                    Pentakosta, yang membuat orang menjadi percaya dan tergerak
-                    untuk menerima Yesus sebagai juruselamat mereka. Demikianlah
-                    kehidupan kita selayaknya memancarkan kesaksian tentang
-                    kasih dan kuasa Tuhan Yesus kepada dunia dimana kita berada.
-                  </p>
-                  <h5>Diakonia (Melayani)</h5>
-                  <p>
-                    Allah memerintahkan umat dan Jemaat-Nya untuk bersedia dan
-                    terus melayani dengan tulus agar menjadi berkat untuk satu
-                    sama lain. Dalam Kis. 2:45 dituliskan, "selalu ada yang
-                    menjual miliknya, dan membagi-bagikannya sesuai keperluan
-                    masing-masing.". Artinya, bahwa Gereja selalu mengutamakan
-                    pelayanan bagi umat-umatnya, terutama untuk mereka yang
-                    membutuhkan.
-                  </p>
-                </div>
+            <div class="yl_5sola-bottom">
+              <div class="yl_5sola-wrapper">
+                <ul class="yl_5sola-carousel">
+                  <li class="yl_5sola-card">
+                    <div class="card_5sola">
+                      <div class="content_5sola">
+                        <div class="front_5sola">
+                          <img
+                            src="./public/slide/5solla-1.png"
+                            alt=""
+                            height="270"
+                            width="270"
+                            draggable="false"
+                          />
+                        </div>
+                        <div class="back_5sola">
+                          <h6>Sola Fide</h6>
+                          <p>"Hanya iman"</p>
+                          <p>
+                            “Sebab seperti tubuh tanpa roh adalah mati, demikian
+                            jugalah iman tanpa perbuatan-perbuatan adalah mati.”
+                            <br />
+                            - Yakobus 2:26
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="yl_5sola-card">
+                    <div class="card_5sola">
+                      <div class="content_5sola">
+                        <div class="front_5sola">
+                          <img
+                            src="./public/slide/5solla-2.png"
+                            alt=""
+                            height="270"
+                            width="270"
+                            draggable="false"
+                          />
+                        </div>
+                        <div class="back_5sola">
+                          <h6>Solus Christus</h6>
+                          <p>"Hanya Kristus"</p>
+                          <p>
+                            “Dia yang menjadi pengantara antara Allah dan
+                            manusia, yaitu manusia Kristus Yesus, yang telah
+                            menyerahkan diri-Nya sebagai tebusan bagi semua
+                            manusia.”<br />
+                            - 1 Tim 2:5-6
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="yl_5sola-card">
+                    <div class="card_5sola">
+                      <div class="content_5sola">
+                        <div class="front_5sola">
+                          <img
+                            src="./public/slide/5solla-3.png"
+                            alt=""
+                            height="270"
+                            width="270"
+                            draggable="false"
+                          />
+                        </div>
+                        <div class="back_5sola">
+                          <h6>Sola Deo Gloria</h6>
+                          <p>"Kemuliaan bagi Tuhan saja"</p>
+                          <p>
+                            “Sebab segala sesuatu adalah dari Dia, dan oleh Dia,
+                            dan kepada Dia: Bagi Dialah kemuliaan sampai
+                            selama-lamanya!”<br />
+                            - Roma 11:36
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="yl_5sola-card">
+                    <div class="card_5sola">
+                      <div class="content_5sola">
+                        <div class="front_5sola">
+                          <img
+                            src="./public/slide/5solla-4.png"
+                            alt=""
+                            height="270"
+                            width="270"
+                            draggable="false"
+                          />
+                        </div>
+                        <div class="back_5sola">
+                          <h6>Sola Gratia</h6>
+                          <p>"Hanya kasih karunia"</p>
+                          <p>
+                            Sebab karena kasih karunia kamu diselamatkan oleh
+                            iman; itu bukan hasil usahamu, tetapi pemberian
+                            Allah, itu bukan hasil pekerjaanmu: jangan ada orang
+                            yang memegahkan diri.”<br />
+                            - Efesus 2:8-9
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="yl_5sola-card">
+                    <div class="card_5sola">
+                      <div class="content_5sola">
+                        <div class="front_5sola">
+                          <img
+                            src="./public/slide/5solla-5.png"
+                            alt=""
+                            height="270"
+                            width="270"
+                            draggable="false"
+                          />
+                        </div>
+                        <div class="back_5sola">
+                          <h6>Sola Scriptura</h6>
+                          <p>"Hanya Kitab Suci"</p>
+                          <p>
+                            “Segala tulisan yang diilhamkan Allah memang
+                            bermanfaat untuk mengajar, untuk menyatakan
+                            kesalahan, untuk memperbaiki kelakuan dan untuk
+                            mendidik orang dalam kebenaran. Dengan demikian
+                            tiap-tiap manusia kepunyaan Allah diperlengkapi
+                            untuk setiap perbuatan baik.”<br />
+                            - 2 Tim 3:16-17
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
 
-        <!--awal multimedia -->
+        <!--akhir slider -->
+
         <section>
           <div class="yl_media">
-            <div class="yl_media-content">
-              <div class="yl_media-top">
-                <h1 class="yl_sect-title">Multimedia</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt voluptatum vero beatae repellat suscipit! Minima qui
-                  eaque aut enim et dicta dolorum ipsa cupiditate, nesciunt,
-                  corrupti maiores nihil! Eos maiores esse asperiores
-                  perspiciatis nisi cum sequi delectus reiciendis tempore itaque
-                  neque culpa nulla nesciunt animi nam, rem molestiae quas
-                  sapiente!
-                </p>
+            <div class="yl_2layout">
+              <div class="yl_2box">
+                <div class="yl_2wrap">
+                  <div class="yl_media-top border_box">
+                    <div class="yl_media-top-content">
+                      <h1 class="yl_sect-title">Multimedia</h1>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nesciunt voluptatum vero beatae repellat suscipit!
+                        Minima qui eaque aut enim et dicta dolorum ipsa
+                        cupiditate, nesciunt, corrupti maiores nihil! Eos
+                        maiores esse asperiores perspiciatis nisi cum sequi
+                        delectus reiciendis tempore itaque neque culpa nulla
+                        nesciunt animi nam, rem molestiae quas sapiente!
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="yl_media-bottom">
-                <div class="yl_media-yt-box">
-                  <iframe
-                    width="100%"
-                    height="390"
-                    src="https://www.youtube.com/embed/iHlbqRX8UDo?si=cZiaDP44maO25oji"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+              <div class="yl_2box">
+                <div class="yl_2wrap">
+                  <div class="yl_media-bottom">
+                    <iframe
+                      width="100%"
+                      height="390"
+                      class="border_box"
+                      src="https://www.youtube.com/embed/iHlbqRX8UDo?si=cZiaDP44maO25oji"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
@@ -502,273 +609,10 @@
 
         <!--akhir multimedia -->
 
-        <section id="news">
-          <div class="yl_blog">
-            <div class="yl_blog-top">
-              <h1 class="yl_sect-title">Artikel</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt voluptatum vero beatae repellat suscipit! Minima qui
-                eaque aut enim et dicta dolorum ipsa cupiditate, nesciunt,
-                corrupti maiores nihil! Eos maiores esse asperiores perspiciatis
-                nisi cum sequi delectus reiciendis tempore itaque neque culpa
-                nulla nesciunt animi nam, rem molestiae quas sapiente!
-              </p>
-            </div>
-
-            <div class="yl_blog-bottom">
-              <div class="yl_bottom-head">
-                <div class="yl_layout">
-                  <div class="yl_box">
-                    <div class="yl_wrap">
-                      <div class="yl_bottom-head-l-content">
-                        <h5>Artikel Terbaru</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="yl_box">
-                    <div class="yl_wrap">
-                      <div class="yl_bottom-head-r-content">
-                        <a href="article.html" class="card-btn-head">
-                          Artikel Selengkapnya
-                          <i class="fa fa-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="yl_3layout">
-                  <div class="yl_3box">
-                    <div class="yl_3wrap">
-                      <div class="yl_card">
-                        <div class="card-header">
-                          <img src="./public/blog/IMG_0043.JPG" alt="" />
-                          <div class="yl_gradient"></div>
-                        </div>
-                        <div class="card-body">
-                          <div class="card-body-desc">
-                            <div class="card-body-title">
-                              Satu Tahap Lagi Akan Dilalui
-                            </div>
-                            <div class="card-body-subtitle">
-                              Seng pertama pengatapan rumah pastori 2 GMIT
-                              Yarden LabatJemaat GMIT Yarden Labat patut
-                              mengucap syukur atas kebaikan Tuhan Yesus...
-                            </div>
-                          </div>
-                          <div class="line-devid-card"></div>
-
-                          <div class="card-body-date">13 Februari 2024</div>
-                          <div class="line-devid-card"></div>
-
-                          <a href="" class="card-btn">
-                            Baca Selengkapnya
-                            <span> <i class="fa fa-arrow-right"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="yl_3box">
-                    <div class="yl_3wrap">
-                      <div class="yl_card">
-                        <div class="card-header">
-                          <img src="./public/blog/_MG_7599.JPG" alt="" />
-                          <div class="yl_gradient"></div>
-                        </div>
-                        <div class="card-body">
-                          <div class="card-body-desc">
-                            <div class="card-body-title">
-                              Yarden Laksanakan Nikah Masal
-                            </div>
-                            <div class="card-body-subtitle">
-                              BP Kategorial Fungsional saat menghadap ke
-                              JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
-                              Yarden Labat, Klasis Kota Kupang, memberi diri
-                              untuk melayani...
-                            </div>
-                          </div>
-                          <div class="line-devid-card"></div>
-
-                          <div class="card-body-date">21 Oktober 2024</div>
-                          <div class="line-devid-card"></div>
-
-                          <a href="" class="card-btn">
-                            Baca Selengkapnya
-                            <span> <i class="fa fa-arrow-right"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="yl_3box">
-                    <div class="yl_3wrap">
-                      <div class="yl_card">
-                        <div class="card-header">
-                          <img
-                            src="./public/blog/IMG-20240317-WA0035.jpg"
-                            alt=""
-                          />
-                          <div class="yl_gradient"></div>
-                        </div>
-
-                        <div class="card-body">
-                          <div class="card-body-desc">
-                            <div class="card-body-title">
-                              105 Orang Memberi Diri
-                            </div>
-                            <div class="card-body-subtitle">
-                              BP Kategorial Fungsional saat menghadap ke
-                              JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
-                              Yarden Labat, Klasis Kota Kupang, memberi diri
-                              untuk melayani...
-                            </div>
-                          </div>
-                          <div class="line-devid-card"></div>
-                          <div class="card-body-date">21 Oktober 2024</div>
-                          <div class="line-devid-card"></div>
-                          <a href="" class="card-btn">
-                            Baca Selengkapnya
-                            <span> <i class="fa fa-arrow-right"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <!--awal multimedia -->
       </div>
     </main>
     <footer>
-      <div class="yl_footer-boxes">
-        <div class="yl_footer-gridlayout">
-          <div class="yl_footer-gridbox">
-            <div class="yl_footer-gridwrap">
-              <div class="yl_footer-content">
-                <div class="yl_footer-gridlayout">
-                  <div class="yl_footer-gridbox">
-                    <div class="yl_footer-gridwrap">
-                      <div class="yl_footer-content">
-                        <div class="yl_footer-ls">
-                          <a href="">
-                            <div class="yl_footer-logo">
-                              <img
-                                loading="lazy"
-                                src="./public/favicon/gmit-black.jpg"
-                                height="85px"
-                                alt=""
-                              />
-                            </div>
-                            <h6>
-                              Gereja Masehi Injili di Timor <br />
-                              Yarden Labat
-                            </h6>
-                            <p>Klasis Kota Kupang</p>
-                          </a>
-                          <div class="yl_footer-social">
-                            <a href="">
-                              <i class="fa-brands fa-x-twitter"></i
-                            ></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                            <a href=""
-                              ><i class="fa-brands fa-instagram"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="yl_footer-gridbox">
-                    <div class="yl_footer-gridwrap">
-                      <div class="yl_footer-content">
-                        <h6 class="yl_footer-content-title">YARDEN LABAT-</h6>
-                        <p class="yl_footer-content-subtitle">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Perspiciatis blanditiis eos magni cumque rem
-                          saepe voluptates enim voluptate quod quisquam!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="yl_footer-gridbox">
-            <div class="yl_footer-gridwrap">
-              <div class="yl_footer-content">
-                <div class="yl_footer-gridlayout">
-                  <div class="yl_footer-gridbox">
-                    <div class="yl_footer-gridwrap">
-                      <div class="yl_footer-content">
-                        <div class="box-box">
-                          <div class="box-one">
-                            <h6>PROFIL</h6>
-                            <div class="yl_footer-qlink">
-                              <p class="fade_small">YARDEN LABAT</p>
-                              <div class="yl_footer-qlink">
-                                <a href="">SEJARAH</a>
-                              </div>
-                              <div class="yl_footer-qlink">
-                                <a href="">VISI MISI</a>
-                              </div>
-
-                              <p class="fade_small">ARSIP</p>
-                              <div class="yl_footer-qlink">
-                                <a href="">PENDETA GEREJA</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="box-two">
-                            <h6>PELAYANAN</h6>
-                            <p class="fade_small">SAKRAMEN</p>
-                            <div class="drop-link">
-                              <a href="">PERJAMUAN KUDUS</a>
-                            </div>
-                            <div class="drop-link"><a href="">BAPTISAN</a></div>
-
-                            <p class="fade_small">UPP</p>
-                            <div class="drop-link">
-                              <a href="">KATEGORIAL</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="yl_footer-gridbox">
-                    <div class="yl_footer-gridwrap">
-                      <div class="yl_footer-content">
-                        <h6>Hubungi Kami</h6>
-                        <div class="yl_footer-email">
-                          <a href="">yardenlabat@gmail.com</a>
-                        </div>
-
-                        <div class="yl_gmaps">
-                          <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900.2498782135514!2d123.59522370796513!3d-10.187329670374863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c569b730adf117d%3A0xd999869fbcc87fb4!2sGMIT%20Jemaat%20Yarden%20Labat!5e0!3m2!1sen!2sid!4v1734616222221!5m2!1sen!2sid"
-                            width="250"
-                            height="150"
-                            style="border: 0"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                          ></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="yl_footer-copyright">
         <p>© 2024 - Yarden Labat. All Rights Reserved</p>
       </div>
@@ -937,7 +781,7 @@
     ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./src/js/scripts.js"></script>
+    <!-- <script src="./src/js/scripts.js"></script> -->
     <script>
       // swipper blog
       new Swiper(".card-wrapper", {
@@ -973,6 +817,21 @@
     </script>
 
     <script>
+      //==>Menu show<==//
+      const x = document.getElementById("navbtn");
+      const s = document.getElementById("megamenu");
+      x.addEventListener("click", function () {
+        s.classList.toggle("is-open");
+      });
+
+      //==>Menu close<==//
+      // window.addEventListener("click", function (e) {
+      //   if (e.target != s) {
+      //     s.classList.remove("is-open");
+      //   }
+      // });
+    </script>
+    <script>
       //==>Hamburger Menu show<==//
       const hamBurger = document.querySelector(".hamburger");
       const hamBurger1 = document.querySelector("#hamburger-1");
@@ -992,6 +851,90 @@
           hamBurger.classList.add("hamburger");
           hamBurger1.classList.remove("is-active");
         }
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".yl_5sola-carousel");
+        const arrowBtns = document.querySelectorAll(".yl_5sola-slide i");
+        const wrapper = document.querySelector(".yl_5sola-wrapper");
+
+        const firstCard = carousel.querySelector(".yl_5sola-card");
+        const firstCardWidth = firstCard.offsetWidth;
+
+        let isDragging = false,
+          startX,
+          startScrollLeft,
+          timeoutId;
+
+        const dragStart = (e) => {
+          isDragging = true;
+          carousel.classList.add("dragging");
+          startX = e.pageX;
+          startScrollLeft = carousel.scrollLeft;
+        };
+
+        const dragging = (e) => {
+          if (!isDragging) return;
+
+          // Calculate the new scroll position
+          const newScrollLeft = startScrollLeft - (e.pageX - startX);
+
+          // Check if the new scroll position exceeds
+          // the carousel boundaries
+          if (
+            newScrollLeft <= 0 ||
+            newScrollLeft >= carousel.scrollWidth - carousel.offsetWidth
+          ) {
+            // If so, prevent further dragging
+            isDragging = false;
+            return;
+          }
+
+          // Otherwise, update the scroll position of the carousel
+          carousel.scrollLeft = newScrollLeft;
+        };
+
+        const dragStop = () => {
+          isDragging = false;
+          carousel.classList.remove("dragging");
+        };
+
+        const autoPlay = () => {
+          // Return if window is smaller than 800
+          if (window.innerWidth < 800) return;
+
+          // Calculate the total width of all cards
+          const totalCardWidth = carousel.scrollWidth;
+
+          // Calculate the maximum scroll position
+          const maxScrollLeft = totalCardWidth - carousel.offsetWidth;
+
+          // If the carousel is at the end, stop autoplay
+          if (carousel.scrollLeft >= maxScrollLeft) return;
+
+          // Autoplay the carousel after every 2500ms
+          timeoutId = setTimeout(
+            () => (carousel.scrollLeft += firstCardWidth),
+            2500
+          );
+        };
+
+        carousel.addEventListener("mousedown", dragStart);
+        carousel.addEventListener("mousemove", dragging);
+        document.addEventListener("mouseup", dragStop);
+        wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+        wrapper.addEventListener("mouseleave", autoPlay);
+
+        // Add event listeners for the arrow buttons to
+        // scroll the carousel left and right
+        arrowBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            carousel.scrollLeft +=
+              btn.id === "left" ? -firstCardWidth : firstCardWidth;
+          });
+        });
       });
     </script>
   </body>
