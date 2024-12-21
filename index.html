@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GMIT-Yarden Labat</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/grid.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./public/favicon/gmit-head.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- font-family -->
+    <style
+      data-href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap"
+    >
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v22/pxiEyp8kv8JHgFVrFJM.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLEj6V1g.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLCz7V1g.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C,
+          U+038E-03A1, U+03A3-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309,
+          U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+          U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+          U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C,
+          U+038E-03A1, U+03A3-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309,
+          U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+          U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+          U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C,
+          U+038E-03A1, U+03A3-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309,
+          U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+          U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+          U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C,
+          U+038E-03A1, U+03A3-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309,
+          U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+          U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+          U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C,
+          U+038E-03A1, U+03A3-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309,
+          U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+          U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+          U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v22/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2)
+          format("woff2");
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+          U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v22/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+          U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+          U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+          U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+          U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+          U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+    <!-- font-family -->
+  </head>
+  <body>
+    <!--{Awal Header}-->
+
+    <header id="yl-header">
+      <div class="yl_header">
+        <div class="yl_header-intro">
+          <h5 class="glowIn">
+            Pada mulanya adalah Firman; Firman itu bersama-sama dengan Allah dan
+            Firman itu adalah Allah.
+            <br />Yohanes 1:1
+          </h5>
+        </div>
+        <div class="yl_2layout">
+          <div class="yl_2box">
+            <div class="yl_2wrap">
+              <div class="yl_header-head">
+                <h5>kebaktian pertama</h5>
+                <h6>pukul 06:00 - 08:00 (WITA)</h6>
+              </div>
+            </div>
+          </div>
+          <div class="yl_2box">
+            <div class="yl_2wrap">
+              <div class="yl_header-head">
+                <h5>kebaktian kedua</h5>
+                <h6>pukul 08:00 - 10:00 (WITA)</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--{Akhir Header}-->
+
+    <!--{Awal Nav}-->
+
+    <div id="yl_nav" class="yl_nav-custom border_box">
+      <div class="yl_navlayout">
+        <div class="yl_nav-brand">
+          <a class="yl_nav-logo" href="#">
+            <img
+              src="./public/favicon/gmit-dark 300x269.png"
+              loading="lazy"
+              height="50px"
+              alt=""
+              id="yl-logo"
+              class="yl_nav-brand-logo"
+            />
+            <span class="yl_nav-brand-text" id="yl-logo-txt">
+              Gereja Masehi Injili di Timor <br />
+              Yarden Labat
+            </span>
+          </a>
+        </div>
+
+        <nav class="yl_nav-menu">
+          <ul class="yl_nav-menu-item">
+            <li class="yl_navmenulink" style="justify-self: center">
+              <div id="navbtn">TENTANG</div>
+              <a href="">PENATALAYANAN</a>
+              <a href="">PELAYANAN</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="yl_nav_right">
+          <a
+            href="https://nusatimoretelematika.gitbook.io/docs/"
+            class="button_primary"
+            style="width: 150px; justify-self: end"
+            target="_blank"
+            >Open Docs
+            <span
+              ><i
+                class="fa fa-arrow-right"
+                style="transform: rotate(-45deg)"
+              ></i></span
+          ></a>
+
+          <div class="three" style="justify-self: end">
+            <div class="hamburger" id="hamburger-1">
+              <span id="line1" class="line"></span>
+
+              <span id="line2" class="line"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- megamenu -->
+      <div id="megamenu" class="yl_nav-megamenu">
+        <div class="yl_nav-megamenu-content">
+          <div class="box_1">
+            <p>PROFIL</p>
+            <ul>
+              <li>
+                <a href=""> SEJARAH </a>
+              </li>
+              <li><a href=""> VISI MISI </a></li>
+              <li><a href=""> STRUKTUR ORGANISASI </a></li>
+            </ul>
+          </div>
+          <div class="box_2">
+            <p>MJH</p>
+            <ul>
+              <li>
+                <a href=""> MAJELIS JEMAAT HARIAN </a>
+              </li>
+            </ul>
+          </div>
+          <div class="box_3">
+            <p>MJH</p>
+            <ul>
+              <li>
+                <a href=""> BADAN PEMBANTU PELAYANAN (BPP) </a>
+              </li>
+              <li>
+                <a href=""> BPPPPJ (BP4J) </a>
+              </li>
+
+              <li><a href=""> BPPPJ (BP3J) </a></li>
+              <li><a href=""> BADAN DIAKONAT JEMAAT (BDJ) </a></li>
+              <li><a href=""> BADAN PEMBANGUNAN FISIK (BPF) </a></li>
+              <li><a href=""> BADAN HARGAKU </a></li>
+            </ul>
+          </div>
+          <div class="box_4">
+            <p>UNIT PEMBANTU PELAYANAN (UPP)</p>
+            <ul>
+              <li>
+                <a href=""> TERITORI </a>
+              </li>
+
+              <li><a href=""> PAR & TARUNA </a></li>
+              <li><a href=""> KATEKISASI </a></li>
+              <li><a href=""> PEMUDA </a></li>
+              <li><a href=""> KAUM BAPAK </a></li>
+              <li><a href=""> KAUM PEREMPUAN </a></li>
+              <li><a href=""> LANSIA </a></li>
+              <li><a href=""> PERSEKUTUAN DOA </a></li>
+              <li><a href=""> LITURGI & MUSIK GEREJAWI </a></li>
+              <li><a href=""> KESEKRETARIATAN & MULTIMEDIA </a></li>
+              <li><a href=""> PERBENDAHARAAN & KERUMAH -TANGGAAN </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--{mobile::menu-->
+      <div id="mobMenu" class="mobile-menu">
+        <ul class="yl_mobile-menulist">
+          <li>
+            <a href="#" class="yl_mobilelink">PROFIL</a>
+            <p class="fade_small">YARDEN LABAT</p>
+            <div class="moblink"><a href="">SEJARAH</a></div>
+            <div class="moblink"><a href="">VISI MISI</a></div>
+
+            <p class="fade_small">ARSIP</p>
+            <div class="moblink"><a href="">PENDETA GEREJA</a></div>
+          </li>
+
+          <li class="yl_mob-btn">
+            <a
+              href="https://nusatimoretelematika.gitbook.io/docs/"
+              class="button_primary"
+              style="margin-left: 1rem"
+              target="_blank"
+              >Open Docs
+              <span
+                ><i
+                  class="fa fa-arrow-right"
+                  style="transform: rotate(-45deg)"
+                ></i></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <!--{docs::menu}-->
+    </div>
+
+    <!--{Akhir Nav}-->
+
+    <!--{Awal Main}-->
+
+    <main class="yl_page">
+      <div class="yl_padding">
+        <!--awal cta -->
+        <section id="cta">
+          <div class="yl_cta">
+            <div class="yl_cta-container">
+              <div class="yl_cta-content">
+                <div class="yl_cta-box">
+                  <a class="button_primary" href="">Warta Jemaat</a>
+                </div>
+                <div class="yl_cta-box">
+                  <a class="button_primary" href="">Laporan Keuangan</a>
+                </div>
+                <div class="yl_cta-box">
+                  <a class="button_primary" href="">Jadwal Ibadah Mingguan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--akhir cta -->
+        <!--awal berita kegiatan -->
+        <!--awal tentang -->
+        <section id="about">
+          <div class="yl_about">
+            <div class="yl_about-head">
+              <h1 class="yl_sect-title">Tentang Yarden Labat</h1>
+              <p class="yl_sect-subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi
+                maxime ipsum necessitatibus quam ea tenetur in quos sint? Maxime
+                quae veritatis voluptates blanditiis autem ducimus eligendi
+                perferendis nobis debitis iure, doloribus ratione laborum
+                voluptatibus tempore deserunt unde amet impedit aliquid cumque
+                repellat! Expedita, provident. Quae ipsa officia dignissimos
+                neque.
+              </p>
+            </div>
+            <div class="yl_about-bottom">
+              <div class="yl_2layout">
+                <div class="yl_2box">
+                  <div class="yl_2wrap">
+                    <div class="yl_about-bottom-content">
+                      <div class="yl_church-head">
+                        <img
+                          src="./public/pendeta/pendeta1.webp"
+                          loading="lazy"
+                          alt="foto pendeta1"
+                          height="280px"
+                          width="180px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="yl_2box">
+                  <div class="yl_2wrap">
+                    <div class="yl_about-bottom-content">
+                      <div class="yl_church-head">
+                        <img
+                          src="./public/pendeta/pendeta2.webp"
+                          alt="foto pendeta2"
+                          loading="lazy"
+                          height="280px"
+                          width="180px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--akhir tentang -->
+
+        <section id="news">
+          <div class="yl_blog">
+            <div class="yl_blog-top">
+              <h1 class="yl_sect-title">Berita &amp; Aktivitas</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt voluptatum vero beatae repellat suscipit! Minima qui
+                eaque aut enim et dicta dolorum ipsa cupiditate, nesciunt,
+                corrupti maiores nihil! Eos maiores esse asperiores perspiciatis
+                nisi cum sequi delectus reiciendis tempore itaque neque culpa
+                nulla nesciunt animi nam, rem molestiae quas sapiente!
+              </p>
+            </div>
+
+            <div class="yl_blog-bottom">
+              <div class="yl_bottom-head">
+                <div class="yl_2layout">
+                  <div class="yl_2box">
+                    <div class="yl_2wrap">
+                      <div class="yl_bottom-head-l-content">
+                        <h5>Berita Terbaru</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yl_2box">
+                    <div class="yl_2wrap">
+                      <div class="yl_bottom-head-r-content">
+                        <a href="" class="card-btn-head">
+                          Berita Lainnya
+                          <i class="fa fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="yl_3layout">
+                  <div class="yl_3box">
+                    <div class="yl_3wrap">
+                      <div class="yl_card border_box">
+                        <div class="yl_card-header">
+                          <img
+                            src="./public/blog/IMG_0043.JPG"
+                            loading="lazy"
+                            alt=""
+                          />
+                          <div class="yl_gradient"></div>
+                        </div>
+                        <div class="yl_card-body">
+                          <h2>Satu Tahap Lagi Akan Dilalui</h2>
+                          <p>
+                            Seng pertama pengatapan rumah pastori 2 GMIT Yarden
+                            LabatJemaat GMIT Yarden Labat patut mengucap syukur
+                            atas kebaikan Tuhan Yesus...
+                          </p>
+                        </div>
+                        <div class="yl_card-footer">
+                          <p>13 Februari 2024</p>
+                          <a href="" class="yl_card-btn">
+                            Baca Selengkapnya
+                            <span> <i class="fa fa-arrow-right"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yl_3box">
+                    <div class="yl_3wrap">
+                      <div class="yl_card border_box">
+                        <div class="yl_card-header">
+                          <img
+                            src="./public/blog/_MG_7599.JPG"
+                            loading="lazy"
+                            alt=""
+                          />
+                          <div class="yl_gradient"></div>
+                        </div>
+                        <div class="yl_card-body">
+                          <h2>Yarden Laksanakan Nikah Masal</h2>
+                          <p>
+                            BP Kategorial Fungsional saat menghadap ke
+                            JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
+                            Yarden Labat, Klasis Kota Kupang, memberi diri untuk
+                            melayani...
+                          </p>
+                        </div>
+                        <div class="yl_card-footer">
+                          <p>21 Oktober 2024</p>
+                          <a href="" class="yl_card-btn">
+                            Baca Selengkapnya
+                            <span> <i class="fa fa-arrow-right"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yl_3box">
+                    <div class="yl_3wrap">
+                      <div class="yl_card border_box">
+                        <div class="yl_card-header">
+                          <img
+                            src="./public/blog/IMG-20240317-WA0035.jpg"
+                            loading="lazy"
+                            alt=""
+                          />
+                          <div class="yl_gradient"></div>
+                        </div>
+                        <div class="yl_card-body">
+                          <h2>105 Orang Memberi Diri</h2>
+                          <p>
+                            BP Kategorial Fungsional saat menghadap ke
+                            JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
+                            Yarden Labat, Klasis Kota Kupang, memberi diri untuk
+                            melayani...
+                          </p>
+                        </div>
+                        <div class="yl_card-footer">
+                          <p>21 Oktober 2024</p>
+                          <a href="" class="yl_card-btn">
+                            Baca Selengkapnya
+                            <span> <i class="fa fa-arrow-right"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--akhir berita kegiatan -->
+
+        <!--awal slider -->
+
+        <section id="5sola">
+          <div class="yl_5sola-slide">
+            <div class="yl_5sola-top">
+              <div class="yl_5sola-top-title">
+                <h1>5 Sola</h1>
+              </div>
+              <div class="yl_5sola-top-btn">
+                <i id="left" class="fa fa-arrow-left"></i>
+                <div class="yl_5sola-devide-btn"></div>
+
+                <i id="right" class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="yl_5sola-bottom">
+              <div class="yl_5sola-wrapper">
+                <ul class="yl_5sola-carousel">
+                  <li class="yl_5sola-card">
+                    <div class="card_5sola">
+                      <div class="content_5sola">
+                        <div class="front_5sola">
+                          <img
+                            src="./public/slide/5solla-1.png"
+                            alt=""
+                            height="270"
+                            width="270"
+                            draggable="false"
+                          />
+                        </div>
+                        <div class="back_5sola">
+                          <h6>Sola Fide</h6>
+                          <p>"Hanya iman"</p>
+                          <p>
+                            “Sebab seperti tubuh tanpa roh adalah mati, demikian
+                            jugalah iman tanpa perbuatan-perbuatan adalah mati.”
+                            <br />
+                            - Yakobus 2:26
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="yl_5sola-card">
+                    <div class="card_5sola">
+                      <div class="content_5sola">
+                        <div class="front_5sola">
+                          <img
+                            src="./public/slide/5solla-2.png"
+                            alt=""
+                            height="270"
+                            width="270"
+                            draggable="false"
+                          />
+                        </div>
+                        <div class="back_5sola">
+                          <h6>Solus Christus</h6>
+                          <p>"Hanya Kristus"</p>
+                          <p>
+                            “Dia yang menjadi pengantara antara Allah dan
+                            manusia, yaitu manusia Kristus Yesus, yang telah
+                            menyerahkan diri-Nya sebagai tebusan bagi semua
+                            manusia.”<br />
+                            - 1 Tim 2:5-6
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="yl_5sola-card">
+                    <div class="card_5sola">
+                      <div class="content_5sola">
+                        <div class="front_5sola">
+                          <img
+                            src="./public/slide/5solla-3.png"
+                            alt=""
+                            height="270"
+                            width="270"
+                            draggable="false"
+                          />
+                        </div>
+                        <div class="back_5sola">
+                          <h6>Sola Deo Gloria</h6>
+                          <p>"Kemuliaan bagi Tuhan saja"</p>
+                          <p>
+                            “Sebab segala sesuatu adalah dari Dia, dan oleh Dia,
+                            dan kepada Dia: Bagi Dialah kemuliaan sampai
+                            selama-lamanya!”<br />
+                            - Roma 11:36
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="yl_5sola-card">
+                    <div class="card_5sola">
+                      <div class="content_5sola">
+                        <div class="front_5sola">
+                          <img
+                            src="./public/slide/5solla-4.png"
+                            alt=""
+                            height="270"
+                            width="270"
+                            draggable="false"
+                          />
+                        </div>
+                        <div class="back_5sola">
+                          <h6>Sola Gratia</h6>
+                          <p>"Hanya kasih karunia"</p>
+                          <p>
+                            Sebab karena kasih karunia kamu diselamatkan oleh
+                            iman; itu bukan hasil usahamu, tetapi pemberian
+                            Allah, itu bukan hasil pekerjaanmu: jangan ada orang
+                            yang memegahkan diri.”<br />
+                            - Efesus 2:8-9
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="yl_5sola-card">
+                    <div class="card_5sola">
+                      <div class="content_5sola">
+                        <div class="front_5sola">
+                          <img
+                            src="./public/slide/5solla-5.png"
+                            alt=""
+                            height="270"
+                            width="270"
+                            draggable="false"
+                          />
+                        </div>
+                        <div class="back_5sola">
+                          <h6>Sola Scriptura</h6>
+                          <p>"Hanya Kitab Suci"</p>
+                          <p>
+                            “Segala tulisan yang diilhamkan Allah memang
+                            bermanfaat untuk mengajar, untuk menyatakan
+                            kesalahan, untuk memperbaiki kelakuan dan untuk
+                            mendidik orang dalam kebenaran. Dengan demikian
+                            tiap-tiap manusia kepunyaan Allah diperlengkapi
+                            untuk setiap perbuatan baik.”<br />
+                            - 2 Tim 3:16-17
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--akhir slider -->
+
+        <section>
+          <div class="yl_media">
+            <div class="yl_2layout">
+              <div class="yl_2box">
+                <div class="yl_2wrap">
+                  <div class="yl_media-top border_box">
+                    <div class="yl_media-top-content">
+                      <h1 class="yl_sect-title">Multimedia</h1>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nesciunt voluptatum vero beatae repellat suscipit!
+                        Minima qui eaque aut enim et dicta dolorum ipsa
+                        cupiditate, nesciunt, corrupti maiores nihil! Eos
+                        maiores esse asperiores perspiciatis nisi cum sequi
+                        delectus reiciendis tempore itaque neque culpa nulla
+                        nesciunt animi nam, rem molestiae quas sapiente!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="yl_2box">
+                <div class="yl_2wrap">
+                  <div class="yl_media-bottom">
+                    <iframe
+                      width="100%"
+                      height="390"
+                      class="border_box"
+                      src="https://www.youtube.com/embed/iHlbqRX8UDo?si=cZiaDP44maO25oji"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--akhir multimedia -->
+
+        <!--awal multimedia -->
+      </div>
+    </main>
+
+    <!--{Akhir Main}-->
+
+    <!--{Awal Footer}-->
+
+    <footer>
+      <div class="yl_footer-copyright">
+        <p>© 2024 - Yarden Labat. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!--{Akhir Footer}-->
+
+    <!--{Awal Additional}-->
+
+    <style type="text/css">
+      .yl_wa-floating {
+        height: 100%;
+        position: relative;
+        text-align: left;
+        width: 100%;
+        z-index: 999;
+      }
+      .yl_wa-buttton {
+        align-items: center;
+        background-color: rgba(38, 28, 110, 0.8);
+        border-radius: 50%;
+        bottom: 2rem;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        position: fixed;
+        right: 2rem;
+        width: 50px;
+      }
+      .yl_wa-buttton:after {
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+        -webkit-animation-duration: 1.2s;
+        animation-duration: 1.2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: yl_wa-styles-pulse;
+        animation-name: yl_wa-styles-pulse;
+        -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        border-color: inherit;
+        border-radius: 50%;
+        content: "";
+        height: 60px;
+        opacity: 0;
+        position: absolute;
+        width: 60px;
+      }
+      .yl_wa-buttton svg {
+        fill: rgba(225, 225, 225, 1);
+        height: 50px;
+        width: 50px;
+      }
+      @-webkit-keyframes yl_wa-styles-pulse {
+        0% {
+          box-shadow: 0 0 0 0 #021728;
+          opacity: 1;
+        }
+        to {
+          box-shadow: 0 0 0 15px #021728;
+          opacity: 0;
+        }
+      }
+      @keyframes yl_wa-styles-pulse {
+        0% {
+          box-shadow: 0 0 0 0 #021728;
+          opacity: 1;
+        }
+        to {
+          box-shadow: 0 0 0 15px #021728;
+          opacity: 0;
+        }
+      }
+      @-webkit-keyframes yl_wa-styles-bounce-in {
+        0% {
+          opacity: 0;
+          transform: scale(0);
+          transform-origin: bottom right;
+        }
+        50% {
+          transform: scale(1.03);
+          transform-origin: bottom right;
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+          transform-origin: bottom right;
+        }
+      }
+      @keyframes yl_wa-styles-bounce-in {
+        0% {
+          opacity: 0;
+          transform: scale(0);
+          transform-origin: bottom right;
+        }
+        50% {
+          transform: scale(1.03);
+          transform-origin: bottom right;
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+          transform-origin: bottom right;
+        }
+      }
+      @-webkit-keyframes yl_wa-style-bounce-out {
+        0% {
+          opacity: 1;
+          transform: scale(1);
+          transform-origin: bottom right;
+        }
+        to {
+          opacity: 0;
+          transform: scale(0);
+          transform-origin: bottom right;
+        }
+      }
+      @keyframes yl_wa-style-bounce-out {
+        0% {
+          opacity: 1;
+          transform: scale(1);
+          transform-origin: bottom right;
+        }
+        to {
+          opacity: 0;
+          transform: scale(0);
+          transform-origin: bottom right;
+        }
+      }
+    </style>
+    <div class="yl_wa-floating custom-class">
+      <a
+        class="yl_wa-buttton"
+        href="https://wa.me/6285858833600?text=Silahkan%20Klik%20Tombol%20Tautan%20diatas."
+        target="_blank"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          style="isolation: isolate"
+          viewBox="0 0 800 800"
+          width="800"
+          height="800"
+        >
+          <defs>
+            <clipPath id="_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ">
+              <rect width="800" height="800" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ)">
+            <g>
+              <path
+                d=" M 508.558 450.429 C 502.67 447.483 473.723 433.24 468.325 431.273 C 462.929 429.308 459.003 428.328 455.078 434.22 C 451.153 440.114 439.869 453.377 436.434 457.307 C 433 461.236 429.565 461.729 423.677 458.78 C 417.79 455.834 398.818 449.617 376.328 429.556 C 358.825 413.943 347.008 394.663 343.574 388.768 C 340.139 382.873 343.207 379.687 346.155 376.752 C 348.804 374.113 352.044 369.874 354.987 366.436 C 357.931 362.999 358.912 360.541 360.875 356.614 C 362.837 352.683 361.857 349.246 360.383 346.299 C 358.912 343.352 347.136 314.369 342.231 302.579 C 337.451 291.099 332.597 292.654 328.983 292.472 C 325.552 292.301 321.622 292.265 317.698 292.265 C 313.773 292.265 307.394 293.739 301.996 299.632 C 296.6 305.527 281.389 319.772 281.389 348.752 C 281.389 377.735 302.487 405.731 305.431 409.661 C 308.376 413.592 346.949 473.062 406.015 498.566 C 420.062 504.634 431.03 508.256 439.581 510.969 C 453.685 515.451 466.521 514.818 476.666 513.302 C 487.978 511.613 511.502 499.06 516.409 485.307 C 521.315 471.55 521.315 459.762 519.842 457.307 C 518.371 454.851 514.446 453.377 508.558 450.429 Z  M 401.126 597.117 L 401.047 597.117 C 365.902 597.104 331.431 587.661 301.36 569.817 L 294.208 565.572 L 220.08 585.017 L 239.866 512.743 L 235.21 505.332 C 215.604 474.149 205.248 438.108 205.264 401.1 C 205.307 293.113 293.17 205.257 401.204 205.257 C 453.518 205.275 502.693 225.674 539.673 262.696 C 576.651 299.716 597.004 348.925 596.983 401.258 C 596.939 509.254 509.078 597.117 401.126 597.117 Z  M 567.816 234.565 C 523.327 190.024 464.161 165.484 401.124 165.458 C 271.24 165.458 165.529 271.161 165.477 401.085 C 165.46 442.617 176.311 483.154 196.932 518.892 L 163.502 641 L 288.421 608.232 C 322.839 627.005 361.591 636.901 401.03 636.913 L 401.126 636.913 L 401.127 636.913 C 530.998 636.913 636.717 531.2 636.77 401.274 C 636.794 338.309 612.306 279.105 567.816 234.565"
+                fill-rule="evenodd"
+              />
+            </g>
+          </g>
+        </svg>
+      </a>
+    </div>
+
+    <!--{Akhir Additional}-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="./src/js/scripts.js"></script> -->
+    <script>
+      // swipper blog
+      new Swiper(".card-wrapper", {
+        loop: true,
+        spaceBetween: 30,
+
+        // Pagination bullets
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <script>
+      let glowInTexts = document.querySelectorAll(".glowIn");
+      glowInTexts.forEach((glowInText) => {
+        let letters = glowInText.textContent.split("");
+        glowInText.textContent = "";
+        letters.forEach((letter, i) => {
+          let span = document.createElement("span");
+          span.textContent = letter;
+          span.style.animationDelay = `${i * 0.05}s`;
+          glowInText.append(span);
+        });
+      });
+    </script>
+    <script>
+      //==>Menu show<==//
+      const x = document.getElementById("navbtn");
+      const s = document.getElementById("megamenu");
+      x.addEventListener("click", function () {
+        s.classList.toggle("is-open");
+      });
+      //==>Menu close<==//
+      const a = document.getElementById("yl_nav");
+      window.addEventListener("click", function (close) {
+        if (!x.contains(close.target) && !a.contains(close.target)) {
+          s.classList.remove("is-open");
+        }
+      });
+      //==>Hamburger Menu show<==//
+      const h = document.querySelector(".hamburger");
+      const h1 = document.querySelector("#hamburger-1");
+      const m = document.querySelector("#mobMenu");
+      h.addEventListener("click", function () {
+        h1.classList.toggle("is-active");
+      });
+      h1.addEventListener("click", function () {
+        m.classList.toggle("mobile-menu-show");
+      });
+      //==>Hamburger Menu close<==//
+      window.addEventListener("click", function (inactive) {
+        if (!h1.contains(inactive.target) && !m.contains(inactive.target)) {
+          m.classList.remove("mobile-menu-show");
+          h1.classList.remove("is-active");
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".yl_5sola-carousel");
+        const arrowBtns = document.querySelectorAll(".yl_5sola-slide i");
+        const wrapper = document.querySelector(".yl_5sola-wrapper");
+        const firstCard = carousel.querySelector(".yl_5sola-card");
+        const firstCardWidth = firstCard.offsetWidth;
+        let isDragging = false,
+          startX,
+          startScrollLeft,
+          timeoutId;
+        const dragStart = (e) => {
+          isDragging = true;
+          carousel.classList.add("dragging");
+          startX = e.pageX;
+          startScrollLeft = carousel.scrollLeft;
+        };
+        const dragging = (e) => {
+          if (!isDragging) return;
+
+          // Calculate the new scroll position
+          const newScrollLeft = startScrollLeft - (e.pageX - startX);
+
+          // Check if the new scroll position exceeds
+          // the carousel boundaries
+          if (
+            newScrollLeft <= 0 ||
+            newScrollLeft >= carousel.scrollWidth - carousel.offsetWidth
+          ) {
+            // If so, prevent further dragging
+            isDragging = false;
+            return;
+          }
+
+          // Otherwise, update the scroll position of the carousel
+          carousel.scrollLeft = newScrollLeft;
+        };
+
+        const dragStop = () => {
+          isDragging = false;
+          carousel.classList.remove("dragging");
+        };
+
+        const autoPlay = () => {
+          // Return if window is smaller than 800
+          if (window.innerWidth < 800) return;
+
+          // Calculate the total width of all cards
+          const totalCardWidth = carousel.scrollWidth;
+
+          // Calculate the maximum scroll position
+          const maxScrollLeft = totalCardWidth - carousel.offsetWidth;
+
+          // If the carousel is at the end, stop autoplay
+          if (carousel.scrollLeft >= maxScrollLeft) return;
+
+          // Autoplay the carousel after every 2500ms
+          timeoutId = setTimeout(
+            () => (carousel.scrollLeft += firstCardWidth),
+            2500
+          );
+        };
+
+        carousel.addEventListener("mousedown", dragStart);
+        carousel.addEventListener("mousemove", dragging);
+        document.addEventListener("mouseup", dragStop);
+        wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+        wrapper.addEventListener("mouseleave", autoPlay);
+
+        // Add event listeners for the arrow buttons to
+        // scroll the carousel left and right
+        arrowBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            carousel.scrollLeft +=
+              btn.id === "left" ? -firstCardWidth : firstCardWidth;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
