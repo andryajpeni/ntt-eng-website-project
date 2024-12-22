@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/css/grid.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/infi-scroll.css" />
 
     <link
       rel="shortcut icon"
@@ -575,7 +576,7 @@
 
         <div class="yl_nav_right">
           <a
-            href="https://nusatimoretelematika.gitbook.io/docs/"
+            href="#"
             class="button_primary"
             style="width: 150px; justify-self: end"
             target="_blank"
@@ -669,7 +670,7 @@
 
           <li class="yl_mob-btn">
             <a
-              href="https://nusatimoretelematika.gitbook.io/docs/"
+              href="#"
               class="button_primary"
               style="margin-left: 1rem"
               target="_blank"
@@ -902,6 +903,23 @@
         <!--awal slider -->
 
         <section id="5sola">
+          <div class="scrolling-text-layout">
+            <div class="scrolling-text">
+              <div
+                class="scrolling-text-background scrolling-text-alternate scrolling-text-blue"
+              >
+                <div
+                  class="infinite-scroll_wrap"
+                  style="--override-speed: 140s"
+                >
+                  <div class="infinite-scroll_marquee infinite-scroll_reverse">
+                    <p>5 Sola Reform&nbsp;</p>
+                    <p>5 Sola Reform&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="yl_5sola-slide">
             <div class="yl_5sola-top">
               <div class="yl_5sola-top-title">
@@ -1099,8 +1117,6 @@
         </section>
 
         <!--akhir multimedia -->
-
-        <!--awal multimedia -->
       </div>
     </main>
 
@@ -1118,129 +1134,6 @@
 
     <!--{Awal Additional}-->
 
-    <style type="text/css">
-      .yl_wa-floating {
-        height: 100%;
-        position: relative;
-        text-align: left;
-        width: 100%;
-        z-index: 999;
-      }
-      .yl_wa-buttton {
-        align-items: center;
-        background-color: rgba(38, 28, 110, 0.8);
-        border-radius: 50%;
-        bottom: 2rem;
-        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
-        cursor: pointer;
-        display: flex;
-        height: 50px;
-        justify-content: center;
-        position: fixed;
-        right: 2rem;
-        width: 50px;
-      }
-      .yl_wa-buttton:after {
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-duration: 1.2s;
-        animation-duration: 1.2s;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-name: yl_wa-styles-pulse;
-        animation-name: yl_wa-styles-pulse;
-        -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        border-color: inherit;
-        border-radius: 50%;
-        content: "";
-        height: 60px;
-        opacity: 0;
-        position: absolute;
-        width: 60px;
-      }
-      .yl_wa-buttton svg {
-        fill: rgba(225, 225, 225, 1);
-        height: 50px;
-        width: 50px;
-      }
-      @-webkit-keyframes yl_wa-styles-pulse {
-        0% {
-          box-shadow: 0 0 0 0 #021728;
-          opacity: 1;
-        }
-        to {
-          box-shadow: 0 0 0 15px #021728;
-          opacity: 0;
-        }
-      }
-      @keyframes yl_wa-styles-pulse {
-        0% {
-          box-shadow: 0 0 0 0 #021728;
-          opacity: 1;
-        }
-        to {
-          box-shadow: 0 0 0 15px #021728;
-          opacity: 0;
-        }
-      }
-      @-webkit-keyframes yl_wa-styles-bounce-in {
-        0% {
-          opacity: 0;
-          transform: scale(0);
-          transform-origin: bottom right;
-        }
-        50% {
-          transform: scale(1.03);
-          transform-origin: bottom right;
-        }
-        to {
-          opacity: 1;
-          transform: scale(1);
-          transform-origin: bottom right;
-        }
-      }
-      @keyframes yl_wa-styles-bounce-in {
-        0% {
-          opacity: 0;
-          transform: scale(0);
-          transform-origin: bottom right;
-        }
-        50% {
-          transform: scale(1.03);
-          transform-origin: bottom right;
-        }
-        to {
-          opacity: 1;
-          transform: scale(1);
-          transform-origin: bottom right;
-        }
-      }
-      @-webkit-keyframes yl_wa-style-bounce-out {
-        0% {
-          opacity: 1;
-          transform: scale(1);
-          transform-origin: bottom right;
-        }
-        to {
-          opacity: 0;
-          transform: scale(0);
-          transform-origin: bottom right;
-        }
-      }
-      @keyframes yl_wa-style-bounce-out {
-        0% {
-          opacity: 1;
-          transform: scale(1);
-          transform-origin: bottom right;
-        }
-        to {
-          opacity: 0;
-          transform: scale(0);
-          transform-origin: bottom right;
-        }
-      }
-    </style>
     <div class="yl_wa-floating custom-class">
       <a
         class="yl_wa-buttton"
@@ -1279,165 +1172,7 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-      // swipper blog
-      new Swiper(".card-wrapper", {
-        loop: true,
-        spaceBetween: 30,
-
-        // Pagination bullets
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        // Responsive breakpoints
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
-    <script>
-      let glowInTexts = document.querySelectorAll(".glowIn");
-      glowInTexts.forEach((glowInText) => {
-        let letters = glowInText.textContent.split("");
-        glowInText.textContent = "";
-        letters.forEach((letter, i) => {
-          let span = document.createElement("span");
-          span.textContent = letter;
-          span.style.animationDelay = `${i * 0.05}s`;
-          glowInText.append(span);
-        });
-      });
-    </script>
-    <script>
-      //==>Menu show<==//
-      const x = document.getElementById("navbtn");
-      const s = document.getElementById("megamenu");
-      x.addEventListener("click", function () {
-        s.classList.toggle("is-open");
-      });
-      //==>Menu close<==//
-      const a = document.getElementById("yl_nav");
-      window.addEventListener("click", function (close) {
-        if (!x.contains(close.target) && !a.contains(close.target)) {
-          s.classList.remove("is-open");
-        }
-      });
-      //==>Hamburger Menu show<==//
-      const h = document.querySelector(".hamburger");
-      const h1 = document.querySelector("#hamburger-1");
-      const m = document.querySelector("#mobMenu");
-      h.addEventListener("click", function () {
-        h1.classList.toggle("is-active");
-      });
-      h1.addEventListener("click", function () {
-        m.classList.toggle("mobile-menu-show");
-      });
-      //==>Hamburger Menu close<==//
-      window.addEventListener("click", function (inactive) {
-        if (!h1.contains(inactive.target) && !m.contains(inactive.target)) {
-          m.classList.remove("mobile-menu-show");
-          h1.classList.remove("is-active");
-        }
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const carousel = document.querySelector(".yl_5sola-carousel");
-        const arrowBtns = document.querySelectorAll(".yl_5sola-slide i");
-        const wrapper = document.querySelector(".yl_5sola-wrapper");
-        const firstCard = carousel.querySelector(".yl_5sola-card");
-        const firstCardWidth = firstCard.offsetWidth;
-        let isDragging = false,
-          startX,
-          startScrollLeft,
-          timeoutId;
-        const dragStart = (e) => {
-          isDragging = true;
-          carousel.classList.add("dragging");
-          startX = e.pageX;
-          startScrollLeft = carousel.scrollLeft;
-        };
-        const dragging = (e) => {
-          if (!isDragging) return;
-
-          // Calculate the new scroll position
-          const newScrollLeft = startScrollLeft - (e.pageX - startX);
-
-          // Check if the new scroll position exceeds
-          // the carousel boundaries
-          if (
-            newScrollLeft <= 0 ||
-            newScrollLeft >= carousel.scrollWidth - carousel.offsetWidth
-          ) {
-            // If so, prevent further dragging
-            isDragging = false;
-            return;
-          }
-
-          // Otherwise, update the scroll position of the carousel
-          carousel.scrollLeft = newScrollLeft;
-        };
-
-        const dragStop = () => {
-          isDragging = false;
-          carousel.classList.remove("dragging");
-        };
-
-        const autoPlay = () => {
-          // Return if window is smaller than 800
-          if (window.innerWidth < 800) return;
-
-          // Calculate the total width of all cards
-          const totalCardWidth = carousel.scrollWidth;
-
-          // Calculate the maximum scroll position
-          const maxScrollLeft = totalCardWidth - carousel.offsetWidth;
-
-          // If the carousel is at the end, stop autoplay
-          if (carousel.scrollLeft >= maxScrollLeft) return;
-
-          // Autoplay the carousel after every 2500ms
-          timeoutId = setTimeout(
-            () => (carousel.scrollLeft += firstCardWidth),
-            2500
-          );
-        };
-
-        carousel.addEventListener("mousedown", dragStart);
-        carousel.addEventListener("mousemove", dragging);
-        document.addEventListener("mouseup", dragStop);
-        wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-        wrapper.addEventListener("mouseleave", autoPlay);
-
-        // Add event listeners for the arrow buttons to
-        // scroll the carousel left and right
-        arrowBtns.forEach((btn) => {
-          btn.addEventListener("click", () => {
-            carousel.scrollLeft +=
-              btn.id === "left" ? -firstCardWidth : firstCardWidth;
-          });
-        });
-      });
-    </script>
+    <script src="./src/js/scrips.js"></script>
   </body>
 </html>
