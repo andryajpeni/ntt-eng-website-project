@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GMIT-Yarden Labat</title>
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/navi.css" />
     <link rel="stylesheet" href="./src/css/grid.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/infi-scroll.css" />
+    <link rel="stylesheet" href="./src/css/system.css" />
+    <link rel="stylesheet" href="./src/css/custom-class.css" />
 
     <link
       rel="shortcut icon"
@@ -22,195 +25,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./src/dist/fontawesome-free/css/all.css" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="/src/dist/swiper/swiper-bundle.min.css" />
 
-    <style>
-      .scrolling-text-layout {
-        width: 100%;
-        width: 100%;
-        border-top: 1px solid var(--color-dark15);
-      }
-      .scrolling-text-background {
-        height: -moz-fit-content;
-        height: fit-content;
-        color: var(--custom-text-color, #7958a5);
-        font-size: 220px;
-        line-height: 1em;
-        z-index: -1;
-        width: 100%;
-        bottom: 0;
-        position: absolute;
-        padding-top: 60px;
-        -webkit-mask-image: linear-gradient(
-          90deg,
-          transparent,
-          #000 35%,
-          #000 65%,
-          transparent
-        );
-        mask-image: linear-gradient(
-          90deg,
-          transparent,
-          #000 35%,
-          #000 65%,
-          transparent
-        );
-      }
-      .scrolling-text-background.scrolling-text-alternate {
-        bottom: auto;
-        top: 0;
-        padding-top: 0;
-        padding-bottom: 60px;
-      }
-      .scrolling-text-background.scrolling-text-alternate p {
-        text-align: start;
-        -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent);
-        mask-image: linear-gradient(180deg, #000 30%, transparent);
-      }
-      :root {
-        --custom-fade-color: #d4d2ff;
-      }
-      .scrolling-text-background.scrolling-text-alternate:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--custom-fade-color, #ffe3cd);
-        -webkit-mask-image: linear-gradient(180deg, #000, transparent);
-        mask-image: linear-gradient(180deg, #000, transparent);
-      }
-      .scrolling-text-background.scrolling-text-blue {
-        --custom-fade-color: #d4d2ff;
-        color: #7958a5;
-      }
-
-      .scrolling-text-background p {
-        opacity: 0.15;
-        letter-spacing: 12px;
-        -webkit-mask-image: linear-gradient(0deg, #000 30%, transparent);
-        mask-image: linear-gradient(0deg, #000 30%, transparent);
-      }
-      .scrolling-text-background:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--custom-fade-color, #e5d2ff);
-        -webkit-mask-image: linear-gradient(0deg, #000, transparent);
-        mask-image: linear-gradient(0deg, #000, transparent);
-      }
-      .infinite-scroll_wrap {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-      }
-      .infinite-scroll_marquee {
-        display: flex;
-        flex-wrap: nowrap;
-        width: -moz-max-content;
-        width: max-content;
-        animation: infinite-scroll_marquee 80s linear infinite;
-        --animation-speed: var(--override-speed, 30s);
-        -webkit-animation: infinite-scroll_marquee 80s linear infinite;
-      }
-
-      .infinite-scroll_marquee.infinite-scroll_reverse {
-        animation-direction: reverse;
-      }
-
-      @keyframes infinite-scroll_marquee {
-        0% {
-          transform: translateX(0);
-        }
-        to {
-          transform: translateX(-50%);
-        }
-      }
-      .infinite-scroll_marquee.infinite-scroll_reverse {
-        animation-direction: reverse;
-      }
-
-      .scrolling-text-background {
-        height: -moz-fit-content;
-        height: fit-content;
-        color: var(--custom-text-color, #7958a5);
-        font-size: 220px;
-        line-height: 1em;
-        z-index: -1;
-        width: 100%;
-        bottom: 0;
-        position: absolute;
-        padding-top: 60px;
-        -webkit-mask-image: linear-gradient(
-          90deg,
-          transparent,
-          #000 35%,
-          #000 65%,
-          transparent
-        );
-        mask-image: linear-gradient(
-          90deg,
-          transparent,
-          #000 35%,
-          #000 65%,
-          transparent
-        );
-      }
-      .scrolling-text {
-        position: relative;
-        padding-bottom: 1rem;
-      }
-      .scrolling-text-background.scrolling-text-alternate {
-        bottom: auto;
-        top: 0;
-        padding-top: 0;
-        padding-bottom: 60px;
-      }
-      .scrolling-text-background.scrolling-text-alternate p {
-        font-size: 7rem;
-        font-weight: 800;
-        text-transform: uppercase;
-        text-align: start;
-        -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent);
-        mask-image: linear-gradient(180deg, #000 30%, transparent);
-      }
-      .scrolling-text-background.scrolling-text-alternate:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--custom-fade-color, #ffe3cd);
-        -webkit-mask-image: linear-gradient(180deg, #000, transparent);
-        mask-image: linear-gradient(180deg, #000, transparent);
-      }
-      .scrolling-text-background.scrolling-text-blue {
-        --custom-fade-color: #d4d2ff;
-        color: #7958a5;
-      }
-
-      .scrolling-text-background p {
-        opacity: 0.15;
-        letter-spacing: 12px;
-        -webkit-mask-image: linear-gradient(0deg, #000 30%, transparent);
-        mask-image: linear-gradient(0deg, #000 30%, transparent);
-      }
-      .scrolling-text-background:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--custom-fade-color, #e5d2ff);
-        -webkit-mask-image: linear-gradient(0deg, #000, transparent);
-        mask-image: linear-gradient(0deg, #000, transparent);
-      }
-    </style>
     <!-- font-family -->
     <style
       data-href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap"
@@ -717,11 +539,9 @@
     <header id="yl-header">
       <div class="yl_header">
         <div class="yl_header-intro">
-          <h5 class="glowIn">
-            Pada mulanya adalah Firman; Firman itu bersama-sama dengan Allah dan
-            Firman itu adalah Allah.
-            <br />Yohanes 1:1
-          </h5>
+          <p class="disable_large">Header Content</p>
+          <p class="disable_large">Slider 3 Page</p>
+          <p class="disable_large">Content Ayat Alkitab</p>
         </div>
       </div>
     </header>
@@ -730,7 +550,7 @@
 
     <!--{Awal Nav}-->
 
-    <div id="yl_nav" class="yl_nav-custom border_box">
+    <div id="yl_nav" class="yl_nav-custom">
       <div class="yl_navlayout">
         <div class="yl_nav-brand">
           <a class="yl_nav-logo" href="#">
@@ -762,10 +582,10 @@
         <div class="yl_nav_right">
           <a
             href="#"
-            class="button_primary"
+            class="button_danger"
             style="width: 150px; justify-self: end"
             target="_blank"
-            >Open Docs
+            >Alkitab
             <span
               ><i
                 class="fa fa-arrow-right"
@@ -856,10 +676,10 @@
           <li class="yl_mob-btn">
             <a
               href="#"
-              class="button_primary"
-              style="margin-left: 1rem"
+              class="button_danger"
+              style="width: 200px"
               target="_blank"
-              >Open Docs
+              >Alkitab
               <span
                 ><i
                   class="fa fa-arrow-right"
@@ -878,32 +698,23 @@
 
     <main class="yl_page">
       <div class="yl_padding">
-        <!--awal cta -->
-        <section id="cta">
-          <div class="yl_cta">
-            <div class="yl_cta-container">
-              <div class="yl_cta-content">
-                <div class="yl_cta-box">
-                  <a class="button_primary" href="">Warta Jemaat</a>
-                </div>
-                <div class="yl_cta-box">
-                  <a class="button_primary" href="">Laporan Keuangan</a>
-                </div>
-                <div class="yl_cta-box">
-                  <a class="button_primary" href="">Jadwal Ibadah Mingguan</a>
+        <!--awal berita kegiatan -->
+        <!--awal tentang -->
+        <section id="about" class="yl_top-container yl_about">
+          <div class="relative_slider-container">
+            <div class="index_scrolling-text-background index_alternate">
+              <div class="infinite-scroll_wrap" style="--override-speed: 100s">
+                <div class="infinite-scroll_marquee infinite-scroll_reverse">
+                  <p class="bolt-text-scroll">YARDEN LABAT&nbsp;</p>
+                  <p class="bolt-text-scroll">YARDEN LABAT&nbsp;</p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!--akhir cta -->
-        <!--awal berita kegiatan -->
-        <!--awal tentang -->
-        <section id="about">
           <div class="yl_about">
             <div class="yl_about-head">
-              <h1 class="yl_sect-title">Tentang Yarden Labat</h1>
-              <p class="yl_sect-subtitle">
+              <h2>Tentang Yarden Labat</h2>
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi
                 maxime ipsum necessitatibus quam ea tenetur in quos sint? Maxime
                 quae veritatis voluptates blanditiis autem ducimus eligendi
@@ -913,167 +724,417 @@
                 neque.
               </p>
             </div>
-            <div class="yl_about-bottom">
-              <div class="yl_2layout">
-                <div class="yl_2box">
-                  <div class="yl_2wrap">
-                    <div class="yl_about-bottom-content">
-                      <div class="yl_church-head">
-                        <img
-                          src="./public/pendeta/pendeta1.webp"
-                          loading="lazy"
-                          alt="foto pendeta1"
-                          height="280px"
-                          width="180px"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="yl_2box">
-                  <div class="yl_2wrap">
-                    <div class="yl_about-bottom-content">
-                      <div class="yl_church-head">
-                        <img
-                          src="./public/pendeta/pendeta2.webp"
-                          alt="foto pendeta2"
-                          loading="lazy"
-                          height="280px"
-                          width="180px"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
         <!--akhir tentang -->
 
-        <section id="news">
-          <div class="yl_blog">
-            <div class="yl_blog-top">
-              <h1 class="yl_sect-title">Berita &amp; Aktivitas</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt voluptatum vero beatae repellat suscipit! Minima qui
-                eaque aut enim et dicta dolorum ipsa cupiditate, nesciunt,
-                corrupti maiores nihil! Eos maiores esse asperiores perspiciatis
-                nisi cum sequi delectus reiciendis tempore itaque neque culpa
-                nulla nesciunt animi nam, rem molestiae quas sapiente!
-              </p>
-            </div>
+        <!--awal info gereja -->
+        <section class="yl_top-container">
+          <div class="yl_container-inner">
+            <div class="yl_2layout">
+              <!-- main -->
+              <div class="yl_2box">
+                <div class="yl_2wrap">
+                  <!-- inner -->
+                  <div class="yl_inner">
+                    <div class="yl_inner-left1 border_box">
+                      <div class="yl_head-title">
+                        <h3>Pendeta Yarden Labat</h3>
+                        <p>
+                          Jemaat Yarden Labat memiliki 2 orang pendeta yang
+                          melayani
+                        </p>
+                      </div>
+                      <div class="yl_2layout">
+                        <div class="yl_2box">
+                          <div class="yl_2wrap">
+                            <div class="yl_head-1">
+                              <img
+                                src="./public/pendeta/pendeta1.webp"
+                                loading="lazy"
+                                alt="Ketua"
+                                height="150px"
+                                width="150px"
+                              />
+                              <p>Pdt. Martha M. R. Nggauk-Nada Weo, S.Th</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="yl_2box">
+                          <div class="yl_2wrap">
+                            <div class="yl_head-2">
+                              <img
+                                src="./public/pendeta/pendeta1.webp"
+                                loading="lazy"
+                                alt="Wakil Ketua 1"
+                                height="150px"
+                                width="150px"
+                              />
+                              <p>
+                                Pdt. Marganingsih Thurmalinda Nome - Fiah, S.Th
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
-            <div class="yl_blog-bottom">
-              <div class="yl_bottom-head">
-                <div class="yl_2layout">
-                  <div class="yl_2box">
-                    <div class="yl_2wrap">
-                      <div class="yl_bottom-head-l-content">
-                        <h5>Berita Terbaru</h5>
+                      <div class="yl_head-org-btn">
+                        <a
+                          class="button_light border_box"
+                          href=""
+                          style="width: 200px"
+                          >Struktur Organisasi</a
+                        >
+                      </div>
+                    </div>
+                    <div class="yl_inner-left2 border_box">
+                      <div class="yl_inner-left-bottom">
+                        <div class="yl_inner-left-bottom-in">
+                          <h3>Organisasi Yarden Labat</h3>
+                          <p>
+                            Yarden Labat adalah Anggota dalam Organisasi Gereja
+                            di Indonesia
+                          </p>
+                        </div>
+                      </div>
+                      <div class="yl_slide-logo_logos">
+                        <div class="yl_logos-wrapper">
+                          <div class="yl_logo-grid logo-animate">
+                            <div class="div-block-53">
+                              <img
+                                src="./public/infi-logo/pgi.png"
+                                loading="lazy"
+                                width="48"
+                                alt="PGI logo"
+                                class="div-block-52"
+                              />
+                              <div class="div-block-54">
+                                <div>
+                                  Persatuan Gereje-Gereja di Indonesia (PGI)
+                                </div>
+                              </div>
+                            </div>
+                            <div class="div-block-53">
+                              <img
+                                src="./public/infi-logo/gmit.png"
+                                loading="lazy"
+                                width="48"
+                                alt="Sinode GMIT logo"
+                                class="div-block-52"
+                              />
+                              <div class="div-block-54">
+                                <div>Sinode GMIT</div>
+                              </div>
+                            </div>
+
+                            <div class="div-block-53">
+                              <img
+                                src="./public/infi-logo/pemuda_gmit.png"
+                                loading="lazy"
+                                width="48"
+                                alt="Pemuda Sinode GMIT logo"
+                                class="div-block-52"
+                              />
+                              <div class="div-block-54">
+                                <div>Pemuda Sinode GMIT</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="yl_logo-grid logo-animate">
+                            <div class="div-block-53">
+                              <img
+                                src="./public/infi-logo/pgi.png"
+                                loading="lazy"
+                                width="48"
+                                alt="PGI logo"
+                                class="div-block-52"
+                              />
+                              <div class="div-block-54">
+                                <div>
+                                  Persatuan Gereje-Gereja di Indonesia (PGI)
+                                </div>
+                              </div>
+                            </div>
+                            <div class="div-block-53">
+                              <img
+                                src="./public/infi-logo/gmit.png"
+                                loading="lazy"
+                                width="48"
+                                alt="Sinode GMIT logo"
+                                class="div-block-52"
+                              />
+                              <div class="div-block-54">
+                                <div>Sinode GMIT</div>
+                              </div>
+                            </div>
+
+                            <div class="div-block-53">
+                              <img
+                                src="./public/infi-logo/pemuda_gmit.png"
+                                loading="lazy"
+                                width="48"
+                                alt="Pemuda GMIT logo"
+                                class="div-block-52"
+                              />
+                              <div class="div-block-54">
+                                <div>Pemuda GMIT</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="yl_logo-grid logo-animate">
+                            <div class="div-block-53">
+                              <img
+                                src="./public/infi-logo/pgi.png"
+                                loading="lazy"
+                                width="48"
+                                alt="PGI logo"
+                                class="div-block-52"
+                              />
+                              <div class="div-block-54">
+                                <div>
+                                  Persatuan Gereje-Gereja di Indonesia (PGI)
+                                </div>
+                              </div>
+                            </div>
+                            <div class="div-block-53">
+                              <img
+                                src="./public/infi-logo/gmit.png"
+                                loading="lazy"
+                                width="48"
+                                alt="Sinode GMIT logo"
+                                class="div-block-52"
+                              />
+                              <div class="div-block-54">
+                                <div>Sinode GMIT</div>
+                              </div>
+                            </div>
+
+                            <div class="div-block-53">
+                              <img
+                                src="./public/infi-logo/pemuda_gmit.png"
+                                loading="lazy"
+                                width="48"
+                                alt="Pemuda GMIT logo"
+                                class="div-block-52"
+                              />
+                              <div class="div-block-54">
+                                <div>Pemuda GMIT</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="yl_2box">
-                    <div class="yl_2wrap">
-                      <div class="yl_bottom-head-r-content">
-                        <a href="" class="card-btn-head">
-                          Berita Lainnya
-                          <i class="fa fa-arrow-right"></i>
-                        </a>
+
+                  <!-- inner -->
+                </div>
+              </div>
+              <div class="yl_2box">
+                <div class="yl_2wrap">
+                  <!-- inner -->
+
+                  <div class="yl_inner">
+                    <div class="yl_inner-right1 border_box">
+                      <!-- main inner -->
+                      <div class="yl_3layout">
+                        <div class="yl_3box">
+                          <div class="yl_3wrap">
+                            <!-- inner -->
+                            <div class="yl_inner-right">
+                              <h3>8</h3>
+                              <p>TERITORI</p>
+                              <h3>1000</h3>
+                              <p>PAR &amp; TARUNA</p>
+                              <h3>1000</h3>
+                              <p>KATEKISASI</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="yl_3box">
+                          <div class="yl_3wrap">
+                            <!-- inner -->
+                            <div class="yl_inner-right">
+                              <h3>1000</h3>
+                              <p>PEMUDA</p>
+                              <h3>1000</h3>
+                              <p>KAUM BAPAK</p>
+                              <h3>1000</h3>
+                              <p>KAUM PEREMPUAN</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="yl_3box">
+                          <div class="yl_3wrap">
+                            <!-- inner -->
+                            <div class="yl_inner-right">
+                              <h3>1000</h3>
+                              <p>LANSIA</p>
+                              <h3>1000</h3>
+                              <p>PERSEKUTUAN DOA</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    <div class="yl_inner-right2 border_box">content</div>
+                  </div>
+                  <!-- inner -->
+                </div>
+              </div>
+            </div>
+            <!-- main -->
+          </div>
+        </section>
+        <!--akhir info gereja -->
+
+        <!--{tabs}-->
+
+        <section id="info" class="yl_top-container">
+          <div class="yl_tabs-menu border_box">
+            <div class="yl_tabs">
+              <h6 class="tab-active">Jadwal Ibadah</h6>
+              <h6>Warta Jemaat</h6>
+            </div>
+          </div>
+          <div class="yl_tabs-content">
+            <div class="yl_tabs-products tab-active">
+              <div class="yl_tab_1-list">
+                <div class="yl_tab_1-box">
+                  <div class="yl_tab_1-wrapper">
+                    <h5>Jadwal Ibadah Hari Minggu</h5>
+                    <p>
+                      Kebaktian 1: 06.00-08.00 WITA <br />
+                      Kebaktian 2: 08.00-10.00 WITA
+                    </p>
+                    <h5>Jadwal Ibadah Kaum Bapak</h5>
+                    <p>Senin: 18.00-20.00 WITA</p>
+                    <h5>Jadwal Ibadah Kaum Perempuan</h5>
+                    <p>Rabu: 18.00-20.00 WITA</p>
+
+                    <h5>Jadwal Ibadah Rumah Tangga</h5>
+                    <p>
+                      Selasa:18.00-20.00 WITA <br />
+                      dan Kamis: 18.00-20.00 WITA
+                    </p>
+                    <h5>Jadwal Ibadah Pemuda</h5>
+                    <p>Jumat:18.00-20.00 WITA</p>
+                    <h5>Jadwal Ibadah Taruna</h5>
+                    <p>Jumat:18.00-20.00 WITA</p>
                   </div>
                 </div>
+                <div class="yl_tab_1-box">
+                  <div class="yl_tab_1-wrapper">IMG</div>
+                </div>
+              </div>
+            </div>
+            <div class="yl_tabs-products">
+              <div class="yl_tab_2-list">
+                <div class="yl_tab_2-box">
+                  <div class="yl_tab_2-wrapper">content title dan image</div>
+                </div>
+                <div class="yl_tab_2-box">
+                  <div class="yl_tab_2-wrapper">
+                    <div class="yl_info-content">
+                      <div class="tabs_searc-sort">
+                        <input
+                          class="tabs_searchbar"
+                          type="search"
+                          onkeyup="cariWarta()"
+                          id="tabs_search"
+                          placeholder=" Cari Warta"
+                          value=""
+                        />
+                      </div>
 
-                <div class="yl_3layout">
-                  <div class="yl_3box">
-                    <div class="yl_3wrap">
-                      <div class="yl_card border_box">
-                        <div class="yl_card-header">
-                          <img
-                            src="./public/blog/IMG_0043.JPG"
-                            loading="lazy"
-                            alt=""
-                          />
-                          <div class="yl_gradient"></div>
-                        </div>
-                        <div class="yl_card-body">
-                          <h2>Satu Tahap Lagi Akan Dilalui</h2>
-                          <p>
-                            Seng pertama pengatapan rumah pastori 2 GMIT Yarden
-                            LabatJemaat GMIT Yarden Labat patut mengucap syukur
-                            atas kebaikan Tuhan Yesus...
-                          </p>
-                        </div>
-                        <div class="yl_card-footer">
-                          <p>13 Februari 2024</p>
-                          <a href="" class="yl_card-btn">
-                            Baca Selengkapnya
-                            <span> <i class="fa fa-arrow-right"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="yl_3box">
-                    <div class="yl_3wrap">
-                      <div class="yl_card border_box">
-                        <div class="yl_card-header">
-                          <img
-                            src="./public/blog/_MG_7599.JPG"
-                            loading="lazy"
-                            alt=""
-                          />
-                          <div class="yl_gradient"></div>
-                        </div>
-                        <div class="yl_card-body">
-                          <h2>Yarden Laksanakan Nikah Masal</h2>
-                          <p>
-                            BP Kategorial Fungsional saat menghadap ke
-                            JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
-                            Yarden Labat, Klasis Kota Kupang, memberi diri untuk
-                            melayani...
-                          </p>
-                        </div>
-                        <div class="yl_card-footer">
-                          <p>21 Oktober 2024</p>
-                          <a href="" class="yl_card-btn">
-                            Baca Selengkapnya
-                            <span> <i class="fa fa-arrow-right"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="yl_3box">
-                    <div class="yl_3wrap">
-                      <div class="yl_card border_box">
-                        <div class="yl_card-header">
-                          <img
-                            src="./public/blog/IMG-20240317-WA0035.jpg"
-                            loading="lazy"
-                            alt=""
-                          />
-                          <div class="yl_gradient"></div>
-                        </div>
-                        <div class="yl_card-body">
-                          <h2>105 Orang Memberi Diri</h2>
-                          <p>
-                            BP Kategorial Fungsional saat menghadap ke
-                            JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
-                            Yarden Labat, Klasis Kota Kupang, memberi diri untuk
-                            melayani...
-                          </p>
-                        </div>
-                        <div class="yl_card-footer">
-                          <p>21 Oktober 2024</p>
-                          <a href="" class="yl_card-btn">
-                            Baca Selengkapnya
-                            <span> <i class="fa fa-arrow-right"></i></span>
-                          </a>
-                        </div>
+                      <hr />
+                      <div class="yl_table-warta">
+                        <table id="myTable" width="100%">
+                          <tr>
+                            <td>
+                              <div class="yl_info-box border_box">
+                                <div class="yl_info-box-act">
+                                  <div class="yl_info-box-title">
+                                    <div class="d-flexs">
+                                      <div class="yl_title-small">
+                                        Warta Jemaat - 2 Januari 2024
+                                      </div>
+                                    </div>
+                                    <div class="user-desc">
+                                      Sekertariat Yarden Labat
+                                    </div>
+                                  </div>
+                                  <div class="yl_info-box-downl border_box">
+                                    <a href="#"> Baca</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="yl_info-box border_box">
+                                <div class="yl_info-box-act">
+                                  <div class="yl_info-box-title">
+                                    <div class="d-flexs">
+                                      <div class="yl_title-small">
+                                        Warta Jemaat - 3 Januari 2024
+                                      </div>
+                                    </div>
+                                    <div class="user-desc">
+                                      Sekertariat Yarden Labat
+                                    </div>
+                                  </div>
+                                  <div class="yl_info-box-downl border_box">
+                                    <a href="#"> Baca</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="yl_info-box border_box">
+                                <div class="yl_info-box-act">
+                                  <div class="yl_info-box-title">
+                                    <div class="d-flexs">
+                                      <div class="yl_title-small">
+                                        Warta Jemaat - 4 Februari 2024
+                                      </div>
+                                    </div>
+                                    <div class="user-desc">
+                                      Sekertariat Yarden Labat
+                                    </div>
+                                  </div>
+                                  <div class="yl_info-box-downl border_box">
+                                    <a href="#"> Baca</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="yl_info-box border_box">
+                                <div class="yl_info-box-act">
+                                  <div class="yl_info-box-title">
+                                    <div class="d-flexs">
+                                      <div class="yl_title-small">
+                                        Warta Jemaat - 1 Januari 2024
+                                      </div>
+                                    </div>
+                                    <div class="user-desc">
+                                      Sekertariat Yarden Labat
+                                    </div>
+                                  </div>
+                                  <div class="yl_info-box-downl border_box">
+                                    <a href="#"> Baca</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -1082,33 +1143,14 @@
             </div>
           </div>
         </section>
+        <!--{tabs}-->
+        <!--awal 5sola -->
 
-        <!--akhir berita kegiatan -->
-
-        <!--awal slider -->
-
-        <section id="5sola">
-          <div class="scrolling-text-layout">
-            <div class="scrolling-text">
-              <div
-                class="scrolling-text-background scrolling-text-alternate scrolling-text-blue"
-              >
-                <div
-                  class="infinite-scroll_wrap"
-                  style="--override-speed: 140s"
-                >
-                  <div class="infinite-scroll_marquee infinite-scroll_reverse">
-                    <p>5 Sola Reform&nbsp;</p>
-                    <p>5 Sola Reform&nbsp;</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <section id="5sola" class="yl_top-container">
           <div class="yl_5sola-slide">
             <div class="yl_5sola-top">
               <div class="yl_5sola-top-title">
-                <h1>5 Sola</h1>
+                <h2>Lima Sola Reformasi</h2>
               </div>
               <div class="yl_5sola-top-btn">
                 <i id="left" class="fa fa-arrow-left"></i>
@@ -1254,28 +1296,161 @@
                 </ul>
               </div>
             </div>
+            <div class="relative_slider-container">
+              <div class="index_scrolling-text-background">
+                <div class="infinite-scroll_wrap" style="--override-speed: 70s">
+                  <div class="infinite-scroll_marquee">
+                    <p class="bolt-text-scroll">5 SOLA REFORM&nbsp;</p>
+                    <p class="bolt-text-scroll">5 SOLA REFORM&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        <!--akhir slider -->
+        <!--akhir 5sola -->
 
-        <section>
+        <!--awal multimedia -->
+
+        <section id="media">
           <div class="yl_media">
+            <div class="relative_slider-container">
+              <div class="index_scrolling-text-background index_alternate">
+                <div
+                  class="infinite-scroll_wrap"
+                  style="--override-speed: 100s"
+                >
+                  <div class="infinite-scroll_marquee infinite-scroll_reverse">
+                    <p class="bolt-text-scroll">MULTIMEDIA&nbsp;</p>
+                    <p class="bolt-text-scroll">MULTIMEDIA&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="yl_media-header">
+              <h3>Multimedia</h3>
+              <div class="yl_media-social">
+                <a class="yl_youtube-btn" href="">
+                  <span class="tooltiptext">@gmityardenlabat</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                  >
+                    <style type="text/css">
+                      .st0 {
+                        fill: currentColor;
+                      }
+                    </style>
+                    <path
+                      class="st0"
+                      d="M4.652 0h1.44l.988 3.702.916-3.702h1.454l-1.665 5.505v3.757h-1.431v-3.757l-1.702-5.505zm6.594 2.373c-1.119 0-1.861.74-1.861 1.835v3.349c0 1.204.629 1.831 1.861 1.831 1.022 0 1.826-.683 1.826-1.831v-3.349c0-1.069-.797-1.835-1.826-1.835zm.531 5.127c0 .372-.19.646-.532.646-.351 0-.554-.287-.554-.646v-3.179c0-.374.172-.651.529-.651.39 0 .557.269.557.651v3.179zm4.729-5.07v5.186c-.155.194-.5.512-.747.512-.271 0-.338-.186-.338-.46v-5.238h-1.27v5.71c0 .675.206 1.22.887 1.22.384 0 .918-.2 1.468-.853v.754h1.27v-6.831h-1.27zm2.203 13.858c-.448 0-.541.315-.541.763v.659h1.069v-.66c.001-.44-.092-.762-.528-.762zm-4.703.04c-.084.043-.167.109-.25.198v4.055c.099.106.194.182.287.229.197.1.485.107.619-.067.07-.092.105-.241.105-.449v-3.359c0-.22-.043-.386-.129-.5-.147-.193-.42-.214-.632-.107zm4.827-5.195c-2.604-.177-11.066-.177-13.666 0-2.814.192-3.146 1.892-3.167 6.367.021 4.467.35 6.175 3.167 6.367 2.6.177 11.062.177 13.666 0 2.814-.192 3.146-1.893 3.167-6.367-.021-4.467-.35-6.175-3.167-6.367zm-12.324 10.686h-1.363v-7.54h-1.41v-1.28h4.182v1.28h-1.41v7.54zm4.846 0h-1.21v-.718c-.223.265-.455.467-.696.605-.652.374-1.547.365-1.547-.955v-5.438h1.209v4.988c0 .262.063.438.322.438.236 0 .564-.303.711-.487v-4.939h1.21v6.506zm4.657-1.348c0 .805-.301 1.431-1.106 1.431-.443 0-.812-.162-1.149-.583v.5h-1.221v-8.82h1.221v2.84c.273-.333.644-.608 1.076-.608.886 0 1.18.749 1.18 1.631v3.609zm4.471-1.752h-2.314v1.228c0 .488.042.91.528.91.511 0 .541-.344.541-.91v-.452h1.245v.489c0 1.253-.538 2.013-1.813 2.013-1.155 0-1.746-.842-1.746-2.013v-2.921c0-1.129.746-1.914 1.837-1.914 1.161 0 1.721.738 1.721 1.914v1.656z"
+                    />
+                  </svg>
+                </a>
+                <a class="yl_facebook-btn" href="">
+                  <span class="tooltiptext">@gmityardenlabat</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                  >
+                    <style type="text/css">
+                      .st0 {
+                        fill: currentColor;
+                      }
+                    </style>
+                    <path
+                      class="st0"
+                      d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
+                    />
+                  </svg>
+                </a>
+                <a class="yl_instagram-btn" href="">
+                  <span class="tooltiptext">@gmityardenlabat</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                  >
+                    <style type="text/css">
+                      .st0 {
+                        fill: currentColor;
+                      }
+                    </style>
+                    <path
+                      class="st0"
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </a>
+                <p class="disable_small">
+                  Kunjungi Media Sosial Kami untuk Content dan live streaming
+                  Lainnya
+                </p>
+              </div>
+            </div>
             <div class="yl_2layout">
               <div class="yl_2box">
                 <div class="yl_2wrap">
                   <div class="yl_media-top border_box">
                     <div class="yl_media-top-content">
-                      <h1 class="yl_sect-title">Multimedia</h1>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nesciunt voluptatum vero beatae repellat suscipit!
-                        Minima qui eaque aut enim et dicta dolorum ipsa
-                        cupiditate, nesciunt, corrupti maiores nihil! Eos
-                        maiores esse asperiores perspiciatis nisi cum sequi
-                        delectus reiciendis tempore itaque neque culpa nulla
-                        nesciunt animi nam, rem molestiae quas sapiente!
-                      </p>
+                      <div class="yl_media-slider">
+                        <a href="" class="yl_media-slider-content-top">
+                          <p class="disable_normal">KEBAKTIAN 1</p>
+                          <p>Minggu - 1 Januari 2024</p>
+                          <p class="disable_small">Tim Multimedia</p>
+                        </a>
+                        <a href="" class="yl_media-slider-content">
+                          <p class="disable_normal">KEBAKTIAN 2</p>
+                          <p>Minggu - 1 Januari 2024</p>
+                          <p class="disable_small">Tim Multimedia</p>
+                        </a>
+                        <a href="" class="yl_media-slider-content">
+                          <p class="disable_normal">KEBAKTIAN 1</p>
+                          <p>Minggu - 2 Januari 2024</p>
+                          <p class="disable_small">Tim Multimedia</p>
+                        </a>
+                        <a href="" class="yl_media-slider-content">
+                          <p class="disable_normal">KEBAKTIAN 2</p>
+                          <p>Minggu - 2 Januari 2024</p>
+                          <p class="disable_small">Tim Multimedia</p>
+                        </a>
+                        <a href="" class="yl_media-slider-content">
+                          <p class="disable_normal">KEBAKTIAN 1</p>
+                          <p>Minggu - 3 Januari 2024</p>
+                          <p class="disable_small">Tim Multimedia</p>
+                        </a>
+                        <a href="" class="yl_media-slider-content">
+                          <p class="disable_normal">KEBAKTIAN 2</p>
+                          <p>Minggu - 3 Januari 2024</p>
+                          <p class="disable_small">Tim Multimedia</p>
+                        </a>
+                        <a href="" class="yl_media-slider-content">
+                          <p class="disable_normal">KEBAKTIAN 1</p>
+                          <p>Minggu - 4 Januari 2024</p>
+                          <p class="disable_small">Tim Multimedia</p>
+                        </a>
+                        <a href="" class="yl_media-slider-content">
+                          <p class="disable_normal">KEBAKTIAN 2</p>
+                          <p>Minggu - 4 Januari 2024</p>
+                          <p class="disable_small">Tim Multimedia</p>
+                        </a>
+                        <a href="" class="yl_media-slider-content">
+                          <p class="disable_normal">KEBAKTIAN 1</p>
+                          <p>Minggu - 5 Januari 2024</p>
+                          <p class="disable_small">Tim Multimedia</p>
+                        </a>
+                        <a href="" class="yl_media-slider-content-bottom">
+                          <p class="disable_normal">KEBAKTIAN 2</p>
+                          <p>Minggu - 5 Januari 2024</p>
+                          <p class="disable_small">Tim Multimedia</p>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1302,6 +1477,132 @@
         </section>
 
         <!--akhir multimedia -->
+
+        <!--awal berita kegiatan -->
+        <section id="news">
+          <div class="relative_slider-container">
+            <div class="index_scrolling-text-background index_alternate">
+              <div class="infinite-scroll_wrap" style="--override-speed: 100s">
+                <div class="infinite-scroll_marquee infinite-scroll_reverse">
+                  <p class="bolt-text-scroll">BERITA YARDEN&nbsp;</p>
+                  <p class="bolt-text-scroll">BERITA YARDEN&nbsp;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="yl_blog">
+            <div class="yl_blog-top">
+              <h2>Berita &amp; Aktivitas</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt voluptatum vero beatae repellat suscipit! Minima qui
+                eaque aut enim et dicta dolorum ipsa cupiditate, nesciunt,
+                corrupti maiores nihil! Eos maiores esse asperiores perspiciatis
+                nisi cum sequi delectus reiciendis tempore itaque neque culpa
+                nulla nesciunt animi nam, rem molestiae quas sapiente!
+              </p>
+            </div>
+
+            <div class="yl_blog-bottom">
+              <div class="yl_bottom-head">
+                <div class="yl_3layout">
+                  <div class="yl_3box">
+                    <div class="yl_3wrap">
+                      <div class="yl_card border_box">
+                        <div class="yl_card-header">
+                          <img
+                            src="./public/blog/IMG_0043.JPG"
+                            loading="lazy"
+                            alt=""
+                          />
+                          <div class="yl_gradient"></div>
+                        </div>
+                        <div class="yl_card-body">
+                          <h5>Satu Tahap Lagi Akan Dilalui</h5>
+                          <p>
+                            Seng pertama pengatapan rumah pastori 2 GMIT Yarden
+                            LabatJemaat GMIT Yarden Labat patut mengucap syukur
+                            atas kebaikan Tuhan Yesus...
+                          </p>
+                        </div>
+                        <div class="yl_card-footer">
+                          <p class="disable_normal">13 Februari 2024</p>
+                          <a href="" class="yl_card-btn">
+                            Baca Selengkapnya
+                            <span> <i class="fa fa-arrow-right"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yl_3box">
+                    <div class="yl_3wrap">
+                      <div class="yl_card border_box">
+                        <div class="yl_card-header">
+                          <img
+                            src="./public/blog/_MG_7599.JPG"
+                            loading="lazy"
+                            alt=""
+                          />
+                          <div class="yl_gradient"></div>
+                        </div>
+                        <div class="yl_card-body">
+                          <h5>Yarden Laksanakan Nikah Masal</h5>
+                          <p>
+                            BP Kategorial Fungsional saat menghadap ke
+                            JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
+                            Yarden Labat, Klasis Kota Kupang, memberi diri untuk
+                            melayani...
+                          </p>
+                        </div>
+                        <div class="yl_card-footer">
+                          <p class="disable_normal">21 Oktober 2024</p>
+                          <a href="" class="yl_card-btn">
+                            Baca Selengkapnya
+                            <span> <i class="fa fa-arrow-right"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yl_3box">
+                    <div class="yl_3wrap">
+                      <div class="yl_card border_box">
+                        <div class="yl_card-header">
+                          <img
+                            src="./public/blog/IMG-20240317-WA0035.jpg"
+                            loading="lazy"
+                            alt=""
+                          />
+                          <div class="yl_gradient"></div>
+                        </div>
+                        <div class="yl_card-body">
+                          <h5>105 Orang Memberi Diri</h5>
+                          <p>
+                            BP Kategorial Fungsional saat menghadap ke
+                            JemaatSejumlah 105 orang Anggota Sidi Jemaat GMIT
+                            Yarden Labat, Klasis Kota Kupang, memberi diri untuk
+                            melayani...
+                          </p>
+                        </div>
+                        <div class="yl_card-footer">
+                          <p class="disable_normal">21 Oktober 2024</p>
+                          <a href="" class="yl_card-btn">
+                            Baca Selengkapnya
+                            <span> <i class="fa fa-arrow-right"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--akhir berita kegiatan -->
       </div>
     </main>
 
@@ -1309,55 +1610,95 @@
 
     <!--{Awal Footer}-->
 
-    <footer>
+    <footer class="yl_top-container">
+      <div class="yl_footer">
+        <div class="yl_footer-head">
+          <div class="yl_footer-layout">
+            <div class="yl_footer-box">
+              <div class="yl_footer-wrap">
+                <div class="yl_footer-layout">
+                  <div class="yl_footer-box">
+                    <div class="yl_footer-wrap">
+                      <div class="yl_footer-logo-soc">
+                        <div class="yl_footer-logo">kolom logo</div>
+                        <div class="yl_footer-social">kolom media sosial</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yl_footer-box">
+                    <div class="yl_footer-wrap">
+                      <div class="yl_footer-about">
+                        <h5>Yarden Labat -</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Veritatis vitae similique, minima ullam deserunt
+                          voluptatem incidunt consequatur, nemo magnam officiis
+                          ex quaerat dolores quidem alias odit odio, eveniet
+                          porro tempore?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="yl_footer-box">
+              <div class="yl_footer-wrap">
+                <div class="yl_footer-qlinks">
+                  <div class="yl_footer-qlink">
+                    <div class="yl_footer-qlink-box">
+                      <ul class="yl_footer-qlink-menu">
+                        <h6>Link Cepat</h6>
+                        <li class="yl_footer-qlink-link">
+                          <a id="about-btn">Tentang Yarden Labat</a>
+                        </li>
+                        <li class="yl_footer-qlink-link">
+                          <a id="media-btn">Multimedia</a>
+                        </li>
+                        <li class="yl_footer-qlink-link">
+                          <a id="news-btn">Berita & Aktivitas</a>
+                        </li>
+                        <li class="yl_footer-qlink-link">
+                          <a id="info-btn">Jadwal &amp; Warta</a>
+                        </li>
+                      </ul>
+                      <div class="yl_footer-copyright-is-hidden">
+                        <div>Crafted with passion By KA-AN</div>
+                        <div>
+                          © 2024 - Yarden Labat. <br />
+                          All Rights Reserved
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yl_footer-totop">
+                    <div id="top-btn" class="yl_5sola-top-btn">
+                      <i class="fa fa-arrow-left"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="yl_footer-copyright">
-        <p>© 2024 - Yarden Labat. All Rights Reserved</p>
+        <div>Crafted with passion By KA-AN</div>
+        <div>© 2024 - Yarden Labat. All Rights Reserved</div>
       </div>
     </footer>
 
     <!--{Akhir Footer}-->
-
-    <!--{Awal Additional}-->
-
-    <div class="yl_wa-floating custom-class">
-      <a
-        class="yl_wa-buttton"
-        href="https://wa.me/6285858833600?text=Silahkan%20Klik%20Tombol%20Tautan%20diatas."
-        target="_blank"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          style="isolation: isolate"
-          viewBox="0 0 800 800"
-          width="800"
-          height="800"
-        >
-          <defs>
-            <clipPath id="_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ">
-              <rect width="800" height="800" />
-            </clipPath>
-          </defs>
-          <g clip-path="url(#_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ)">
-            <g>
-              <path
-                d=" M 508.558 450.429 C 502.67 447.483 473.723 433.24 468.325 431.273 C 462.929 429.308 459.003 428.328 455.078 434.22 C 451.153 440.114 439.869 453.377 436.434 457.307 C 433 461.236 429.565 461.729 423.677 458.78 C 417.79 455.834 398.818 449.617 376.328 429.556 C 358.825 413.943 347.008 394.663 343.574 388.768 C 340.139 382.873 343.207 379.687 346.155 376.752 C 348.804 374.113 352.044 369.874 354.987 366.436 C 357.931 362.999 358.912 360.541 360.875 356.614 C 362.837 352.683 361.857 349.246 360.383 346.299 C 358.912 343.352 347.136 314.369 342.231 302.579 C 337.451 291.099 332.597 292.654 328.983 292.472 C 325.552 292.301 321.622 292.265 317.698 292.265 C 313.773 292.265 307.394 293.739 301.996 299.632 C 296.6 305.527 281.389 319.772 281.389 348.752 C 281.389 377.735 302.487 405.731 305.431 409.661 C 308.376 413.592 346.949 473.062 406.015 498.566 C 420.062 504.634 431.03 508.256 439.581 510.969 C 453.685 515.451 466.521 514.818 476.666 513.302 C 487.978 511.613 511.502 499.06 516.409 485.307 C 521.315 471.55 521.315 459.762 519.842 457.307 C 518.371 454.851 514.446 453.377 508.558 450.429 Z  M 401.126 597.117 L 401.047 597.117 C 365.902 597.104 331.431 587.661 301.36 569.817 L 294.208 565.572 L 220.08 585.017 L 239.866 512.743 L 235.21 505.332 C 215.604 474.149 205.248 438.108 205.264 401.1 C 205.307 293.113 293.17 205.257 401.204 205.257 C 453.518 205.275 502.693 225.674 539.673 262.696 C 576.651 299.716 597.004 348.925 596.983 401.258 C 596.939 509.254 509.078 597.117 401.126 597.117 Z  M 567.816 234.565 C 523.327 190.024 464.161 165.484 401.124 165.458 C 271.24 165.458 165.529 271.161 165.477 401.085 C 165.46 442.617 176.311 483.154 196.932 518.892 L 163.502 641 L 288.421 608.232 C 322.839 627.005 361.591 636.901 401.03 636.913 L 401.126 636.913 L 401.127 636.913 C 530.998 636.913 636.717 531.2 636.77 401.274 C 636.794 338.309 612.306 279.105 567.816 234.565"
-                fill-rule="evenodd"
-              />
-            </g>
-          </g>
-        </svg>
-      </a>
-    </div>
-
-    <!--{Akhir Additional}-->
 
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <script src="./src/dist/jquery/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/dist/swiper/swiper-bundle.min.js"></script>
     <script src="./src/js/scrips.js"></script>
   </body>
 </html>
