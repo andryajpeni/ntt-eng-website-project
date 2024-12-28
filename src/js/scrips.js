@@ -74,18 +74,39 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //==>Menu show<==//
-const x = document.getElementById("navbtn");
-const s = document.getElementById("megamenu");
-x.addEventListener("click", function () {
-  s.classList.toggle("is-open");
+const xa = document.getElementById("m_btn1");
+const xb = document.getElementById("m_btn2");
+const xc = document.getElementById("m_btn3");
+const xd = document.getElementById("m_btn4");
+const xma = document.getElementById("m_m1");
+const xmb = document.getElementById("m_m2");
+const xmc = document.getElementById("m_m3");
+const xmd = document.getElementById("m_m4");
+xa.addEventListener("click", function () {
+  xma.classList.toggle("yl_mob-linkbox--open");
 });
-//==>Menu close<==//
-const a = document.getElementById("yl_nav");
-window.addEventListener("click", function (close) {
-  if (!x.contains(close.target) && !a.contains(close.target)) {
-    s.classList.remove("is-open");
-  }
+xb.addEventListener("click", function () {
+  xmb.classList.toggle("yl_mob-linkbox--open");
 });
+xc.addEventListener("click", function () {
+  xmc.classList.toggle("yl_mob-linkbox--open");
+});
+xd.addEventListener("click", function () {
+  xmd.classList.toggle("yl_mob-linkbox--open");
+});
+//==>Menu show<==//
+// const x = document.getElementById("navbtn");
+// const s = document.getElementById("megamenu");
+// x.addEventListener("click", function () {
+//   s.classList.toggle("is-open");
+// });
+
+// const a = document.getElementById("yl_nav");
+// window.addEventListener("click", function (close) {
+//   if (!x.contains(close.target) && !a.contains(close.target)) {
+//     s.classList.remove("is-open");
+//   }
+// });
 //==>Hamburger Menu show<==//
 const h = document.querySelector(".hamburger");
 const h1 = document.querySelector("#hamburger-1");
@@ -142,9 +163,7 @@ $("#top-btn").click(function () {
 // tabs
 let tabs = document.querySelectorAll(".yl_tabs h6");
 
-let tabContents = document.querySelectorAll(
-  ".yl_tabs-content .yl_tabs-products"
-);
+let tabContents = document.querySelectorAll(".yl_tabs-content .yl_tabs-info");
 tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => {
     tabContents.forEach((content) => {
@@ -168,64 +187,21 @@ tabs.forEach((tab, index) => {
   });
 });
 //table secarh
-function cariWarta() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("tabs_search");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
-// scrollspy section
-window.addEventListener("click", () => {
-  $("#about-btn").click(function () {
-    // Scroll smoothly
-    $("html, body").animate(
-      {
-        scrollTop: $("#about").offset().top,
-      },
-      600 // Adjust the speed (600ms) as needed
-    );
-    return false;
-  });
-  $("#media-btn").click(function () {
-    // Scroll smoothly
-    $("html, body").animate(
-      {
-        scrollTop: $("#media").offset().top,
-      },
-      600 // Adjust the speed (600ms) as needed
-    );
-    return false;
-  });
-  $("#news-btn").click(function () {
-    // Scroll smoothly
-    $("html, body").animate(
-      {
-        scrollTop: $("#news").offset().top,
-      },
-      600 // Adjust the speed (600ms) as needed
-    );
-    return false;
-  });
-  $("#info-btn").click(function () {
-    // Scroll smoothly
-    $("html, body").animate(
-      {
-        scrollTop: $("#info").offset().top,
-      },
-      600 // Adjust the speed (600ms) as needed
-    );
-    return false;
-  });
-});
+// function cariWarta() {
+//   var input, filter, table, tr, td, i, txtValue;
+//   input = document.getElementById("tabs_search");
+//   filter = input.value.toUpperCase();
+//   table = document.getElementById("myTable");
+//   tr = table.getElementsByTagName("tr");
+//   for (i = 0; i < tr.length; i++) {
+//     td = tr[i].getElementsByTagName("td")[0];
+//     if (td) {
+//       txtValue = td.textContent || td.innerText;
+//       if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//         tr[i].style.display = "";
+//       } else {
+//         tr[i].style.display = "none";
+//       }
+//     }
+//   }
+// }
