@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GMIT-Yarden Labat</title>
     <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="stylesheet" href="./src/css/navi.css" />
-    <link rel="stylesheet" href="./src/css/grid.css" />
-    <link rel="stylesheet" href="./src/css/footer.css" />
-    <link rel="stylesheet" href="./src/css/header.css" />
-    <link rel="stylesheet" href="./src/css/infi-scroll.css" />
-    <link rel="stylesheet" href="./src/css/system.css" />
-    <link rel="stylesheet" href="./src/css/custom-class.css" />
-
     <link
       rel="shortcut icon"
       href="./public/favicon/gmit-head.png"
@@ -26,13 +18,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./src/dist/fontawesome-free/css/all.css" />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="/src/dist/swiper/swiper-bundle.min.css" />
-
     <!-- font-family -->
     <style
       data-href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap"
@@ -535,19 +524,156 @@
   </head>
   <body>
     <!--{Awal Header}-->
+    <div class="carousel" id="yl-header">
+      <div class="progress-bar progress-bar--primary hide-on-desktop">
+        <div class="progress-bar__fill"></div>
+      </div>
 
-    <header id="yl-header">
+      <header class="main-post-wrapper">
+        <div class="slides">
+          <article class="main-post main-post--active">
+            <div class="main-post__image">
+              <img src="./public/slide/home-1.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="main-post__content">
+              <div class="main-post__tag-wrapper">
+                <span class="main-post__tag">Berita & Aktifitas</span>
+              </div>
+              <h1 class="main-post__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                maxime nam deleniti est velit sit alias ipsam vitae quia soluta.
+              </h1>
+              <a class="main-post__link" href="#news">
+                <span class="main-post__link-text">Baca Selengkapnya</span>
+                <svg
+                  class="main-post__link-icon main-post__link-icon--arrow"
+                  width="37"
+                  height="12"
+                  viewBox="0 0 37 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11"
+                    stroke="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+          <article class="main-post main-post--not-active">
+            <div class="main-post__image">
+              <img src="./public/slide/home-2.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="main-post__content">
+              <div class="main-post__tag-wrapper">
+                <span class="main-post__tag">Multimedia</span>
+              </div>
+              <h1 class="main-post__title">
+                Kebaktian 1 - Minggu 2 Januari 2024
+              </h1>
+              <a class="main-post__link" href="#media">
+                <svg
+                  class="main-post__link-icon main-post__link-icon--play-btn"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="9"
+                    stroke="#C20000"
+                    stroke-width="2"
+                  />
+                  <path d="M14 10L8 6V14L14 10Z" fill="white" />
+                </svg>
+                <span class="main-post__link-text">Putar video</span>
+              </a>
+            </div>
+          </article>
+          <article class="main-post main-post--not-active">
+            <div class="main-post__image">
+              <img src="./public/slide/home-3.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="main-post__content">
+              <div class="main-post__tag-wrapper">
+                <span class="main-post__tag">Info</span>
+              </div>
+              <h1 class="main-post__title">Jadwal Kebaktian & Jadwal Ibadah</h1>
+              <a class="main-post__link" href="#">
+                <span class="main-post__link-text">Baca Selengkapnya</span>
+                <svg
+                  class="main-post__link-icon main-post__link-icon--arrow"
+                  width="37"
+                  height="12"
+                  viewBox="0 0 37 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11"
+                    stroke="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </header>
+
+      <div class="posts-wrapper hide-on-mobile">
+        <article class="post post--active">
+          <div class="progress-bar">
+            <div class="progress-bar__fill"></div>
+          </div>
+          <header class="post__header">
+            <span class="post__tag">Berita & Aktifitas</span>
+            <p class="post__published">16 August 2019</p>
+          </header>
+          <h2 class="post__title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos
+            quos eligendi asperiores veniam ullam voluptatibus corporis atque
+            ipsa doloremque.
+          </h2>
+        </article>
+        <article class="post">
+          <div class="progress-bar">
+            <div class="progress-bar__fill"></div>
+          </div>
+          <header class="post__header">
+            <span class="post__tag">Multimedia</span>
+            <p class="post__published">Minggu 2 Januari 2024</p>
+          </header>
+          <h2 class="post__title">Kebaktian 1 - Minggu 2 Januari 2024</h2>
+        </article>
+        <article class="post">
+          <div class="progress-bar">
+            <div class="progress-bar__fill"></div>
+          </div>
+          <header class="post__header">
+            <span class="post__tag">Info</span>
+            <p class="post__published">Minggu 1 Januari 2024</p>
+          </header>
+          <h2 class="post__title">Jadwal Kebaktian & Jadwal Ibadah</h2>
+        </article>
+      </div>
+    </div>
+    <!-- <header id="yl-header">
       <div class="yl_header">
         <div class="yl_header-intro">
           <p class="disable_large">Header Content</p>
           <p class="disable_large">Slider 3 Page</p>
           <p class="disable_large">Content Ayat Alkitab</p>
+          <p class="disable_large">background image</p>
+          <p class="disable_large">CTA Button</p>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <!--{Akhir Header}-->
-
     <!--{Awal Nav}-->
 
     <div id="yl_nav" class="yl_nav-custom">
@@ -569,14 +695,57 @@
           </a>
         </div>
 
-        <nav class="yl_nav-menu">
-          <ul class="yl_nav-menu-item">
-            <li class="yl_navmenulink" style="justify-self: center">
-              <div id="navbtn">TENTANG</div>
-              <a href="">PENATALAYANAN</a>
-              <a href="">PELAYANAN</a>
-            </li>
-          </ul>
+        <nav class="yl_nav-menu" id="ylNav">
+          <div class="yl_nav-menu-item">
+            <div class="yl_navmenulink" style="justify-self: center">
+              <ul class="yl_dropdown">
+                <div class="yl_dropbtn">PROFIL</div>
+                <li class="yl_dropdown-content border_box">
+                  <a href="#">SEJARAH GEREJA</a>
+                  <a href="#">STRUKTUR ORGANISASI</a>
+                </li>
+              </ul>
+              <ul class="yl_dropdown">
+                <div class="yl_dropbtn">MJH</div>
+                <li class="yl_dropdown-content border_box">
+                  <a href="#">KETUA</a>
+                  <a href="#">WAKIL KETUA 1</a>
+                  <a href="#">WAKIL KETUA 2</a>
+                  <a href="#">SEKRETARIS</a>
+                  <a href="#">WAKIL SEKRETARIS</a>
+                  <a href="#">BENDAHARA</a>
+                  <a href="#">WAKIL BENDAHARA</a>
+                </li>
+              </ul>
+              <ul class="yl_dropdown">
+                <div class="yl_dropbtn">BPP</div>
+                <li class="yl_dropdown-content border_box">
+                  <a href="#">BADAN PEMBANTU PELAYANAN (BPP)</a>
+                  <a href="#">BPPPPJ (BP4J)</a>
+                  <a href="#">BPPPJ (BP3J)</a>
+                  <a href="#">BADAN DIAKONAT JEMAAT (BDJ)</a>
+                  <a href="#">BADAN PEMBANGUNAN FISIK (BPF)</a>
+                  <a href="#">BADAN HARGAKU</a>
+                </li>
+              </ul>
+              <ul class="yl_dropdown">
+                <div class="yl_dropbtn">UPP</div>
+                <li class="yl_dropdown-content border_box">
+                  <a href="#">TERITORI</a>
+                  <a href="#">PAR & TARUNA</a>
+                  <a href="#">KATEKISASI</a>
+                  <a href="#">PEMUDA</a>
+                  <a href="#">KAUM BAPAK</a>
+                  <a href="#">KAUM PEREMPUAN</a>
+                  <a href="#">LANSIA</a>
+                  <a href="#">PERSEKUTUAN DOA</a>
+                  <a href="#">LITURGI & MUSIK GEREJAWI</a>
+                  <a href="#">KESEKRETARIATAN & MULTIMEDIA</a>
+                  <a href="#">PERBENDAHARAAN & KERUMAH -TANGGAAN</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
 
         <div class="yl_nav_right">
@@ -602,76 +771,56 @@
           </div>
         </div>
       </div>
-      <!-- megamenu -->
-      <div id="megamenu" class="yl_nav-megamenu">
-        <div class="yl_nav-megamenu-content">
-          <div class="box_1">
-            <p>PROFIL</p>
-            <ul>
-              <li>
-                <a href=""> SEJARAH </a>
-              </li>
-              <li><a href=""> VISI MISI </a></li>
-              <li><a href=""> STRUKTUR ORGANISASI </a></li>
-            </ul>
-          </div>
-          <div class="box_2">
-            <p>MJH</p>
-            <ul>
-              <li>
-                <a href=""> MAJELIS JEMAAT HARIAN </a>
-              </li>
-            </ul>
-          </div>
-          <div class="box_3">
-            <p>MJH</p>
-            <ul>
-              <li>
-                <a href=""> BADAN PEMBANTU PELAYANAN (BPP) </a>
-              </li>
-              <li>
-                <a href=""> BPPPPJ (BP4J) </a>
-              </li>
 
-              <li><a href=""> BPPPJ (BP3J) </a></li>
-              <li><a href=""> BADAN DIAKONAT JEMAAT (BDJ) </a></li>
-              <li><a href=""> BADAN PEMBANGUNAN FISIK (BPF) </a></li>
-              <li><a href=""> BADAN HARGAKU </a></li>
-            </ul>
-          </div>
-          <div class="box_4">
-            <p>UNIT PEMBANTU PELAYANAN (UPP)</p>
-            <ul>
-              <li>
-                <a href=""> TERITORI </a>
-              </li>
-
-              <li><a href=""> PAR & TARUNA </a></li>
-              <li><a href=""> KATEKISASI </a></li>
-              <li><a href=""> PEMUDA </a></li>
-              <li><a href=""> KAUM BAPAK </a></li>
-              <li><a href=""> KAUM PEREMPUAN </a></li>
-              <li><a href=""> LANSIA </a></li>
-              <li><a href=""> PERSEKUTUAN DOA </a></li>
-              <li><a href=""> LITURGI & MUSIK GEREJAWI </a></li>
-              <li><a href=""> KESEKRETARIATAN & MULTIMEDIA </a></li>
-              <li><a href=""> PERBENDAHARAAN & KERUMAH -TANGGAAN </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
       <!--{mobile::menu-->
       <div id="mobMenu" class="mobile-menu">
-        <ul class="yl_mobile-menulist">
-          <li>
-            <a href="#" class="yl_mobilelink">PROFIL</a>
-            <p class="fade_small">YARDEN LABAT</p>
-            <div class="moblink"><a href="">SEJARAH</a></div>
-            <div class="moblink"><a href="">VISI MISI</a></div>
-
-            <p class="fade_small">ARSIP</p>
-            <div class="moblink"><a href="">PENDETA GEREJA</a></div>
-          </li>
+        <div class="yl_mobile-menulist">
+          <ul>
+            <a id="m_btn1" class="yl_mobmbtns">PROFIL</a>
+            <div id="m_m1" class="yl_mob-linkbox border_box">
+              <li><a href="#">SEJARAH GEREJA</a></li>
+              <li><a href="#">STRUKTUR ORGANISASI</a></li>
+            </div>
+          </ul>
+          <ul>
+            <a id="m_btn2" class="yl_mobmbtns">MJH</a>
+            <div id="m_m2" class="yl_mob-linkbox border_box">
+              <li><a href="#">KETUA</a></li>
+              <li><a href="#">WAKIL KETUA 1</a></li>
+              <li><a href="#">WAKIL KETUA 2</a></li>
+              <li><a href="#">SEKRETARIS</a></li>
+              <li><a href="#">WAKIL SEKRETARIS</a></li>
+              <li><a href="#">BENDAHARA</a></li>
+              <li><a href="#">WAKIL BENDAHARA</a></li>
+            </div>
+          </ul>
+          <ul>
+            <a id="m_btn3" class="yl_mobmbtns">BPP</a>
+            <div id="m_m3" class="yl_mob-linkbox border_box">
+              <li><a href="#">BADAN PEMBANTU PELAYANAN (BPP)</a></li>
+              <li><a href="#">BPPPPJ (BP4J)</a></li>
+              <li><a href="#">BPPPJ (BP3J)</a></li>
+              <li><a href="#">BADAN DIAKONAT JEMAAT (BDJ)</a></li>
+              <li><a href="#">BADAN PEMBANGUNAN FISIK (BPF)</a></li>
+              <li><a href="#">BADAN HARGAKU</a></li>
+            </div>
+          </ul>
+          <ul>
+            <a id="m_btn4" class="yl_mobmbtns">UPP</a>
+            <div id="m_m4" class="yl_mob-linkbox border_box">
+              <li><a href="#">TERITORI</a></li>
+              <li><a href="#">PAR & TARUNA</a></li>
+              <li><a href="#">KATEKISASI</a></li>
+              <li><a href="#">PEMUDA</a></li>
+              <li><a href="#">KAUM BAPAK</a></li>
+              <li><a href="#">KAUM PEREMPUAN</a></li>
+              <li><a href="#">LANSIA</a></li>
+              <li><a href="#">PERSEKUTUAN DOA</a></li>
+              <li><a href="#">LITURGI & MUSIK GEREJAWI</a></li>
+              <li><a href="#">KESEKRETARIATAN & MULTIMEDIA</a></li>
+              <li><a href="#">PERBENDAHARAAN & KERUMAH -TANGGAAN</a></li>
+            </div>
+          </ul>
 
           <li class="yl_mob-btn">
             <a
@@ -687,19 +836,18 @@
                 ></i></span
             ></a>
           </li>
-        </ul>
+        </div>
       </div>
       <!--{docs::menu}-->
     </div>
 
     <!--{Akhir Nav}-->
-
     <!--{Awal Main}-->
 
     <main class="yl_page">
       <div class="yl_padding">
-        <!--awal berita kegiatan -->
-        <!--awal tentang -->
+        <!--awal info gereja -->
+
         <section id="about" class="yl_top-container yl_about">
           <div class="relative_slider-container">
             <div class="index_scrolling-text-background index_alternate">
@@ -711,25 +859,17 @@
               </div>
             </div>
           </div>
-          <div class="yl_about">
-            <div class="yl_about-head">
-              <h2>Tentang Yarden Labat</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi
-                maxime ipsum necessitatibus quam ea tenetur in quos sint? Maxime
-                quae veritatis voluptates blanditiis autem ducimus eligendi
-                perferendis nobis debitis iure, doloribus ratione laborum
-                voluptatibus tempore deserunt unde amet impedit aliquid cumque
-                repellat! Expedita, provident. Quae ipsa officia dignissimos
-                neque.
-              </p>
-            </div>
+          <div class="yl_about-header">
+            <h2>PROFIL</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              veniam autem tenetur eligendi numquam voluptates necessitatibus
+              nostrum corporis quos quidem cum voluptatum quod laboriosam magnam
+              culpa doloremque, consequuntur molestias assumenda dignissimos
+              distinctio vitae quaerat. Laborum ducimus modi voluptatibus minus
+              eum?
+            </p>
           </div>
-        </section>
-        <!--akhir tentang -->
-
-        <!--awal info gereja -->
-        <section class="yl_top-container">
           <div class="yl_container-inner">
             <div class="yl_2layout">
               <!-- main -->
@@ -738,54 +878,16 @@
                   <!-- inner -->
                   <div class="yl_inner">
                     <div class="yl_inner-left1 border_box">
-                      <div class="yl_head-title">
-                        <h3>Pendeta Yarden Labat</h3>
-                        <p>
-                          Jemaat Yarden Labat memiliki 2 orang pendeta yang
-                          melayani
-                        </p>
-                      </div>
-                      <div class="yl_2layout">
-                        <div class="yl_2box">
-                          <div class="yl_2wrap">
-                            <div class="yl_head-1">
-                              <img
-                                src="./public/pendeta/pendeta1.webp"
-                                loading="lazy"
-                                alt="Ketua"
-                                height="150px"
-                                width="150px"
-                              />
-                              <p>Pdt. Martha M. R. Nggauk-Nada Weo, S.Th</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="yl_2box">
-                          <div class="yl_2wrap">
-                            <div class="yl_head-2">
-                              <img
-                                src="./public/pendeta/pendeta1.webp"
-                                loading="lazy"
-                                alt="Wakil Ketua 1"
-                                height="150px"
-                                width="150px"
-                              />
-                              <p>
-                                Pdt. Marganingsih Thurmalinda Nome - Fiah, S.Th
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="yl_head-org-btn">
-                        <a
-                          class="button_light border_box"
-                          href=""
-                          style="width: 200px"
-                          >Struktur Organisasi</a
-                        >
-                      </div>
+                      <h3>Sejarah Gereja</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At nisi maxime ipsum necessitatibus quam ea tenetur in
+                        quos sint? Maxime quae veritatis voluptates blanditiis
+                        autem ducimus eligendi perferendis nobis debitis iure,
+                        doloribus ratione laborum voluptatibus tempore deserunt
+                        unde amet impedit aliquid cumque repellat! Expedita,
+                        provident. Quae ipsa officia dignissimos neque.
+                      </p>
                     </div>
                     <div class="yl_inner-left2 border_box">
                       <div class="yl_inner-left-bottom">
@@ -936,6 +1038,47 @@
 
                   <div class="yl_inner">
                     <div class="yl_inner-right1 border_box">
+                      <div class="yl_head-title">
+                        <h3>Pendeta Yarden Labat</h3>
+                        <p>
+                          Jemaat Yarden Labat memiliki 2 orang pendeta yang
+                          melayani
+                        </p>
+                      </div>
+                      <div class="yl_2layout">
+                        <div class="yl_2box">
+                          <div class="yl_2wrap">
+                            <div class="yl_head-1">
+                              <img
+                                src="./public/pendeta/pendeta1.webp"
+                                loading="lazy"
+                                alt="Ketua"
+                                height="150px"
+                                width="150px"
+                              />
+                              <p>Pdt. Martha M. R. Nggauk-Nada Weo, S.Th</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="yl_2box">
+                          <div class="yl_2wrap">
+                            <div class="yl_head-2">
+                              <img
+                                src="./public/pendeta/pendeta1.webp"
+                                loading="lazy"
+                                alt="Wakil Ketua 1"
+                                height="150px"
+                                width="150px"
+                              />
+                              <p>
+                                Pdt. Marganingsih Thurmalinda Nome - Fiah, S.Th
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="yl_inner-right2 border_box">
                       <!-- main inner -->
                       <div class="yl_3layout">
                         <div class="yl_3box">
@@ -977,7 +1120,6 @@
                         </div>
                       </div>
                     </div>
-                    <div class="yl_inner-right2 border_box">content</div>
                   </div>
                   <!-- inner -->
                 </div>
@@ -987,7 +1129,6 @@
           </div>
         </section>
         <!--akhir info gereja -->
-
         <!--{tabs}-->
 
         <section id="info" class="yl_top-container">
@@ -998,7 +1139,7 @@
             </div>
           </div>
           <div class="yl_tabs-content">
-            <div class="yl_tabs-products tab-active">
+            <div class="yl_tabs-info tab-active">
               <div class="yl_tab_1-list">
                 <div class="yl_tab_1-box">
                   <div class="yl_tab_1-wrapper">
@@ -1028,7 +1169,7 @@
                 </div>
               </div>
             </div>
-            <div class="yl_tabs-products">
+            <div class="yl_tabs-info">
               <div class="yl_tab_2-list">
                 <div class="yl_tab_2-box">
                   <div class="yl_tab_2-wrapper">content title dan image</div>
@@ -1143,6 +1284,7 @@
             </div>
           </div>
         </section>
+
         <!--{tabs}-->
         <!--awal 5sola -->
 
@@ -1310,7 +1452,6 @@
         </section>
 
         <!--akhir 5sola -->
-
         <!--awal multimedia -->
 
         <section id="media">
@@ -1332,7 +1473,7 @@
               <h3>Multimedia</h3>
               <div class="yl_media-social">
                 <a class="yl_youtube-btn" href="">
-                  <span class="tooltiptext">@gmityardenlabat</span>
+                  <span class="tooltiptext">@gmityardenlabat1198</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="40"
@@ -1400,52 +1541,52 @@
                   <div class="yl_media-top border_box">
                     <div class="yl_media-top-content">
                       <div class="yl_media-slider">
-                        <a href="" class="yl_media-slider-content-top">
+                        <a class="yl_media-slider-content-top srcChanger">
                           <p class="disable_normal">KEBAKTIAN 1</p>
                           <p>Minggu - 1 Januari 2024</p>
                           <p class="disable_small">Tim Multimedia</p>
                         </a>
-                        <a href="" class="yl_media-slider-content">
+                        <a class="yl_media-slider-content srcChanger">
                           <p class="disable_normal">KEBAKTIAN 2</p>
                           <p>Minggu - 1 Januari 2024</p>
                           <p class="disable_small">Tim Multimedia</p>
                         </a>
-                        <a href="" class="yl_media-slider-content">
+                        <a class="yl_media-slider-content srcChanger">
                           <p class="disable_normal">KEBAKTIAN 1</p>
                           <p>Minggu - 2 Januari 2024</p>
                           <p class="disable_small">Tim Multimedia</p>
                         </a>
-                        <a href="" class="yl_media-slider-content">
+                        <a class="yl_media-slider-content srcChanger">
                           <p class="disable_normal">KEBAKTIAN 2</p>
                           <p>Minggu - 2 Januari 2024</p>
                           <p class="disable_small">Tim Multimedia</p>
                         </a>
-                        <a href="" class="yl_media-slider-content">
+                        <a class="yl_media-slider-content srcChanger">
                           <p class="disable_normal">KEBAKTIAN 1</p>
                           <p>Minggu - 3 Januari 2024</p>
                           <p class="disable_small">Tim Multimedia</p>
                         </a>
-                        <a href="" class="yl_media-slider-content">
+                        <a class="yl_media-slider-content srcChanger">
                           <p class="disable_normal">KEBAKTIAN 2</p>
                           <p>Minggu - 3 Januari 2024</p>
                           <p class="disable_small">Tim Multimedia</p>
                         </a>
-                        <a href="" class="yl_media-slider-content">
+                        <a class="yl_media-slider-content srcChanger">
                           <p class="disable_normal">KEBAKTIAN 1</p>
                           <p>Minggu - 4 Januari 2024</p>
                           <p class="disable_small">Tim Multimedia</p>
                         </a>
-                        <a href="" class="yl_media-slider-content">
+                        <a class="yl_media-slider-content srcChanger">
                           <p class="disable_normal">KEBAKTIAN 2</p>
                           <p>Minggu - 4 Januari 2024</p>
                           <p class="disable_small">Tim Multimedia</p>
                         </a>
-                        <a href="" class="yl_media-slider-content">
+                        <a class="yl_media-slider-content srcChanger">
                           <p class="disable_normal">KEBAKTIAN 1</p>
                           <p>Minggu - 5 Januari 2024</p>
                           <p class="disable_small">Tim Multimedia</p>
                         </a>
-                        <a href="" class="yl_media-slider-content-bottom">
+                        <a class="yl_media-slider-content-bottom srcChanger">
                           <p class="disable_normal">KEBAKTIAN 2</p>
                           <p>Minggu - 5 Januari 2024</p>
                           <p class="disable_small">Tim Multimedia</p>
@@ -1460,8 +1601,9 @@
                   <div class="yl_media-bottom">
                     <iframe
                       width="100%"
-                      height="390"
-                      class="border_box"
+                      height="100%"
+                      class="border_box responsive_frame"
+                      id="iframe"
                       src="https://www.youtube.com/embed/iHlbqRX8UDo?si=cZiaDP44maO25oji"
                       title="YouTube video player"
                       frameborder="0"
@@ -1470,6 +1612,7 @@
                       allowfullscreen
                     ></iframe>
                   </div>
+                  <div id="demo" class="demo-hide"></div>
                 </div>
               </div>
             </div>
@@ -1477,8 +1620,8 @@
         </section>
 
         <!--akhir multimedia -->
-
         <!--awal berita kegiatan -->
+
         <section id="news">
           <div class="relative_slider-container">
             <div class="index_scrolling-text-background index_alternate">
@@ -1612,69 +1755,90 @@
 
     <footer class="yl_top-container">
       <div class="yl_footer">
-        <div class="yl_footer-head">
-          <div class="yl_footer-layout">
-            <div class="yl_footer-box">
-              <div class="yl_footer-wrap">
-                <div class="yl_footer-layout">
-                  <div class="yl_footer-box">
-                    <div class="yl_footer-wrap">
-                      <div class="yl_footer-logo-soc">
-                        <div class="yl_footer-logo">kolom logo</div>
-                        <div class="yl_footer-social">kolom media sosial</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="yl_footer-box">
-                    <div class="yl_footer-wrap">
-                      <div class="yl_footer-about">
-                        <h5>Yarden Labat -</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Veritatis vitae similique, minima ullam deserunt
-                          voluptatem incidunt consequatur, nemo magnam officiis
-                          ex quaerat dolores quidem alias odit odio, eveniet
-                          porro tempore?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div class="yl_2layout">
+          <div class="yl_2box">
+            <div class="yl_2wrap">
+              <div class="yl_footer-left">
+                <h6 class="disable_medium">Yarden Labat -</h6>
+                <p class="disable_small">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis vitae similique, minima ullam deserunt voluptatem
+                  incidunt consequatur, nemo magnam officiis ex quaerat dolores
+                  quidem alias odit odio, eveniet porro tempore?
+                </p>
               </div>
             </div>
-
-            <div class="yl_footer-box">
-              <div class="yl_footer-wrap">
-                <div class="yl_footer-qlinks">
-                  <div class="yl_footer-qlink">
-                    <div class="yl_footer-qlink-box">
-                      <ul class="yl_footer-qlink-menu">
-                        <h6>Link Cepat</h6>
-                        <li class="yl_footer-qlink-link">
-                          <a id="about-btn">Tentang Yarden Labat</a>
-                        </li>
-                        <li class="yl_footer-qlink-link">
-                          <a id="media-btn">Multimedia</a>
-                        </li>
-                        <li class="yl_footer-qlink-link">
-                          <a id="news-btn">Berita & Aktivitas</a>
-                        </li>
-                        <li class="yl_footer-qlink-link">
-                          <a id="info-btn">Jadwal &amp; Warta</a>
-                        </li>
-                      </ul>
-                      <div class="yl_footer-copyright-is-hidden">
-                        <div>Crafted with passion By KA-AN</div>
-                        <div>
-                          © 2024 - Yarden Labat. <br />
-                          All Rights Reserved
+          </div>
+          <div class="yl_2box">
+            <div class="yl_2wrap">
+              <div class="yl_footer-right">
+                <div class="yl_3-5layout">
+                  <div class="yl_3-5box">
+                    <div class="yl_3-5wrap">
+                      <div class="yl_footer-info">
+                        <h6 class="disable_medium">Kontak Info</h6>
+                        <div class="disable_small">
+                          <a href="">
+                            <span class="disable_small">
+                              A : Jl. Kian Kalaki, Kel. Bakunase II, Kec. Kota
+                              Raja, Kota Kupang, Nusa Tenggara Timur -
+                              Indonesia</span
+                            >
+                          </a>
+                        </div>
+                        <div class="disable_small">
+                          <a href="">
+                            <span class="disable_small">
+                              E : info@yardenlabat.org</span
+                            ></a
+                          >
+                        </div>
+                        <div class="disable_small">
+                          <a href="">
+                            <span class="disable_small">
+                              T : (+62) 123 4567 8900</span
+                            ></a
+                          >
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="yl_footer-totop">
-                    <div id="top-btn" class="yl_5sola-top-btn">
-                      <i class="fa fa-arrow-left"></i>
+                  <div class="yl_3-5box">
+                    <div class="yl_3-5wrap">
+                      <div class="yl_footer-qlink">
+                        <h6 class="disable_medium">Link Cepat</h6>
+
+                        <a href="#about">
+                          <span class="disable_small">
+                            Tentang Yarden Labat
+                          </span>
+                        </a>
+
+                        <a href="#media">
+                          <span class="disable_small"> Multimedia </span>
+                        </a>
+
+                        <a href="#news">
+                          <span class="disable_small">
+                            Berita & Aktivitas
+                          </span>
+                        </a>
+
+                        <a href="#info">
+                          <span class="disable_small">
+                            Jadwal &amp; Warta</span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yl_3-5box">
+                    <div class="yl_3-5wrap">
+                      <div class="yl_footer-totop">
+                        <div id="top-btn" class="yl_5sola-top-btn">
+                          <i class="fa fa-arrow-left"></i>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1684,8 +1848,8 @@
         </div>
       </div>
       <div class="yl_footer-copyright">
-        <div>Crafted with passion By KA-AN</div>
-        <div>© 2024 - Yarden Labat. All Rights Reserved</div>
+        <p class="disable_small">Crafted with passion By KA-AN</p>
+        <p class="disable_small">© 2024 - Yarden Labat. All Rights Reserved</p>
       </div>
     </footer>
 
@@ -1698,7 +1862,128 @@
     ></script>
     <script src="./src/dist/jquery/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./src/dist/swiper/swiper-bundle.min.js"></script>
     <script src="./src/js/scrips.js"></script>
+    <script>
+      var locations = [
+        "https://www.youtube.com/embed/nc-ZYmFXw0o?si=4hs3I2aMWcUS8MsH",
+        "https://www.youtube.com/embed/DbESZ6pCy5I?si=jzKzx9YVEgYRw9Yy",
+        "https://www.youtube.com/embed/NHnqNz06GyI?si=HWXznY539Ua2SCs5",
+        "https://www.youtube.com/embed/Zai0DnM_MRU?si=MVLjs-U3vLhZ3D1A",
+        "https://www.youtube.com/embed/WgBsub74uqI?si=PE-3CWfrfec8h2ve",
+      ];
+
+      var btnSrc = document.getElementsByClassName("srcChanger");
+      for (let i = 0; i < btnSrc.length; i++) {
+        btnSrc[i].addEventListener("click", function () {
+          document.getElementsByClassName("responsive_frame")[0].src =
+            locations[i];
+          document.getElementById("demo").innerHTML = locations[i];
+        });
+      }
+    </script>
+    <script>
+      const mainProgressBar = document.querySelector(
+        ".progress-bar--primary .progress-bar__fill"
+      );
+      const mainPosts = document.querySelectorAll(".main-post");
+      const posts = document.querySelectorAll(".post");
+
+      let i = 0;
+      let postIndex = 0;
+      let currentPost = posts[postIndex];
+      let currentMainPost = mainPosts[postIndex];
+
+      let progressInterval = setInterval(progress, 100);
+
+      function progress() {
+        if (i === 100) {
+          i = -5;
+          // reset progress bar
+          currentPost.querySelector(".progress-bar__fill").style.width = 0;
+          mainProgressBar.style.width = 0;
+          currentPost.classList.remove("post--active");
+
+          postIndex++;
+
+          currentMainPost.classList.add("main-post--not-active");
+          currentMainPost.classList.remove("main-post--active");
+
+          // reset postIndex to loop over the slides again
+          if (postIndex === posts.length) {
+            postIndex = 0;
+          }
+
+          currentPost = posts[postIndex];
+          currentMainPost = mainPosts[postIndex];
+        } else {
+          i++;
+          currentPost.querySelector(
+            ".progress-bar__fill"
+          ).style.width = `${i}%`;
+          mainProgressBar.style.width = `${i}%`;
+          currentPost.classList.add("post--active");
+
+          currentMainPost.classList.add("main-post--active");
+          currentMainPost.classList.remove("main-post--not-active");
+        }
+      }
+
+      posts.forEach((post, index) => {
+        post.addEventListener("click", () => {
+          disablePostsTemporarily();
+          i = 0; // Reset the progress bar
+          postIndex = index;
+          updatePosts();
+        });
+      });
+
+      function disablePostsTemporarily() {
+        // Disable pointer events on all posts
+        posts.forEach((post) => {
+          post.classList.add("post--disabled");
+        });
+
+        // Re-enable pointer events after 2 1/2 seconds
+        setTimeout(() => {
+          posts.forEach((post) => {
+            post.classList.remove("post--disabled");
+          });
+        }, 2500);
+      }
+
+      function updatePosts() {
+        // Reset all progress bars and classes
+        posts.forEach((post) => {
+          post.querySelector(".progress-bar__fill").style.width = 0;
+          post.classList.remove("post--active");
+        });
+
+        mainPosts.forEach((mainPost) => {
+          mainPost.classList.add("main-post--not-active");
+          mainPost.classList.remove("main-post--active");
+        });
+
+        // Update the current post and main post
+        currentPost = posts[postIndex];
+        currentMainPost = mainPosts[postIndex];
+
+        currentPost.querySelector(".progress-bar__fill").style.width = `${i}%`;
+        mainProgressBar.style.width = `${i}%`;
+        currentPost.classList.add("post--active");
+
+        currentMainPost.classList.add("main-post--active");
+        currentMainPost.classList.remove("main-post--not-active");
+      }
+    </script>
+    <script>
+      // PAGE HEADER FADE
+      const fadeHead = $("#yl-header");
+      $(window).on("scroll", function () {
+        const st = $(this).scrollTop();
+        fadeHead.css({ opacity: 1 - st / 400 });
+        fadeHead.css({ "transition-delay": "0s" });
+        fadeHead.css({ transition: "0.01s ease-in-out" });
+      });
+    </script>
   </body>
 </html>
