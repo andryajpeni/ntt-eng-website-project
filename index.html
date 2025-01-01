@@ -574,6 +574,23 @@
               </h1>
               <a class="main-post__link" href="#media">
                 <svg
+                  class="main-post__link-icon main-post__link-icon--play-btns"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="9"
+                    stroke="#C20000"
+                    stroke-width="2"
+                  />
+                  <path d="M14 10L8 6V14L14 10Z" fill="white" />
+                </svg>
+                <svg
                   class="main-post__link-icon main-post__link-icon--play-btn"
                   width="30"
                   height="30"
@@ -635,8 +652,6 @@
           </header>
           <h2 class="post__title">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos
-            quos eligendi asperiores veniam ullam voluptatibus corporis atque
-            ipsa doloremque.
           </h2>
         </article>
         <article class="post">
@@ -700,7 +715,7 @@
             <div class="yl_navmenulink" style="justify-self: center">
               <ul class="yl_dropdown">
                 <div class="yl_dropbtn">PROFIL</div>
-                <li class="yl_dropdown-content border_box">
+                <li class="yl_dropdown-content">
                   <a href="#">SEJARAH GEREJA</a>
                   <a href="#">STRUKTUR ORGANISASI</a>
                 </li>
@@ -849,16 +864,6 @@
         <!--awal info gereja -->
 
         <section id="about" class="yl_top-container yl_about">
-          <div class="relative_slider-container">
-            <div class="index_scrolling-text-background index_alternate">
-              <div class="infinite-scroll_wrap" style="--override-speed: 100s">
-                <div class="infinite-scroll_marquee infinite-scroll_reverse">
-                  <p class="bolt-text-scroll">YARDEN LABAT&nbsp;</p>
-                  <p class="bolt-text-scroll">YARDEN LABAT&nbsp;</p>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="yl_about-header">
             <h2>PROFIL</h2>
             <p>
@@ -877,7 +882,10 @@
                 <div class="yl_2wrap">
                   <!-- inner -->
                   <div class="yl_inner">
-                    <div class="yl_inner-left1 border_box">
+                    <div
+                      class="yl_inner-left1 border_box"
+                      style="background-image: url(./public/about/about.jpeg)"
+                    >
                       <h3>Sejarah Gereja</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -911,9 +919,9 @@
                                 class="div-block-52"
                               />
                               <div class="div-block-54">
-                                <div>
+                                <p>
                                   Persatuan Gereje-Gereja di Indonesia (PGI)
-                                </div>
+                                </p>
                               </div>
                             </div>
                             <div class="div-block-53">
@@ -925,7 +933,7 @@
                                 class="div-block-52"
                               />
                               <div class="div-block-54">
-                                <div>Sinode GMIT</div>
+                                <p>Sinode GMIT</p>
                               </div>
                             </div>
 
@@ -938,7 +946,7 @@
                                 class="div-block-52"
                               />
                               <div class="div-block-54">
-                                <div>Pemuda Sinode GMIT</div>
+                                <p>Pemuda Sinode GMIT</p>
                               </div>
                             </div>
                           </div>
@@ -952,9 +960,9 @@
                                 class="div-block-52"
                               />
                               <div class="div-block-54">
-                                <div>
+                                <p>
                                   Persatuan Gereje-Gereja di Indonesia (PGI)
-                                </div>
+                                </p>
                               </div>
                             </div>
                             <div class="div-block-53">
@@ -966,7 +974,7 @@
                                 class="div-block-52"
                               />
                               <div class="div-block-54">
-                                <div>Sinode GMIT</div>
+                                <p>Sinode GMIT</p>
                               </div>
                             </div>
 
@@ -979,7 +987,7 @@
                                 class="div-block-52"
                               />
                               <div class="div-block-54">
-                                <div>Pemuda GMIT</div>
+                                <p>Pemuda GMIT</p>
                               </div>
                             </div>
                           </div>
@@ -993,9 +1001,9 @@
                                 class="div-block-52"
                               />
                               <div class="div-block-54">
-                                <div>
+                                <p>
                                   Persatuan Gereje-Gereja di Indonesia (PGI)
-                                </div>
+                                </p>
                               </div>
                             </div>
                             <div class="div-block-53">
@@ -1007,7 +1015,7 @@
                                 class="div-block-52"
                               />
                               <div class="div-block-54">
-                                <div>Sinode GMIT</div>
+                                <p>Sinode GMIT</p>
                               </div>
                             </div>
 
@@ -1020,7 +1028,7 @@
                                 class="div-block-52"
                               />
                               <div class="div-block-54">
-                                <div>Pemuda GMIT</div>
+                                <p>Pemuda GMIT</p>
                               </div>
                             </div>
                           </div>
@@ -1080,45 +1088,241 @@
                     </div>
                     <div class="yl_inner-right2 border_box">
                       <!-- main inner -->
-                      <div class="yl_3layout">
-                        <div class="yl_3box">
-                          <div class="yl_3wrap">
-                            <!-- inner -->
-                            <div class="yl_inner-right">
-                              <h3>8</h3>
-                              <p>TERITORI</p>
-                              <h3>1000</h3>
-                              <p>PAR &amp; TARUNA</p>
-                              <h3>1000</h3>
-                              <p>KATEKISASI</p>
+                      <div class="yl_inner-right">
+                        <!-- grid -->
+
+                        <div class="yl_prs-desc-title">
+                          <h3>Data Jemaat Yarden Labat</h3>
+                          <p>Tahun Pelayanan 2021</p>
+                        </div>
+
+                        <!-- grid -->
+                        <hr />
+                        <!-- grid -->
+                        <div class="yl_inner-right2layout">
+                          <div class="yl_inner-right2box">
+                            <div class="yl_inner-right2wrap">
+                              <div class="yl_prs">
+                                <h2
+                                  class="counter"
+                                  style="--from: 0; --to: 1648; --time: 4s"
+                                ></h2>
+
+                                <p
+                                  style="
+                                    background: linear-gradient(
+                                      91deg,
+                                      #00aab4 -2.85%,
+                                      #7e7611 84.92%
+                                    );
+                                    -webkit-background-clip: text;
+                                    background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                  "
+                                >
+                                  Anggota Jemaat
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="yl_inner-right2box">
+                            <div class="yl_inner-right2wrap">
+                              <div class="yl_prs-desc">
+                                <div class="male-box">
+                                  <div class="male-count border_box">
+                                    <h4
+                                      class="counter"
+                                      style="--from: 0; --to: 825; --time: 4s"
+                                    ></h4>
+                                  </div>
+                                  <div class="male-desc border_box">
+                                    <p>Laki-Laki</p>
+                                  </div>
+                                </div>
+                                <div class="female-box">
+                                  <div class="female-count border_box">
+                                    <h4
+                                      class="counter"
+                                      style="--from: 0; --to: 823; --time: 4s"
+                                    ></h4>
+                                  </div>
+                                  <div class="female-desc border_box">
+                                    <p>Perempuan</p>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="yl_3box">
-                          <div class="yl_3wrap">
-                            <!-- inner -->
-                            <div class="yl_inner-right">
-                              <h3>1000</h3>
-                              <p>PEMUDA</p>
-                              <h3>1000</h3>
-                              <p>KAUM BAPAK</p>
-                              <h3>1000</h3>
-                              <p>KAUM PEREMPUAN</p>
+                        <!-- grid -->
+                        <hr />
+                        <!-- grid -->
+                        <div class="yl_inner-right2layout">
+                          <div class="yl_inner-right2box">
+                            <div class="yl_inner-right2wrap">
+                              <div class="yl_prs">
+                                <h2
+                                  class="counter"
+                                  style="--from: 0; --to: 1663; --time: 4s"
+                                ></h2>
+
+                                <p
+                                  style="
+                                    background: linear-gradient(
+                                      91deg,
+                                      #00aab4 -2.85%,
+                                      #7e7611 84.92%
+                                    );
+                                    -webkit-background-clip: text;
+                                    background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                  "
+                                >
+                                  Anggota Baptis
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="yl_inner-right2box">
+                            <div class="yl_inner-right2wrap">
+                              <div class="yl_prs-desc">
+                                <div class="male-box">
+                                  <div class="male-count border_box">
+                                    <h4
+                                      class="counter"
+                                      style="--from: 0; --to: 834; --time: 4s"
+                                    ></h4>
+                                  </div>
+                                  <div class="male-desc border_box">
+                                    <p>Laki-Laki</p>
+                                  </div>
+                                </div>
+                                <div class="female-box">
+                                  <div class="female-count border_box">
+                                    <h4
+                                      class="counter"
+                                      style="--from: 0; --to: 829; --time: 4s"
+                                    ></h4>
+                                  </div>
+                                  <div class="female-desc border_box">
+                                    <p>Perempuan</p>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="yl_3box">
-                          <div class="yl_3wrap">
-                            <!-- inner -->
-                            <div class="yl_inner-right">
-                              <h3>1000</h3>
-                              <p>LANSIA</p>
-                              <h3>1000</h3>
-                              <p>PERSEKUTUAN DOA</p>
+                        <!-- grid -->
+                        <hr />
+                        <!-- grid -->
+                        <div class="yl_inner-right2layout">
+                          <div class="yl_inner-right2box">
+                            <div class="yl_inner-right2wrap">
+                              <div class="yl_prs">
+                                <h2
+                                  class="counter"
+                                  style="--from: 0; --to: 1072; --time: 4s"
+                                ></h2>
+
+                                <p
+                                  style="
+                                    background: linear-gradient(
+                                      91deg,
+                                      #00aab4 -2.85%,
+                                      #7e7611 84.92%
+                                    );
+                                    -webkit-background-clip: text;
+                                    background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                  "
+                                >
+                                  Anggota Sidi
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="yl_inner-right2box">
+                            <div class="yl_inner-right2wrap">
+                              <div class="yl_prs-desc">
+                                <div class="male-box">
+                                  <div class="male-count border_box">
+                                    <h4
+                                      class="counter"
+                                      style="--from: 0; --to: 534; --time: 4s"
+                                    ></h4>
+                                  </div>
+                                  <div class="male-desc border_box">
+                                    <p>Laki-Laki</p>
+                                  </div>
+                                </div>
+                                <div class="female-box">
+                                  <div class="female-count border_box">
+                                    <h4
+                                      class="counter"
+                                      style="--from: 0; --to: 538; --time: 4s"
+                                    ></h4>
+                                  </div>
+                                  <div class="female-desc border_box">
+                                    <p>Perempuan</p>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
+                        <!-- grid -->
+                        <hr />
+                        <!-- grid -->
+                        <div class="yl_inner-right2layout">
+                          <div class="yl_inner-right2box">
+                            <div class="yl_inner-right2wrap">
+                              <div class="yl_prs">
+                                <h2
+                                  class="counter"
+                                  style="--from: 0; --to: 408; --time: 4s"
+                                ></h2>
+                                <p
+                                  style="
+                                    background: linear-gradient(
+                                      91deg,
+                                      #00aab4 -2.85%,
+                                      #7e7611 84.92%
+                                    );
+                                    -webkit-background-clip: text;
+                                    background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                  "
+                                >
+                                  Kepala Keluarga
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="yl_inner-right2box">
+                            <div class="yl_inner-right2wrap">
+                              <div class="yl_prs-desc">
+                                <div class="yl_prs-desc-btn">
+                                  <a class="yl_btn-file" href="">
+                                    <div class="yl_btn-file-content border_box">
+                                      <i class="fa fa-file-pdf"></i>
+                                      <div class="vr"></div>
+                                      <span class="btn-file-names"
+                                        >Data Jemaat Yarden Labat TP-2021 <br />
+                                        <span class="btn-file-type">
+                                          Unduh File</span
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- grid -->
                       </div>
+
+                      <!-- main inner -->
                     </div>
                   </div>
                   <!-- inner -->
@@ -1669,6 +1873,7 @@
                             atas kebaikan Tuhan Yesus...
                           </p>
                         </div>
+
                         <div class="yl_card-footer">
                           <p class="disable_normal">13 Februari 2024</p>
                           <a href="" class="yl_card-btn">
@@ -1746,6 +1951,263 @@
         </section>
 
         <!--akhir berita kegiatan -->
+
+        <!--awal artikel -->
+
+        <section id="article" class="yl_top-container">
+          <div class="relative_slider-container">
+            <div class="yl_section-toptitle">
+              <h3>Artikel Yarden</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, ea, velit in deserunt inventore pariatur illo
+                doloremque vel quod quibusdam harum ut quas alias atque, fugiat
+                minima est illum repudiandae.
+              </p>
+            </div>
+            <div class="index_scrolling-text-background index_alternate">
+              <div class="infinite-scroll_wrap" style="--override-speed: 100s">
+                <div class="infinite-scroll_marquee infinite-scroll_reverse">
+                  <p class="bolt-text-scroll">ARTIKEL YARDEN&nbsp;</p>
+                  <p class="bolt-text-scroll">ARTIKEL YARDEN&nbsp;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="n-container-larger">
+            <div class="articles_list">
+              <!-- embed article -->
+
+              <div class="article-box">
+                <div class="article-wrapper border_box">
+                  <a
+                    aria-label="thumbnail image"
+                    style="
+                      background-image: url('/public/article/article2.jpg');
+                    "
+                    href="#"
+                    class="article-image w-inline-block"
+                    ><div class="article-gradient"></div>
+                    <div class="article-gradient"></div
+                  ></a>
+                  <div class="article-content">
+                    <div class="article-text">
+                      <a href="#" class="article-title-link w-inline-block"
+                        ><h3 class="heading-style-h3">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit.
+                        </h3></a
+                      >
+                      <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Recusandae eos in impedit consequatur quaerat
+                        quibusdam deleniti, nobis accusantium est ea?
+                      </div>
+                    </div>
+                    <a href="#" class="n-button-secondary border_box"
+                      ><div>Read More</div>
+                      <div class="button-icon">
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <mask
+                            id="mask0_1626_4670"
+                            style="mask-type: alpha"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="17"
+                            height="16"
+                          >
+                            <rect
+                              x="0.5"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                            />
+                          </mask>
+                          <g mask="url(#mask0_1626_4670)">
+                            <path
+                              d="M3.65002 12.8333C3.50557 12.6889 3.43335 12.5222 3.43335 12.3333C3.43335 12.1444 3.50557 11.9778 3.65002 11.8333L10.75 4.73331H7.16668C6.97779 4.73331 6.81391 4.66387 6.67502 4.52498C6.53613 4.38609 6.46668 4.2222 6.46668 4.03331C6.46668 3.84442 6.53613 3.68054 6.67502 3.54165C6.81391 3.40276 6.97779 3.33331 7.16668 3.33331H12.45C12.6389 3.33331 12.8028 3.40276 12.9417 3.54165C13.0806 3.68054 13.15 3.84442 13.15 4.03331V9.31665C13.15 9.50554 13.0806 9.66942 12.9417 9.80831C12.8028 9.9472 12.6389 10.0166 12.45 10.0166C12.2611 10.0166 12.0972 9.9472 11.9584 9.80831C11.8195 9.66942 11.75 9.50554 11.75 9.31665V5.71665L4.61668 12.85C4.47224 12.9944 4.30835 13.0611 4.12502 13.05C3.94168 13.0389 3.78335 12.9666 3.65002 12.8333Z"
+                              fill="currentColor"
+                            />
+                          </g>
+                        </svg></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- embed article -->
+              <!-- embed article -->
+              <div class="article-box">
+                <div class="article-wrapper border_box">
+                  <a
+                    aria-label="thumbnail image"
+                    style="
+                      background-image: url('/public/article/article1.jpg');
+                    "
+                    href="#"
+                    class="article-image w-inline-block"
+                    ><div class="article-gradient"></div>
+                    <div class="article-gradient"></div
+                  ></a>
+                  <div class="article-content">
+                    <div class="article-text">
+                      <a href="#" class="article-title-link"
+                        ><h3 class="heading-style-h3">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit.
+                        </h3></a
+                      >
+                      <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Recusandae eos in impedit consequatur quaerat
+                        quibusdam deleniti, nobis accusantium est ea?
+                      </div>
+                    </div>
+                    <a href="#" class="n-button-secondary border_box"
+                      ><div>Read More</div>
+                      <div class="button-icon">
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <mask
+                            id="mask0_1626_4670"
+                            style="mask-type: alpha"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="17"
+                            height="16"
+                          >
+                            <rect
+                              x="0.5"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                            />
+                          </mask>
+                          <g mask="url(#mask0_1626_4670)">
+                            <path
+                              d="M3.65002 12.8333C3.50557 12.6889 3.43335 12.5222 3.43335 12.3333C3.43335 12.1444 3.50557 11.9778 3.65002 11.8333L10.75 4.73331H7.16668C6.97779 4.73331 6.81391 4.66387 6.67502 4.52498C6.53613 4.38609 6.46668 4.2222 6.46668 4.03331C6.46668 3.84442 6.53613 3.68054 6.67502 3.54165C6.81391 3.40276 6.97779 3.33331 7.16668 3.33331H12.45C12.6389 3.33331 12.8028 3.40276 12.9417 3.54165C13.0806 3.68054 13.15 3.84442 13.15 4.03331V9.31665C13.15 9.50554 13.0806 9.66942 12.9417 9.80831C12.8028 9.9472 12.6389 10.0166 12.45 10.0166C12.2611 10.0166 12.0972 9.9472 11.9584 9.80831C11.8195 9.66942 11.75 9.50554 11.75 9.31665V5.71665L4.61668 12.85C4.47224 12.9944 4.30835 13.0611 4.12502 13.05C3.94168 13.0389 3.78335 12.9666 3.65002 12.8333Z"
+                              fill="currentColor"
+                            />
+                          </g>
+                        </svg></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- embed article -->
+              <!-- embed article -->
+              <div class="article-box">
+                <div class="article-wrapper border_box">
+                  <a
+                    aria-label="thumbnail image"
+                    style="
+                      background-image: url('/public/article/article1.jpg');
+                    "
+                    href="#"
+                    class="article-image w-inline-block"
+                    ><div class="article-gradient"></div>
+                    <div class="article-gradient"></div
+                  ></a>
+                  <div class="article-content">
+                    <div class="article-text">
+                      <a href="#" class="article-title-link"
+                        ><h3 class="heading-style-h3">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit.
+                        </h3></a
+                      >
+                      <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Recusandae eos in impedit consequatur quaerat
+                        quibusdam deleniti, nobis accusantium est ea?
+                      </div>
+                    </div>
+                    <a href="#" class="n-button-secondary border_box"
+                      ><div>Read More</div>
+                      <div class="button-icon">
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <mask
+                            id="mask0_1626_4670"
+                            style="mask-type: alpha"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="17"
+                            height="16"
+                          >
+                            <rect
+                              x="0.5"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                            />
+                          </mask>
+                          <g mask="url(#mask0_1626_4670)">
+                            <path
+                              d="M3.65002 12.8333C3.50557 12.6889 3.43335 12.5222 3.43335 12.3333C3.43335 12.1444 3.50557 11.9778 3.65002 11.8333L10.75 4.73331H7.16668C6.97779 4.73331 6.81391 4.66387 6.67502 4.52498C6.53613 4.38609 6.46668 4.2222 6.46668 4.03331C6.46668 3.84442 6.53613 3.68054 6.67502 3.54165C6.81391 3.40276 6.97779 3.33331 7.16668 3.33331H12.45C12.6389 3.33331 12.8028 3.40276 12.9417 3.54165C13.0806 3.68054 13.15 3.84442 13.15 4.03331V9.31665C13.15 9.50554 13.0806 9.66942 12.9417 9.80831C12.8028 9.9472 12.6389 10.0166 12.45 10.0166C12.2611 10.0166 12.0972 9.9472 11.9584 9.80831C11.8195 9.66942 11.75 9.50554 11.75 9.31665V5.71665L4.61668 12.85C4.47224 12.9944 4.30835 13.0611 4.12502 13.05C3.94168 13.0389 3.78335 12.9666 3.65002 12.8333Z"
+                              fill="currentColor"
+                            />
+                          </g>
+                        </svg></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- embed article -->
+            </div>
+          </div>
+          <div class="yl_article-bottom">
+            <a href="#" class="n-button-secondary border_box"
+              ><div>Baca Artikel Lainnya</div>
+              <div class="button-icon">
+                <svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_1626_4670"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="17"
+                    height="16"
+                  >
+                    <rect x="0.5" width="16" height="16" fill="currentColor" />
+                  </mask>
+                  <g mask="url(#mask0_1626_4670)">
+                    <path
+                      d="M3.65002 12.8333C3.50557 12.6889 3.43335 12.5222 3.43335 12.3333C3.43335 12.1444 3.50557 11.9778 3.65002 11.8333L10.75 4.73331H7.16668C6.97779 4.73331 6.81391 4.66387 6.67502 4.52498C6.53613 4.38609 6.46668 4.2222 6.46668 4.03331C6.46668 3.84442 6.53613 3.68054 6.67502 3.54165C6.81391 3.40276 6.97779 3.33331 7.16668 3.33331H12.45C12.6389 3.33331 12.8028 3.40276 12.9417 3.54165C13.0806 3.68054 13.15 3.84442 13.15 4.03331V9.31665C13.15 9.50554 13.0806 9.66942 12.9417 9.80831C12.8028 9.9472 12.6389 10.0166 12.45 10.0166C12.2611 10.0166 12.0972 9.9472 11.9584 9.80831C11.8195 9.66942 11.75 9.50554 11.75 9.31665V5.71665L4.61668 12.85C4.47224 12.9944 4.30835 13.0611 4.12502 13.05C3.94168 13.0389 3.78335 12.9666 3.65002 12.8333Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg></div
+            ></a>
+          </div>
+        </section>
+
+        <!--akhir artikel -->
       </div>
     </main>
 
@@ -1777,28 +2239,21 @@
                     <div class="yl_3-5wrap">
                       <div class="yl_footer-info">
                         <h6 class="disable_medium">Kontak Info</h6>
-                        <div class="disable_small">
-                          <a href="">
-                            <span class="disable_small">
-                              A : Jl. Kian Kalaki, Kel. Bakunase II, Kec. Kota
-                              Raja, Kota Kupang, Nusa Tenggara Timur -
-                              Indonesia</span
-                            >
+                        <div>
+                          <a class="disable_small" href="">
+                            Jl. Kian Kalaki, Kel. Bakunase II, Kec. Kota Raja,
+                            Kota Kupang, Nusa Tenggara Timur - Indonesia
                           </a>
                         </div>
-                        <div class="disable_small">
-                          <a href="">
-                            <span class="disable_small">
-                              E : info@yardenlabat.org</span
-                            ></a
-                          >
+                        <div>
+                          <a class="disable_small" href="">
+                            info@yardenlabat.org
+                          </a>
                         </div>
-                        <div class="disable_small">
-                          <a href="">
-                            <span class="disable_small">
-                              T : (+62) 123 4567 8900</span
-                            ></a
-                          >
+                        <div>
+                          <a class="disable_small" href="">
+                            (+62) 123 4567 8900
+                          </a>
                         </div>
                       </div>
                     </div>
