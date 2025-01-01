@@ -1508,6 +1508,22 @@ footer {
   display: flex;
   gap: 1rem;
 }
+
+@media only screen and (max-width: 720px) {
+  .yl_prs-desc {
+    display: block;
+    margin: 0;
+    align-items: center;
+  }
+
+  .male-count.border_box,
+  .female-count.border_box,
+  .male-count,
+  .female-count {
+    justify-items: start;
+    margin: 0;
+  }
+}
 .yl_btn-file .vr {
   border-left: 1px solid var(--color-dark50);
   height: 40px;
