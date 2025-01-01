@@ -1543,31 +1543,11 @@ footer {
   -o-border-radius: var(--radius-small);
 }
 
-@property --from {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-}
-
 .counter {
   background: linear-gradient(91deg, #00aab4 -2.85%, #7e7611 84.92%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: --from 1s;
-  /* color: var(--color-dark); */
-  counter-reset: int var(--from);
-  animation: counter var(--time, 1000) forwards ease-in-out;
-}
-
-.counter::after {
-  content: counter(int);
-}
-
-@keyframes counter {
-  to {
-    --from: var(--to, 100);
-  }
 }
 
 .male-box,
