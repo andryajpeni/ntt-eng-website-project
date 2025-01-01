@@ -1086,7 +1086,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="yl_inner-right2 border_box">
+                    <div class="yl_inner-right2 border_box" id="mainCount">
                       <!-- main inner -->
                       <div class="yl_inner-right">
                         <!-- grid -->
@@ -1103,10 +1103,7 @@
                           <div class="yl_inner-right2box">
                             <div class="yl_inner-right2wrap">
                               <div class="yl_prs">
-                                <h2
-                                  class="counter"
-                                  style="--from: 0; --to: 1648; --time: 4s"
-                                ></h2>
+                                <h2 class="counter" max-data="1648">1</h2>
 
                                 <p
                                   style="
@@ -1130,10 +1127,7 @@
                               <div class="yl_prs-desc">
                                 <div class="male-box">
                                   <div class="male-count border_box">
-                                    <h4
-                                      class="counter"
-                                      style="--from: 0; --to: 825; --time: 4s"
-                                    ></h4>
+                                    <h4 class="counter" max-data="825">1</h4>
                                   </div>
                                   <div class="male-desc border_box">
                                     <p>Laki-Laki</p>
@@ -1141,10 +1135,7 @@
                                 </div>
                                 <div class="female-box">
                                   <div class="female-count border_box">
-                                    <h4
-                                      class="counter"
-                                      style="--from: 0; --to: 823; --time: 4s"
-                                    ></h4>
+                                    <h4 class="counter" max-data="823">1</h4>
                                   </div>
                                   <div class="female-desc border_box">
                                     <p>Perempuan</p>
@@ -1161,10 +1152,7 @@
                           <div class="yl_inner-right2box">
                             <div class="yl_inner-right2wrap">
                               <div class="yl_prs">
-                                <h2
-                                  class="counter"
-                                  style="--from: 0; --to: 1663; --time: 4s"
-                                ></h2>
+                                <h2 class="counter" max-data="1663">1</h2>
 
                                 <p
                                   style="
@@ -1188,10 +1176,7 @@
                               <div class="yl_prs-desc">
                                 <div class="male-box">
                                   <div class="male-count border_box">
-                                    <h4
-                                      class="counter"
-                                      style="--from: 0; --to: 834; --time: 4s"
-                                    ></h4>
+                                    <h4 class="counter" max-data="834">1</h4>
                                   </div>
                                   <div class="male-desc border_box">
                                     <p>Laki-Laki</p>
@@ -1199,10 +1184,7 @@
                                 </div>
                                 <div class="female-box">
                                   <div class="female-count border_box">
-                                    <h4
-                                      class="counter"
-                                      style="--from: 0; --to: 829; --time: 4s"
-                                    ></h4>
+                                    <h4 class="counter" max-data="829">1</h4>
                                   </div>
                                   <div class="female-desc border_box">
                                     <p>Perempuan</p>
@@ -1219,10 +1201,7 @@
                           <div class="yl_inner-right2box">
                             <div class="yl_inner-right2wrap">
                               <div class="yl_prs">
-                                <h2
-                                  class="counter"
-                                  style="--from: 0; --to: 1072; --time: 4s"
-                                ></h2>
+                                <h2 class="counter" max-data="1072">1</h2>
 
                                 <p
                                   style="
@@ -1246,10 +1225,7 @@
                               <div class="yl_prs-desc">
                                 <div class="male-box">
                                   <div class="male-count border_box">
-                                    <h4
-                                      class="counter"
-                                      style="--from: 0; --to: 534; --time: 4s"
-                                    ></h4>
+                                    <h4 class="counter" max-data="534">1</h4>
                                   </div>
                                   <div class="male-desc border_box">
                                     <p>Laki-Laki</p>
@@ -1257,10 +1233,7 @@
                                 </div>
                                 <div class="female-box">
                                   <div class="female-count border_box">
-                                    <h4
-                                      class="counter"
-                                      style="--from: 0; --to: 538; --time: 4s"
-                                    ></h4>
+                                    <h4 class="counter" max-data="538">1</h4>
                                   </div>
                                   <div class="female-desc border_box">
                                     <p>Perempuan</p>
@@ -1277,10 +1250,7 @@
                           <div class="yl_inner-right2box">
                             <div class="yl_inner-right2wrap">
                               <div class="yl_prs">
-                                <h2
-                                  class="counter"
-                                  style="--from: 0; --to: 408; --time: 4s"
-                                ></h2>
+                                <h2 class="counter" max-data="408">1</h2>
                                 <p
                                   style="
                                     background: linear-gradient(
@@ -2429,8 +2399,7 @@
         currentMainPost.classList.add("main-post--active");
         currentMainPost.classList.remove("main-post--not-active");
       }
-    </script>
-    <script>
+
       // PAGE HEADER FADE
       const fadeHead = $("#yl-header");
       $(window).on("scroll", function () {
@@ -2439,6 +2408,40 @@
         fadeHead.css({ "transition-delay": "0s" });
         fadeHead.css({ transition: "0.01s ease-in-out" });
       });
+      //Counting people
+      // get counting data element
+      var count = document.getElementsByClassName("counter");
+      var inc = [];
+
+      function intervalFunc() {
+        for (let i = 0; i < count.length; i++) {
+          inc.push(1);
+          //get counting data
+          if (inc[i] != count[i].getAttribute("max-data")) {
+            inc[i]++;
+          }
+          count[i].innerHTML = inc[i];
+        }
+      }
+      // setInterval(intervalFunc, 100);
+      var main = document.getElementById("about"); //get section
+      window.onscroll = function () {
+        var timer = setInterval(() => {
+          var topElem = main.offsetTop;
+          var btmElem = main.offsetTop + main.clientHeight;
+          var topScreen = window.pageYOffset;
+          var btmScreen = window.pageYOffset + window.innerHeight;
+          if (btmScreen > topElem && topScreen < btmElem) {
+            intervalFunc();
+          } else {
+            clearInterval(timer);
+            for (let i = 0; i < count.length; i++) {
+              count[i].innerHTML = 1;
+              inc = [];
+            }
+          }
+        }, 50); //speed counting
+      };
     </script>
   </body>
 </html>
