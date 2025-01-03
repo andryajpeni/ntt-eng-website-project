@@ -73,28 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//==>Menu show<==//
-const xa = document.getElementById("m_btn1");
-const xb = document.getElementById("m_btn2");
-const xc = document.getElementById("m_btn3");
-const xd = document.getElementById("m_btn4");
-const xma = document.getElementById("m_m1");
-const xmb = document.getElementById("m_m2");
-const xmc = document.getElementById("m_m3");
-const xmd = document.getElementById("m_m4");
-xa.addEventListener("click", function () {
-  xma.classList.toggle("yl_mob-linkbox--open");
-});
-xb.addEventListener("click", function () {
-  xmb.classList.toggle("yl_mob-linkbox--open");
-});
-xc.addEventListener("click", function () {
-  xmc.classList.toggle("yl_mob-linkbox--open");
-});
-xd.addEventListener("click", function () {
-  xmd.classList.toggle("yl_mob-linkbox--open");
-});
-
 //==>Hamburger Menu show<==//
 const h = document.querySelector(".hamburger");
 const h1 = document.querySelector("#hamburger-1");
