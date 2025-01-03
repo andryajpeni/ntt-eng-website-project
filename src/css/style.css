@@ -207,7 +207,7 @@ html {
 body {
   scroll-behavior: smooth;
   margin: 0;
-  font-family: var(--font-family);
+    font-family: Inter Regular, sans-serif;
   overflow-x: hidden;
   background: var(--color-light);
   color: var(--color-dark);
