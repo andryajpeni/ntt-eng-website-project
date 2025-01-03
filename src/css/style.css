@@ -1,3 +1,69 @@
+/* all css script is write by it dept. of nusa timore telematika */
+@font-face {
+  font-family: "Inter Regular";
+  src: url("https://cdn.prod.website-files.com/6215a9ebdd6ac00165655f15/64affe98aa7a4eeb6809552c_Inter-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("https://cdn.prod.website-files.com/6215a9ebdd6ac00165655f15/64affe9889b41a0a5f5f547f_Inter-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter Bold";
+  src: url("https://cdn.prod.website-files.com/6215a9ebdd6ac00165655f15/64affe9827f099c6e986029f_Inter-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter Medium";
+  src: url("https://cdn.prod.website-files.com/6215a9ebdd6ac00165655f15/64affe9880bb21c2db3223fd_Inter-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Intertight Medium";
+  src: url("https://cdn.prod.website-files.com/6215a9ebdd6ac00165655f15/64affebd40b1f54e462f423e_InterTight-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Intertight";
+  src: url("https://cdn.prod.website-files.com/6215a9ebdd6ac00165655f15/64affebd0854c35bcd9797c6_InterTight-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Intertight Bold";
+  src: url("https://cdn.prod.website-files.com/6215a9ebdd6ac00165655f15/64affebd67d9771a8b37f819_InterTight-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Intertight Regular";
+  src: url("https://cdn.prod.website-files.com/6215a9ebdd6ac00165655f15/64affebded2efb7f078b8ce4_InterTight-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* {Color::style} */
   --color-dark: rgba(56, 10, 83, 1);
@@ -50,7 +116,7 @@
   --all-trans7: all 0.7s ease-in-out;
   --all-trans3: all 0.3s ease-in-out;
   /* font::family */
-  --font-family: "Montserrat", serif;
+  --font-family: "Inter", serif;
   --font-size-title: 2rem;
   --font-size-subtitle: 1.5rem;
   --font-size-desc: 1.125rem;
