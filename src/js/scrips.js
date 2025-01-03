@@ -153,7 +153,7 @@ tabs.forEach((tab, index) => {
   });
 });
 
-//youtube
+//Multimedia
 var locations = [
   "https://www.youtube.com/embed/nc-ZYmFXw0o?si=4hs3I2aMWcUS8MsH",
   "https://www.youtube.com/embed/DbESZ6pCy5I?si=jzKzx9YVEgYRw9Yy",
@@ -169,7 +169,7 @@ for (let i = 0; i < btnSrc.length; i++) {
     document.getElementById("demo").innerHTML = locations[i];
   });
 }
-//header
+//Header Content
 const mainProgressBar = document.querySelector(
   ".progress-bar--primary .progress-bar__fill"
 );
@@ -261,7 +261,7 @@ function updatePosts() {
   currentMainPost.classList.remove("main-post--not-active");
 }
 
-// PAGE HEADER FADE
+// Page Header Fade
 const fadeHead = $("#yl-header");
 $(window).on("scroll", function () {
   const st = $(this).scrollTop();
@@ -284,7 +284,7 @@ function intervalFunc() {
     count[i].innerHTML = inc[i];
   }
 }
-// setInterval(intervalFunc, 100);
+// setInterval(intervalFunc, 50 speed counting);
 var main = document.getElementById("about"); //get section
 window.onscroll = function () {
   var timer = setInterval(() => {
