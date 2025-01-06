@@ -1354,7 +1354,7 @@ p {
     flex-direction: column;
     row-gap: 10px;
     text-align: center;
-    padding: var(--padding10) 2rem;
+    padding: var(--padding10);
   }
 
   /* mobile dropmenu*/
