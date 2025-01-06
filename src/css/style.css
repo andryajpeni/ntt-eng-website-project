@@ -2790,6 +2790,7 @@ td {
 
 .yl_dropmo-icon {
   padding: 7px;
+    align-items: center;
   background-color: var(--light25);
   -webkit-backdrop-filter: var(--blur15);
   backdrop-filter: var(--blur15);
@@ -2983,7 +2984,8 @@ td {
   height: 0;
   opacity: 0;
   max-height: 0;
-  padding: 0 20px;
+  padding: 0 10px;  
+  align-items: center;
   text-align: center;
   overflow: hidden;
   border-radius: var(--radius-small);
