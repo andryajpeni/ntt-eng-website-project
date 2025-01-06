@@ -87,7 +87,16 @@
   font-style: normal;
   font-display: swap;
 }
-
+/* <!-- /* <b> - Bold text */
+/* <strong> - Important text */
+/* <i> - Italic text */
+/* <em> - Emphasized text */
+/* <mark> - Marked text */
+/* <small> - Smaller text */
+/* <del> - Deleted text */
+/* <ins> - Inserted text */
+/* <sub> - Subscript text */
+/* <sup> - Superscript text */
 :root {
   /* {Color::style} */
   --dark: rgba(56, 10, 83, 1);
@@ -103,7 +112,7 @@
   --light25: rgba(251, 250, 225, 0.25);
   --light15: rgba(251, 250, 225, 0.15);
   --light5: rgba(251, 250, 225, 0.05);
-  --danger: rgba(255, 51, 102, 1);
+  --danger: rgb(255, 51, 102);
   --danger75: rgba(255, 51, 102, 0.75);
   --danger50: rgba(255, 51, 102, 0.5);
   --danger25: rgba(255, 51, 102, 0.25);
@@ -451,6 +460,7 @@ h1 {
   font-size: 5.5rem;
   font-weight: 700;
   line-height: 1;
+  text-shadow: 0 1px 2px var(--danger50);
 }
 h2 {
   margin-top: 0;
@@ -460,6 +470,7 @@ h2 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1;
+  text-shadow: 0 1px 2px var(--danger50);
 }
 /* for vard, article, sub title, title,  */
 h3 {
@@ -470,6 +481,7 @@ h3 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1;
+  text-shadow: 0 1px 2px var(--danger50);
 }
 /* for-javascript */
 h4 {
@@ -1217,6 +1229,11 @@ p {
 .yl_nav-brand {
   justify-content: start;
 }
+.yl_nav-logo svg {
+  height: 40px;
+  width: auto;
+}
+
 .yl_nav-logo {
   display: flex;
   align-items: center;
@@ -1526,20 +1543,28 @@ footer {
   margin-right: 5px;
 }
 .space_tb {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .space_xy {
-  margin: 2rem;
+  margin: 1rem;
 }
-
 .space_top {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .space_bottom {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
-
+.yl_tabs_1-creator {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.image_creator {
+  margin-right: 20px;
+  width: 4.625rem;
+  height: 4.625rem;
+}
 /* {custom::class}  */
 .border_box:hover {
   border: 1px solid var(--dark25);
@@ -2790,7 +2815,7 @@ td {
 
 .yl_dropmo-icon {
   padding: 7px;
-    align-items: center;
+  align-items: center;
   background-color: var(--light25);
   -webkit-backdrop-filter: var(--blur15);
   backdrop-filter: var(--blur15);
@@ -2984,9 +3009,9 @@ td {
   height: 0;
   opacity: 0;
   max-height: 0;
-  padding: 0 10px;  
-  align-items: center;
+  padding: 0 10px;
   text-align: center;
+  align-items: center;
   overflow: hidden;
   border-radius: var(--radius-small);
   -webkit-border-radius: var(--radius-small);
