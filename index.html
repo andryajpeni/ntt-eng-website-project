@@ -2342,6 +2342,38 @@
       <!-- {footer} -->
     </div>
     <script src="./lib/swiper/swiper-bundle.min.js"></script>
-    <script src="./src/js/scrips.js"></script>
+    <script src="./src/js/scrips.js">
+// navMenuDropdown
+const btnMob = document.querySelector("#button-m");
+const menuMob = document.querySelector("#nav-mobiles");
+btnMob.addEventListener("click", function () {
+  this.classList.toggle("is-active");
+  menuMob.classList.toggle("is-open-block");
+});
+window.addEventListener("click", function (hide) {
+  if (!menuMob.contains(hide.target) && !btnMob.contains(hide.target)) {
+    menuMob.classList.remove("is-open-block");
+    btnMob.classList.remove("is-active");
+  }
+});
+//change src
+const locations = [
+  "https://www.youtube.com/embed/5L6L9YhFvY4?si=pCOl4O0OjKWvj9uG", // link-1
+  "https://www.youtube.com/embed/5Dkf5zwTWRI?si=t2RkcOc1NbPf6VsT", // link-2
+  "https://www.youtube.com/embed/q5MvhOwYIic?si=3RIlaW-cAQwpmlPC", // link-3
+  "https://www.youtube.com/embed/EknF0fulSDs?si=iXxr7XJpdZKQ4Kcu", // link-4
+  "https://www.youtube.com/embed/OZt0LkDvDfs?si=wRcWsNGsawtBtB8A", // link-5
+  "https://www.youtube.com/embed/yyIbpkVXuII?si=jsGVrcLRjhkPk560", // link-6
+  "https://www.youtube.com/embed/LtjOekObxdM?si=uUO1ovPbmGIx1xot", // link-7
+];
+const btnSrc = document.getElementsByClassName("srcChanger");
+for (let i = 0; i < btnSrc.length; i++) {
+  btnSrc[i].addEventListener("click", function () {
+    document.getElementsByClassName("yl_youtube-link")[0].src = locations[i];
+    document.getElementById("view-ytlink").innerHTML = locations[i];
+  });
+}
+      
+    </script>
   </body>
 </html>
