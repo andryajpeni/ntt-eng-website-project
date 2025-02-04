@@ -329,7 +329,7 @@ p {
   --aquamarine50: #00ffbb80;
   --aquamarine25: #00ffbb40;
   --aquamarine15: #00ffbb26;
-  --aquamarine5: #00ffbb80;
+  --aquamarine5: #00ffbb11;
   --aquamarine0: #00ffbb00;
   --valeyellow: #d3eb00;
   --valegreen: #21374e;
@@ -526,7 +526,6 @@ p {
 .text-italic {
   font-style: italic;
 }
-
 .text-medium {
   font-weight: 500;
 }
@@ -648,4 +647,8 @@ p {
 .ext-link {
   width: 11px;
   height: 11px;
+}
+.main-wrapper {
+  background-color: var(--secondary);
+  background: var(--secondary);
 }

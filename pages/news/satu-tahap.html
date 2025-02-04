@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GMIT-Jemaat Yarden Labat</title>
+    <link rel="stylesheet" href="/src/css/news.css" />
+    <link
+      rel="shortcut icon"
+      href="/public/favicon/gmit-jyl.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* infinity text scrolling */
+      :root {
+        --custom-fade-sec: #fff5d2;
+        --custom-fade-color: #d4d2ff;
+        --custom-dark-color: #0f172a;
+        --custom-light-color: #f8fafc;
+        --custom-blue-color: #7958a5;
+      }
+      .relative_slider-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      .bolt-text-scroll {
+        font-size: 170px;
+        line-height: 1;
+        font-weight: 600;
+      }
+      .index_scrolling-text-background {
+        height: -moz-fit-content;
+        height: fit-content;
+        height: auto;
+        color: var(--custom-text-color, var(--custom-blue-color));
+        /* z-index: -1; */
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        padding-top: 60px;
+        -webkit-mask-image: linear-gradient(
+          90deg,
+          transparent,
+          var(--custom-dark-color) 35%,
+          var(--custom-dark-color) 65%,
+          transparent
+        );
+        mask-image: linear-gradient(
+          90deg,
+          transparent,
+          var(--custom-dark-color) 35%,
+          var(--custom-dark-color) 65%,
+          transparent
+        );
+      }
+      .index_scrolling-text-background p {
+        opacity: 0.15;
+        letter-spacing: 12px;
+        -webkit-mask-image: linear-gradient(
+          0deg,
+          var(--custom-dark-color) 30%,
+          transparent
+        );
+        mask-image: linear-gradient(
+          0deg,
+          var(--custom-dark-color) 30%,
+          transparent
+        );
+      }
+      .index_scrolling-text-background:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--custom-fade-sec, var(--custom-light-color));
+        -webkit-mask-image: linear-gradient(
+          0deg,
+          var(--custom-dark-color),
+          transparent
+        );
+        mask-image: linear-gradient(
+          0deg,
+          var(--custom-dark-color),
+          transparent
+        );
+      }
+      .index_scrolling-text-background.index_alternate {
+        bottom: auto;
+        top: 0;
+        padding-top: 0;
+        padding-bottom: 60px;
+      }
+      .index_scrolling-text-background.index_alternate p {
+        text-align: start;
+        -webkit-mask-image: linear-gradient(
+          180deg,
+          var(--custom-dark-color) 30%,
+          transparent
+        );
+        mask-image: linear-gradient(
+          180deg,
+          var(--custom-dark-color) 30%,
+          transparent
+        );
+      }
+      .index_scrolling-text-background.index_alternate:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--custom-fade-color, var(--custom-light-color));
+        -webkit-mask-image: linear-gradient(
+          180deg,
+          var(--custom-dark-color),
+          transparent
+        );
+        mask-image: linear-gradient(
+          180deg,
+          var(--custom-dark-color),
+          transparent
+        );
+      }
+      .infinite-scroll_wrap {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+      .infinite-scroll_marquee {
+        display: flex;
+        flex-wrap: nowrap;
+        width: -moz-max-content;
+        width: max-content;
+        animation: infinite-scroll_marquee 80s linear infinite;
+        --animation-speed: var(--override-speed, 30s);
+        -webkit-animation: infinite-scroll_marquee 80s linear infinite;
+      }
+      .infinite-scroll_marquee.infinite-scroll_reverse {
+        animation-direction: reverse;
+        bottom: 0;
+      }
+      @keyframes infinite-scroll_marquee {
+        0% {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <div class="body-wrapper">
+      <header id="yl-header" class="header-article">
+        <img src="/public/blog/builg.JPG" alt="" />
+        <div class="header-gradient"></div>
+        <div class="header-article-text">
+          <div class="padding-global">
+            <h2>Satu Tahap Lagi Akan Dilalui</h2>
+            <h4>Pembangunan Rumah Pastori Gereja Yarden Labat</h4>
+            <div class="header-icon">
+              <div>
+                <img
+                  src="/public/img/spirit-headshot-1.png"
+                  height="70px"
+                  width="70px"
+                  alt="Sekretariat"
+                />
+              </div>
+              <div>
+                <p>
+                  <strong> Sekretariat Yarden Labat</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div
+      style="background-color: var(--secondary); background: var(--secondary)"
+    >
+      <!-- {navigasi} -->
+      <nav class="nav_custom">
+        <div class="nav_content border_primary">
+          <div class="nav_grid">
+            <!-- {nav-brand} -->
+            <a href="#" id="nav-brand" class="nav_brand custom-nav-brand"
+              ><div class="nav_logo-wrapper">
+                <div class="nav_logo-icon">
+                  <!-- <img
+                    loading="lazy"
+                    src="/public/favicon/yarden-icon.png"
+                    height="34px"
+                    alt="nav_brand"
+                  /> -->
+                  <img
+                    loading="lazy"
+                    src="/public/favicon/yarden-icon-text - Copy.png"
+                    height="34px"
+                    alt="nav_brand"
+                  />
+                  <!-- <img
+                      loading="lazy"
+                      src="/public/favicon/gmit-jy.png"
+                      height="30px"
+                      alt="nav_brand"
+                    /> -->
+                </div>
+                <div class="nav_logo-text">
+                  <img
+                    loading="lazy"
+                    src="/public/favicon/yarden-icon-text.png"
+                    height="30px"
+                    alt="nav_brand"
+                  />
+                </div></div
+            ></a>
+            <!-- {nav-brand} -->
+            <!-- {nav-main-menu} -->
+            <div id="nav-menu" class="nav_menu-custom">
+              <a href="#about" class="nav_link-custom">Profil</a>
+              <!-- {dropdown} -->
+              <div class="dropdown-toggle">
+                <div class="nav_link-custom">
+                  <div>Penatalayanan</div>
+                </div>
+                <div class="dropdown-list border_primary relative">
+                  <div class="dropdown-box">
+                    <!-- {dropdown-link} -->
+                    <a href="#" class="dropdown-link"
+                      ><div class="dropdown-icon">
+                        <img
+                          src="/public/nav-icon/icon-mjh.png"
+                          loading="lazy"
+                          height="38"
+                          alt="MJH icon"
+                        />
+                      </div>
+                      <div>
+                        <strong>MJH</strong>
+                        <div class="text_disable">Majelis Jemaat Harian</div>
+                      </div></a
+                    >
+                    <!-- {dropdown-link} -->
+                    <!-- {dropdown-link} -->
+                    <a href="#" class="dropdown-link"
+                      ><div class="dropdown-icon">
+                        <img
+                          src="/public/nav-icon/icon-mjh.png"
+                          loading="lazy"
+                          height="38"
+                          alt="MJH icon"
+                        />
+                      </div>
+                      <div>
+                        <strong>BPP</strong>
+                        <div class="text_disable">Badan Pembantu Pelayanan</div>
+                      </div></a
+                    >
+                    <!-- {dropdown-link} -->
+                    <!-- {dropdown-link} -->
+                    <a href="#" class="dropdown-link"
+                      ><div class="dropdown-icon">
+                        <img
+                          src="/public/nav-icon/icon-mjh.png"
+                          loading="lazy"
+                          height="38"
+                          alt="MJH icon"
+                        />
+                      </div>
+                      <div>
+                        <strong>UPP</strong>
+                        <div class="text_disable">Unit Pembantu Pelayanan</div>
+                      </div></a
+                    >
+                    <!-- {dropdown-link} -->
+                  </div>
+                </div>
+              </div>
+              <!-- {dropdown} -->
+              <!-- {nav-main-link} -->
+              <a href="#news" class="nav_link-custom">Berita</a>
+              <a href="#article" class="nav_link-custom">Artikel</a>
+
+              <!-- {nav-main-link} -->
+              <!-- {nav-main-right} -->
+              <div class="nav_right is-dropdown">
+                <a class="button-primary" href="">
+                  <div class="button-text">App</div>
+
+                  <div class="button-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="17"
+                      height="17"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <!-- {nav-main-right} -->
+            </div>
+            <!-- {nav-main-menu} -->
+            <!-- {nav-main-right} -->
+            <div id="nav-right" class="nav_right-wrapper">
+              <div class="nav_right">
+                <a class="button-primary" href=""
+                  >App
+
+                  <div class="button-icon">
+                    <svg
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_1626_4670"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="17"
+                        height="16"
+                      >
+                        <rect
+                          x="0.5"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                        />
+                      </mask>
+                      <g mask="url(#mask0_1626_4670)">
+                        <path
+                          d="M3.65002 12.8333C3.50557 12.6889 3.43335 12.5222 3.43335 12.3333C3.43335 12.1444 3.50557 11.9778 3.65002 11.8333L10.75 4.73331H7.16668C6.97779 4.73331 6.81391 4.66387 6.67502 4.52498C6.53613 4.38609 6.46668 4.2222 6.46668 4.03331C6.46668 3.84442 6.53613 3.68054 6.67502 3.54165C6.81391 3.40276 6.97779 3.33331 7.16668 3.33331H12.45C12.6389 3.33331 12.8028 3.40276 12.9417 3.54165C13.0806 3.68054 13.15 3.84442 13.15 4.03331V9.31665C13.15 9.50554 13.0806 9.66942 12.9417 9.80831C12.8028 9.9472 12.6389 10.0166 12.45 10.0166C12.2611 10.0166 12.0972 9.9472 11.9584 9.80831C11.8195 9.66942 11.75 9.50554 11.75 9.31665V5.71665L4.61668 12.85C4.47224 12.9944 4.30835 13.0611 4.12502 13.05C3.94168 13.0389 3.78335 12.9666 3.65002 12.8333Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- {nav-main-right} -->
+            <!-- {nav-main-hamburger} -->
+            <div id="hamburgers" class="nav_menu-button nav_lines">
+              <button class="menux" id="button-m" aria-label="Main Menu">
+                <svg width="35" height="35" viewBox="0 0 100 100">
+                  <path
+                    class="linex line1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                  />
+                  <path class="linex line2" d="M 20,50 H 80" />
+                  <path
+                    class="linex line3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- {nav-main-hamburger} -->
+            <!-- {nav-mobile-menu} -->
+            <div id="nav-mobiles" class="nav_menu-dropdown">
+              <!-- {nav-main-menu} -->
+
+              <div
+                class="nav_menu-dropdown-box"
+                data-delay="0"
+                data-hover="true"
+              >
+                <a href="#about" class="nav_link-custom">Profil</a>
+                <!-- {dropdown} -->
+                <div class="dropdown-toggle">
+                  <div class="nav_link-custom">
+                    <div>Penatalayanan</div>
+                  </div>
+                  <div class="dropdown-list border_primary">
+                    <div class="dropdown-box">
+                      <!-- {dropdown-link} -->
+                      <a href="#" class="dropdown-link"
+                        ><div class="dropdown-icon">
+                          <img
+                            src="/public/nav-icon/icon-mjh.png"
+                            loading="lazy"
+                            height="38"
+                            alt="MJH icon"
+                          />
+                        </div>
+                        <div>
+                          <strong>MJH</strong>
+                          <div class="text_disable">Majelis Jemaat Harian</div>
+                        </div></a
+                      >
+                      <!-- {dropdown-link} -->
+                      <!-- {dropdown-link} -->
+                      <a href="#" class="dropdown-link"
+                        ><div class="dropdown-icon">
+                          <img
+                            src="/public/nav-icon/icon-mjh.png"
+                            loading="lazy"
+                            height="38"
+                            alt="MJH icon"
+                          />
+                        </div>
+                        <div>
+                          <strong>BPP</strong>
+                          <div class="text_disable">
+                            Badan Pembantu Pelayanan
+                          </div>
+                        </div></a
+                      >
+                      <!-- {dropdown-link} -->
+                      <!-- {dropdown-link} -->
+                      <a href="#" class="dropdown-link"
+                        ><div class="dropdown-icon">
+                          <img
+                            src="/public/nav-icon/icon-mjh.png"
+                            loading="lazy"
+                            height="38"
+                            alt="MJH icon"
+                          />
+                        </div>
+                        <div>
+                          <strong>UPP</strong>
+                          <div class="text_disable">
+                            Unit Pembantu Pelayanan
+                          </div>
+                        </div></a
+                      >
+                      <!-- {dropdown-link} -->
+                    </div>
+                  </div>
+                </div>
+                <!-- {dropdown} -->
+                <!-- {nav-main-link} -->
+                <a href="#news" class="nav_link-custom">Berita</a>
+                <a href="#article" class="nav_link-custom">Artikel</a>
+
+                <!-- {nav-main-link} -->
+                <!-- {nav-main-right} -->
+                <div class="nav_right is-dropdown">
+                  <a class="button-primary" href="">
+                    <div class="button-text">App</div>
+
+                    <div class="button-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="17"
+                        height="17"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <!-- {nav-main-right} -->
+              </div>
+              <!-- {nav-main-menu} -->
+            </div>
+            <!-- {nav-mobile-menu} -->
+          </div>
+        </div>
+      </nav>
+      <!-- {navigasi} -->
+      <!-- {main} -->
+      <main class="yl_main-page">
+        <!-- {article} -->
+        <article class="padding-global">
+          <h1>article</h1>
+        </article>
+        <!-- {article} -->
+
+        <!-- {article} -->
+        <section class="padding-global">
+          <!-- {news} -->
+          <div id="news">
+            <div class="yl_news">
+              <div class="relative_slider-container">
+                <div class="index_scrolling-text-background index_alternate">
+                  <div
+                    class="infinite-scroll_wrap"
+                    style="--override-speed: 100s"
+                  >
+                    <div
+                      class="infinite-scroll_marquee infinite-scroll_reverse"
+                    >
+                      <p class="bolt-text-scroll">BERITA &nbsp; AKTIFITAS</p>
+                      <p class="bolt-text-scroll">BERITA &nbsp;AKTIFITAS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- news -->
+
+              <div class="section_grid" style="margin: 0 10px">
+                <div id="section-left-head" class="section-headleft">
+                  <h3>Berita &amp; Aktiftas</h3>
+                </div>
+                <div id="section-right-head" class="section-headright">
+                  <div class="flex-rows">
+                    <button class="button-rounded btn-prev-news">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="size-5"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1 1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18 10Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+
+                    <button class="button-rounded btn-next-news">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="size-5"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- test -->
+
+              <div class="swiper-sontainer">
+                <div class="swiper news-swipper">
+                  <div role="list" class="swiper-wrapper">
+                    <!-- card template never deleted -->
+                    <!-- <div
+                     role="listitem"
+                        class="swiper-slide" style="width: 400px;outline: none;"
+                    >
+                      <div>
+                        <a
+                          href=""
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/blank-aquamarine.jpg"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">card_titles</p>
+                            <div class="card_text">card_text</div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>Card_Date | Skeretariat</small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                    </div> -->
+                    <!-- card template never deleted -->
+                    <!-- 1 -->
+                    <!-- <div
+                      role="listitem"
+                      class="swiper-slide"
+                      style="width: 400px; outline: none"
+                    >
+                       
+                      <div>
+                        <a
+                          href="./pages/article/satu-tahap.html"
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/builg.JPG"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">
+                              Satu Tahap Lagi Akan Dilalui
+                            </p>
+                            <div class="card_text">
+                              Jemaat GMIT Yarden Labat patut mengucap syukur
+                              atas kebaikan Tuhan Yesus sang kepala Gereja,
+                              sehingga proses pembangunan rumah pastori 2
+                              berjalan dengan baik. Dan pada hari Kamis, 14
+                              November 2024, pengerjaan sampai pada tahap
+                              pengatapan.
+                            </div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>13 November 2024 | Sekretariat</small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                       
+                    </div> -->
+                    <!-- 2 -->
+                    <div
+                      role="listitem"
+                      class="swiper-slide"
+                      style="width: 400px; outline: none"
+                    >
+                      <!-- card -->
+                      <div>
+                        <a
+                          href=""
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/nikah.JPG"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">
+                              Yarden Laksanakan Nikah Masal
+                            </p>
+                            <div class="card_text">
+                              Jemaat GMIT Yarden Labat, pada kebaktian kedua,
+                              Minggu 20 Oktober 2024, melaksanakan kegiatan
+                              Pemberkatan Nikah Masal atas 3 pasangan nikah
+                              yaitu pasangan Thimotius Punuf dan Elvi Manu,
+                              Medan Malkisedek Ambrosius Saekoko dan Aplonia
+                              Benu serta pasangan Nofrit Ariyanto Nombala dan
+                              Yustina Kallu Ate.
+                            </div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>21 Oktober 2024 | Sekretariat </small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                      <!-- card -->
+                    </div>
+                    <!-- 3 -->
+                    <div
+                      role="listitem"
+                      class="swiper-slide"
+                      style="width: 400px; outline: none"
+                    >
+                      <!-- card -->
+                      <div>
+                        <a
+                          href=""
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/sidi.jpg"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">105 Anggota Sidi Baru</p>
+                            <div class="card_text">
+                              Sejumlah 105 orang Anggota Sidi Jemaat GMIT Yarden
+                              Labat, Klasis Kota Kupang, memberi diri untuk
+                              melayani Tuhan sebagai Badan Pengurus (BP)
+                              Kategorial/ Fungsional yaitu BP Kaum Bapak, BP
+                              Kaum Perempuan, BP Pemuda, BP Persekutuan Anak &
+                              Remaja (PAR) dan BP Perekutuan Doa.
+                            </div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>18 Maret 2024 | Sekretariat</small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                      <!-- card -->
+                    </div>
+                    <!-- 4 -->
+                    <div
+                      role="listitem"
+                      class="swiper-slide"
+                      style="width: 400px; outline: none"
+                    >
+                      <!-- card -->
+
+                      <div>
+                        <a
+                          href=""
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/9tahun.jpg"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">
+                              9 Tahun 2 Bulan adalah Waktu Tuhan
+                            </p>
+                            <div class="card_text">
+                              Serah terima KMJ dari Pdt.Daibel
+                              N.D.Tlonaen,S.Th,M.Pdkepada Pdt.Martha M.R.Nggauk
+                              - Nadaweo, S.ThJemaat GMIT Yarden Labat, pada
+                              kebaktian kedua, Minggu, 25 Februari 2024,
+                              melaksanakan acara serah terima jabatan Ketua
+                              Majelis Jemaat (KMJ) dari Pdt. Daibel N.D.
+                              Tlonaen, S.Th
+                            </div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>27 Februari 2024 | Skeretariat</small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                      <!-- card -->
+                    </div>
+                    <!-- 5 -->
+                    <div
+                      role="listitem"
+                      class="swiper-slide"
+                      style="width: 400px; outline: none"
+                    >
+                      <!-- card -->
+                      <div>
+                        <a
+                          href=""
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/semuatinggal.jpeg"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">SEMUA TINGGAL KENANGAN</p>
+                            <div class="card_text">
+                              Gedung gereja lama GMIT Yarden Labat"Semua Tinggal
+                              Kenangan".... ya... inilah kalimat yang dapat
+                              menggambarkan proses pembongkaran gedung gereja
+                              lama GMIT Yarden Labat, sebagai bagian dari
+                              program penataan halaman gereja Yarden Labat.
+                              Sejak tahun 1992 sampai tahun 2016, sebelum
+                            </div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>28 Januari 2023 | Skeretariat</small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                      <!-- card -->
+                    </div>
+                    <!-- 6 -->
+                    <div
+                      role="listitem"
+                      class="swiper-slide"
+                      style="width: 400px; outline: none"
+                    >
+                      <!-- card -->
+                      <div>
+                        <a
+                          href=""
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/mimbarper.JPG"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">
+                              MIMBAR PERTAMA GMIT DIPINDAHKAN
+                            </p>
+                            <div class="card_text">
+                              Dari kiri ke kanan, Bpk. Jacob Haan (Pelaku
+                              Sejarah), Bpk. Habel Amun (Tukang pembangunan
+                              gedung gereja lama), Bpk. John Damaleru (Ketua
+                              Panitia Pembangunan gedung gereja lama), Bpk. Pdt.
+                              Daibel N. D. Tlonaen (KMJ Yarden Labat), Ibu Pdt.
+                              Martha Nggauk (Wakil 1 KMJ Yarden Labat)
+                            </div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>22 Januari 203 | Skeretariat</small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                      <!-- card -->
+                    </div>
+                    <!-- 7 -->
+                    <div
+                      role="listitem"
+                      class="swiper-slide"
+                      style="width: 400px; outline: none"
+                    >
+                      <!-- card -->
+                      <div>
+                        <a
+                          href=""
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/memeriahkan.jpg"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">
+                              MEMERIAHKAN PASKAH: GMIT YARDEN LABAT
+                              MENYELENGGARAKAN LOMBA DAN KEGIATAN LAINNYA
+                            </p>
+                            <div class="card_text">
+                              KMJ Yarden Labat, Pdt. Daibel N. D. Tlonaen S.Th,
+                              M.Pd, Pengajar PAR, Pgr. Felsiana Kadja Kore Bonat
+                              dan Cavik. Irma Benu - Thiyus, S.Th, menjadi juri
+                              dalam kegiatan lomba PARDalam rangka memperingati
+                              Jumat Agung dan Merayakan Paskah, Jemaat GMIT
+                              Yarden Labat
+                            </div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>17 April 2022 | Skeretariat</small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                      <!-- card -->
+                    </div>
+                    <!-- 8 -->
+                    <div
+                      role="listitem"
+                      class="swiper-slide"
+                      style="width: 400px; outline: none"
+                    >
+                      <!-- card -->
+                      <div>
+                        <a
+                          href=""
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/mimbar kedua.jpeg"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">
+                              MIMBAR KEDUA GMIT YARDEN DIANTAR KE GEREJA
+                              BETHESDA PENE
+                            </p>
+                            <div class="card_text">
+                              Ketua Rayon 1, Pnt. Drs. Daniel H. Manoh
+                              menyampaikan sepatah dua kata sebelum menyerahkan
+                              mimbar dan persembahan lainnya kepada jemaat
+                              Bethesda Pene Mimbar kedua Jemaat Yarden Labat
+                              yang sudah “vakum” atau tidak digunakan karena
+                              adanya mimbar baru, diantar
+                            </div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>17 April 2022 | Skeretariat</small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                      <!-- card -->
+                    </div>
+                    <!-- 9 -->
+                    <div
+                      role="listitem"
+                      class="swiper-slide"
+                      style="width: 400px; outline: none"
+                    >
+                      <!-- card -->
+                      <div>
+                        <a
+                          href=""
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/sukseskanpaskah.jpeg"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">
+                              SUKSESKAN PASKAH, PANITIA PASKAH DIPERHADAPKAN
+                            </p>
+                            <div class="card_text">
+                              Perhadapan PanitiaMajelis Jemaat Yarden Labat
+                              memperhadapkan 38 orang “Panitia Paskah & HUT
+                              Jemaat GMIT Yarden Labat ke-XXX Tahun 2022". Salah
+                              satu hasil Keputusan Pra Persidangan Majelis
+                              Jemaat Yarden Labat Tahun Pelayanan 2022, Tanggal
+                              23 Januari 2022 yang kemudian dikuatkan
+                            </div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>6 Maret 2022 | Skeretariat</small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                      <!-- card -->
+                    </div>
+                    <!-- 10 -->
+                    <div
+                      role="listitem"
+                      class="swiper-slide"
+                      style="width: 400px; outline: none"
+                    >
+                      <!-- card -->
+                      <div>
+                        <a
+                          href=""
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/blank-aquamarine.jpg"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">
+                              MARI KATONG IKUT VAKSINASI
+                            </p>
+                            <div class="card_text">
+                              KMJ Yarden Labat, Pdt. Daibel N. D. Tlonanen,
+                              S.Th, M. Pd saat divaksin.Sesuai dengan informasi
+                              dari Puskesmas Bakunase sehubungan dengan
+                              pelaksanaan vaksinasi covid 19, maka
+                              diinformasikan bahwa puskesmas Bakunase siap
+                              bekerja sama dengan pihak Gereja Yarden Labat
+                              untuk pelaksanaan
+                            </div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>5 Juni 2021 | Skeretariat</small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                      <!-- card -->
+                    </div>
+                    <!-- 11 -->
+                    <div
+                      role="listitem"
+                      class="swiper-slide"
+                      style="width: 400px; outline: none"
+                    >
+                      <!-- card -->
+                      <div>
+                        <a
+                          href=""
+                          class="cards-news news-reel_card card_slide"
+                          draggable="false"
+                          target="_blank"
+                          ><div class="aspect-card">
+                            <div class="card_img-wrapper">
+                              <div class="card_img-scale">
+                                <img
+                                  alt="Card Img"
+                                  src="/public/blog/kamikecil.jpeg"
+                                  loading="lazy"
+                                  class="card_imgs card_not-gatsbys"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card_bodys card_with-links">
+                            <p class="card_titles">
+                              “KAMI KECIL TAPI MAMPU”…..SEMUA UNTUK KEMULIAAN
+                              TUHAN….(Catatan kecil dari pelaksanaan bulan
+                              Bahasa & Budaya Tahun 2021)
+                            </p>
+                            <div class="card_text">
+                              Sebelum membaca tulisan ini, perlu penulis
+                              sampaikan bahwa tulisan ini hanya asumsi pribadi
+                              dari penulis, yang mungkin bisa bertentangan
+                              dengan asumsi dari para pembaca sekalian. Tulisan
+                              ini tidak untuk mendiskreditkan atau
+                              membangga-banggakan etnis tertentu, karena sekali
+                              lagi
+                            </div>
+                            <div class="card_bottom-section">
+                              <div class="card_metadata">
+                                <small>30 Juni 2021 | Skeretariat</small>
+                              </div>
+                              <div class="card_read-more">
+                                Baca Selengkapnya<svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon"
+                                >
+                                  <path
+                                    d="M8 0 6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8Z"
+                                    fill="#323232"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div></div
+                        ></a>
+                      </div>
+                      <!-- card -->
+                    </div>
+                  </div>
+                </div>
+
+                <!-- swipper -->
+              </div>
+              <!-- test -->
+
+              <!-- news -->
+              <!-- swipper wrap-->
+            </div>
+            <div class="section-btn">
+              <a href="#" class="button-secondary"
+                ><div class="button-text">Baca Berita Lainnya</div>
+                <div class="button-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    data-slot="icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg></div
+              ></a>
+            </div>
+          </div>
+          <!-- {news} -->
+        </section>
+        <!-- {article} -->
+      </main>
+      <!-- {main} -->
+
+      <!-- {footer} -->
+      <footer>
+        <div class="yl_footer">
+          <div class="padding-global">
+            <div class="footer-grid">
+              <div class="footer-left">
+                <div class="footer-about">
+                  <div class="footer-about-left">
+                    <div class="footer-logo">
+                      <!-- sosial -->
+                      <div class="footer-social">
+                        <a href="#" class="footer-brand">
+                          <img
+                            loading="lazy"
+                            src="/public/favicon/yarden-icon-text - Copy.png"
+                            height="34px"
+                            alt="footer-brand"
+                          />
+
+                          <img
+                            loading="lazy"
+                            src="/public/favicon/yarden-icon-text.png"
+                            height="30px"
+                            alt="footer-brand"
+                            style="margin-left: 10px"
+                          />
+                        </a>
+                        <!--  -->
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                          ><svg
+                            width="2em"
+                            height="2em"
+                            viewBox="0 0 24 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon"
+                            style="cursor: pointer"
+                          >
+                            <path
+                              d="M23.8 4.2s-.2-1.7-1-2.4c-.9-1-1.9-1-2.4-1C17 .6 12 .6 12 .6s-5 0-8.4.2c-.5.1-1.5.1-2.4 1-.7.7-1 2.4-1 2.4S0 6.1 0 8.1v1.8c0 1.9.2 3.9.2 3.9s.2 1.7 1 2.4c.9 1 2.1.9 2.6 1 1.9.2 8.2.2 8.2.2s5 0 8.4-.3c.5-.1 1.5-.1 2.4-1 .7-.7 1-2.4 1-2.4s.2-1.9.2-3.9V8c0-1.9-.2-3.8-.2-3.8ZM9.5 12.1V5.4L16 8.8l-6.5 3.3Z"
+                              fill="#000"
+                            ></path></svg
+                        ></a>
+                        <!--  -->
+                        <a href="#">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="2em"
+                            height="2em"
+                            viewBox="0 0 30 30"
+                          >
+                            <path
+                              d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z"
+                            ></path>
+                          </svg>
+                        </a>
+                        <!--  -->
+                        <a href="#">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="2em"
+                            height="2em"
+                            viewBox="0 0 30 30"
+                          >
+                            <path
+                              d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-about-right">
+                    <p>Yarden Labat -</p>
+                    <p>
+                      <small>
+                        Gereja Yarden Labat awal berdirinya merupakan sebuah
+                        mata jemaat cabang gereja Syalom Airnona.</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-right">
+                <div class="footer-link">
+                  <div class="footer-contact">
+                    <p>Kontak Info</p>
+                    <p>
+                      <small>
+                        Jl. Kian Kalaki, Kel. Bakunase II, Kec. Kota Raja, Kota
+                        Kupang, Nusa Tenggara Timur - Indonesia</small
+                      >
+                    </p>
+                    <p>
+                      <small> info@yardenlabat.org </small>
+                    </p>
+                    <p>
+                      <small> (+62) 123 4567 8900</small>
+                    </p>
+                  </div>
+                  <div class="footer-qlink">
+                    <p>Link Cepat</p>
+                    <div>
+                      <a href="#about"> Tentang Yarden Labat </a>
+                    </div>
+                    <div>
+                      <a href="#media"> Multimedia </a>
+                    </div>
+                    <div>
+                      <a href="#news"> Berita &amp; Aktivitas </a>
+                    </div>
+                  </div>
+                  <div class="footer-totop">
+                    <button class="button-rounded">
+                      <a href="#yl-header">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          class="size-5"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a.75.75 0 0 1-.75-.75V4.66L7.3 6.76a.75.75 0 0 1-1.1-1.02l3.25-3.5a.75.75 0 0 1 1.1 0l3.25 3.5a.75.75 0 1 1-1.1 1.02l-1.95-2.1v12.59A.75.75 0 0 1 10 18Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <small
+            >Crafted with passion By KA-AN <br />
+            © 2024 - Yarden Labat. All Rights Reserved</small
+          >
+        </div>
+        <!-- {main} -->
+      </footer>
+      <!-- {footer} -->
+    </div>
+    <script src="/lib/swiper/swiper-bundle.min.js"></script>
+    <script src="/src/js/scrips.js"></script>
+  </body>
+</html>

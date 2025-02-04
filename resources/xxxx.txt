@@ -1,0 +1,126 @@
+  <!-- <nav id="yl-nav" class="yl_nav"> 
+      <div class="yl_nav-menu">
+        <ul class="yl_nav-menu-item">
+          <li class="yl_nav-menu-itemlist" id="yl_nav-menu">
+           <div class="yl-dropdown">
+                <span class="yl-dropdown-title">PROFIL</span>
+                <div
+                  class="yl-dropdown-content"
+                  style="
+                    background-image: url(/public/favicon/gmit-drop.png);
+                    object-fit: cover;
+                    background-size: cover;
+                  "
+                >
+                  <p class="fade_small">YARDEN LABAT</p>
+                  <div class="drop-link"><a href="">SEJARAH</a></div>
+                  <div class="drop-link"><a href="">VISI MISI</a></div>
+
+                  <p class="fade_small">ARSIP</p>
+                  <div class="drop-link"><a href="">PENDETA GEREJA</a></div>
+                </div>
+              </div>
+            </div>  
+           
+            <div id="yl-navlink2" class="yl-navlink">
+              <div class="yl-dropdown">
+                <span class="yl-dropdown-title">PENATALAYANAN</span>
+                <div
+                  class="yl-dropdown-content"
+                  style="
+                    background-image: url(/public/favicon/gmit-drop.png);
+                    object-fit: cover;
+                    background-size: cover;
+                  "
+                >
+                  <p class="fade_small">MJH</p>
+                  <div class="drop-link">
+                    <a href="">MAJELIS JEMAAT HARIAN </a>
+                  </div>
+
+                  <p class="fade_small">BADAN PEMBANTU PELAYANAN (BPP)</p>
+                  <div class="drop-link"><a href="">BPPPPJ (BP4J) </a></div>
+                  <div class="drop-link"><a href="">BPPPJ (BP3J) </a></div>
+                  <div class="drop-link">
+                    <a href="">BADAN DIAKONAT JEMAAT (BDJ) </a>
+                  </div>
+                  <div class="drop-link">
+                    <a href="">BADAN PEMBANGUNAN FISIK (BPF) </a>
+                  </div>
+                  <div class="drop-link"><a href="">BADAN HARGAKU </a></div>
+                  <p class="fade_small">BADAN PEMBANTU PELAYANAN (BPP)</p>
+                  <div class="drop-link"><a href="">BPPPPJ (BP4J) </a></div>
+                  <div class="drop-link"><a href="">BPPPJ (BP3J) </a></div>
+                  <div class="drop-link">
+                    <a href="">BADAN DIAKONAT JEMAAT (BDJ) </a>
+                  </div>
+                  <div class="drop-link">
+                    <a href="">BADAN PEMBANGUNAN FISIK (BPF) </a>
+                  </div>
+                  <div class="drop-link"><a href="">BADAN HARGAKU </a></div>
+
+                  <p class="fade_small">UNIT PEMBANTU PELAYANAN (UPP)</p>
+                  <div class="drop-link"><a href="">TERITORI </a></div>
+                  <div class="drop-link"><a href="">PAR & TARUNA </a></div>
+                  <div class="drop-link"><a href="">KATEKISASI </a></div>
+                  <div class="drop-link"><a href="">PEMUDA </a></div>
+                  <div class="drop-link"><a href="">KAUM BAPAK </a></div>
+                  <div class="drop-link"><a href="">KAUM PEREMPUAN </a></div>
+                  <div class="drop-link"><a href="">LANSIA </a></div>
+                  <div class="drop-link"><a href="">PERSEKUTUAN DOA </a></div>
+                  <div class="drop-link">
+                    <a href="">LITURGI & MUSIK GEREJAW </a>
+                  </div>
+                  <div class="drop-link">
+                    <a href="">KESEKRETARIATAN & MULTIMEDIA </a>
+                  </div>
+                  <div class="drop-link">
+                    <a href="">PERBENDAHARAAN & KERUMAH -TANGGAAN </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="yl-navlink3" class="yl-navlink">
+              <div class="yl-dropdown">
+                <span class="yl-dropdown-title">PELAYANAN</span>
+                <div
+                  class="yl-dropdown-content"
+                  style="
+                    background-image: url(/public/favicon/gmit-drop.png);
+                    object-fit: cover;
+                    background-size: cover;
+                  "
+                >
+                  <p class="fade_small">SAKRAMEN</p>
+                  <div class="drop-link"><a href="">PERJAMUAN KUDUS</a></div>
+                  <div class="drop-link"><a href="">BAPTISAN</a></div>
+
+                  <p class="fade_small">UPP</p>
+                  <div class="drop-link"><a href="">KATEGORIAL</a></div>
+                </div>
+              </div>
+            </div>
+            <div id="yl-navlink4" class="yl-navlink">
+              <div class="yl-dropdown">
+                <span class="yl-dropdown-title">UNDUHAN</span>
+                <div
+                  class="yl-dropdown-content"
+                  style="
+                    background-image: url(/public/favicon/gmit-drop.png);
+                    object-fit: cover;
+                    background-size: cover;
+                  "
+                >
+                  <p class="fade_small">FORMULIR</p>
+                  <div class="drop-link"><a href="">FORMULIR 1</a></div>
+                  <div class="drop-link"><a href="">FORMULIR 2</a></div>
+                  <div class="drop-link"><a href="">FORMULIR 32</a></div>
+                </div>
+              </div>
+            </div> 
+          </li>
+        </ul>
+      </div> 
+   
+    </nav> -->

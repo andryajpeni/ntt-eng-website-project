@@ -1,4 +1,4 @@
-// 5SolasSwipper 
+// 5SolasSwipper
 const SolasSwipper = new Swiper(".sola-swiper", {
   grabCursor: false,
   loop: false,

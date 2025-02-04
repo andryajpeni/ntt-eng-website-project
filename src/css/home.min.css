@@ -26,6 +26,7 @@
 }
 .about-button {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   width: 100%;
@@ -52,6 +53,9 @@
   }
   .yl_media-videos {
     display: flex;
+    flex-direction: column;
+  }
+  .about-button {
     flex-direction: column;
   }
 }
