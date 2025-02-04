@@ -1,8 +1,8 @@
-@import url(./src/css/root.min.css);
-@import url(./src/css/nav.min.css);
-@import url(./src/css/footer.min.css);
-@import url(./src/css/infi-slider-text.min.css);
-@import url(./src/css/slider.min.css);
+@import url(/src/css/root.min.css);
+@import url(/src/css/nav.min.css);
+@import url(/src/css/footer.min.css);
+@import url(/src/css/infi-slider-text.min.css);
+@import url(/src/css/slider.min.css);
 
 /* about */
 .yl_about-top {
