@@ -1,14 +1,14 @@
 /* about */
-.yl_about-top {
+.about-section-top {
   padding: 0 var(--padding10) 0 var(--padding10);
 }
-.yl_about-top {
+.about-section-top {
   border-top-left-radius: var(--radius-normal);
   border-top-right-radius: var(--radius-normal);
   border: 1px solid var(--primary15);
   padding-bottom: 1rem;
 }
-.yl_about-bottom {
+.about-section-bottom {
   border-bottom-left-radius: var(--radius-normal);
   border-bottom-right-radius: var(--radius-normal);
   border-right: 1px solid var(--primary15);
@@ -27,7 +27,7 @@
   margin-top: 1rem;
 }
 /* main */
-.yl_main-page {
+.main-section {
   padding-top: 2rem;
 }
 /* @multimedia */
@@ -45,7 +45,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-  .yl_media-videos {
+  .media-videos {
     display: flex;
     flex-direction: column;
   }
@@ -54,7 +54,7 @@
   }
 }
 
-.yl_media-videos {
+.media-videos {
   position: relative;
   height: 50vh;
   overflow: hidden;
@@ -71,7 +71,7 @@
   -o-border-radius: var(--radius-normal);
 }
 
-.yl_media-slider {
+.media-slider-section {
   height: 50vh;
   position: relative;
   flex-shrink: 0;
@@ -84,7 +84,7 @@
   -ms-border-radius: var(--radius-normal);
   -o-border-radius: var(--radius-normal);
 }
-.yl_media-slider-bg {
+.media-slider-bg {
   position: absolute;
   justify-content: end;
   opacity: 85;
@@ -98,7 +98,7 @@
   -ms-border-radius: var(--radius-normal);
   -o-border-radius: var(--radius-normal);
 }
-.yl_youtube-link {
+.youtube-link {
   height: 50vh;
   overflow: hidden;
 
@@ -108,7 +108,7 @@
   -ms-border-radius: var(--radius-normal);
   -o-border-radius: var(--radius-normal);
 }
-.yl_media-slider-list {
+.media-slider-list {
   position: absolute;
   height: 100%;
   top: 0;
@@ -118,13 +118,13 @@
   overflow: auto;
   padding: 0 10px;
 }
-.yl_media-list-item:first-child {
+.media-list-item:first-child {
   border-bottom: 1px solid var(--primary15);
 }
-.yl_media-list-item:last-child {
+.media-list-item:last-child {
   border: none;
 }
-.yl_media-list-item {
+.media-list-item {
   display: flex;
   padding: 5px 0;
   margin-bottom: 5px;

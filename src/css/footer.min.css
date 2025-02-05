@@ -49,6 +49,8 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+  color: var(--primary);
+  display: block;
 }
 .footer-brand {
   display: flex;
@@ -62,7 +64,7 @@
   margin-right: auto;
   justify-content: center;
 }
-.yl_footer {
+.footer-section {
   height: max-content;
   width: 100%;
   padding-top: 1rem;

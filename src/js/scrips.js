@@ -125,7 +125,7 @@ const locations = [
 const btnSrc = document.getElementsByClassName("srcChanger");
 for (let i = 0; i < btnSrc.length; i++) {
   btnSrc[i].addEventListener("click", function () {
-    document.getElementsByClassName("yl_youtube-link")[0].src = locations[i];
+    document.getElementsByClassName("youtube-link")[0].src = locations[i];
     document.getElementById("view-ytlink").innerHTML = locations[i];
   });
 }

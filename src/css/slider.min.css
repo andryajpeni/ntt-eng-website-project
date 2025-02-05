@@ -23,7 +23,7 @@
 }
 /* content */
 /* sola */
-.yl_sola {
+.sola-section {
   width: 100%;
 }
 .card-sola {
@@ -214,7 +214,6 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  font-family: Inter, sans-serif;
 }
 @media (max-width: 1024px) {
   .cards-slides .card_bodys {
